@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>答题</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="pragram" content="no-cache">
+<link rel="stylesheet" type="text/css" href="css/main.css?v=20150806">
+<script src="MobileAPI.js"></script>
+    <script type="text/javascript">
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+
+        //微信去掉下方刷新栏
+        if(RegExp("MicroMessenger").test(navigator.userAgent)){
+            document.addEventListener('WeixinJSBridgeReady', function() {
+                WeixinJSBridge.call('hideToolbar');
+            });
+        }
+    </script>
+    <style>
+        .page-con{background-size: contain; height: 909px; background-position: 50% 50%;background-repeat:no-repeat}
+    </style>
+</head>
+
+<body class="s-bg-ddd pc no-3d" style="-webkit-user-select: none;">
+    <!--loading-->
+    <section class="loading mask" style="display:block">
+        <div class="loader loader--glisteningWindow"></div>
+    </section>
+    <!--/loading-->
+    <section class="p-ct transformNode-2d" style="height: 1024px;">
+        <div class="translate-back" style="height: 1024px;">
+            <div class="m-page page_1" style="height:70%;">
+                <div class="page-con" style="background-image: url(./images/p0_bg.jpg);">
+                    <a href="javascript:;" class="video_btn"><i></i></a>
+                    <section class="u-arrow"><p></p></section>
+                    <a href="javascript:;" class="begin_test_btn"><img src="./images/enter_test_btn_ico.png"></a>
+                </div>
+                <div id="jyz_video" class="f-hide"></div>
+            </div>
+            <div class="m-page page_2 f-hide" style="height:70%;">
+                <div class="page-con " style="background-image: url(./images/test_bg.jpg);background-size:100% 100%">
+                    <div class="test_block">
+                        <p class="topic">1. 绩效面谈的“四维”关键点有哪些？（多选题）</p>
+                        <ul class="answer_options">
+                            <li class="answer_option">
+                                <input type="checkbox" id="checkbox-2-1" class="regular-checkbox big-checkbox" /><label for="checkbox-2-1"></label>
+                                <label class="option" for="checkbox-2-1">A.工作业绩</label>
+                            </li>
+                            <li class="answer_option">
+                                <input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-1"></label>
+                                <label class="option" for="radio-2-1">A.工作业绩</label>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" class="answer_btn">提交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="u-video full_mask f-hide" id="jyz_mov">-->
+        <!--<div class="close_btn"><span></span><span></span></div>-->
+        <!--<div id="jyz_video"></div>-->
+    <!--</section>-->
+
+    <section class="full_mask f-hide" id="answer_result">
+        <div class="result_dialog">
+            <p class="result_title">对不起，答错了！</p>
+            <p class="result_tip">正确答案是：ABCD</p>
+            <div class="result_btns">
+                <a href="javascript:;" class="next_btn"></a>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/html" class="hide" id="checkbox_radio_html">
+        <li class="answer_option">
+            <input type="{{input_type}}" id="{{input_type}}-{{id}}" name="{{input_type}}-set" class="regular-{{input_type}} big-{{input_type}}" value="{{choice}}"/><label for="{{input_type}}-{{id}}"></label>
+            <label class="option" for="{{input_type}}-{{id}}">{{item}}</label>
+        </li>
+    </script>
+    <script src="js/init.mix.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/head.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    $(function(){
+        var w_h=$(window).height();
+        $('.p-ct').height(w_h);
+        $('.page-con').height(w_h);
+        $('.m-page').height(w_h);
+        $('.translate-back').height(w_h);
+        head.load("./ckplayer/ckplayer.js","./js/topices.js",function(){
+            /*初始化对象函数*/
+            var loading=$(".loading"),isLookMov=false;
+            loading.hide();
+            createTopic();//生成试题
+            $(".video_btn").on("click",function(){
+                //打开播放器
+                $('#jyz_mov').removeClass('f-hide');
+                var flashvars={
+                    p:2,
+                    e:0,
+                    c:0,
+                    loaded:'loadedHandler',
+                    hl:'./file/mov1.mp4',
+                    ht:'20',
+                    hr:'http://www.ckplayer.com'
+                };
+                var video=['./file/mov1.mp4->video/mp4'];
+                var support=['all'];
+                CKobject.embedHTML5('jyz_video','ckplayer_a1',640,480,video,flashvars,support);
+                mover=CKobject.getObjectById('ckplayer_a1');
+                mover.videoPlay();
+                isLookMov=true;
+                $("#jyz_video").removeClass("f-hide");
+            });
+
+            $(".close_btn").on("click",function(){
+                //关闭播放器层
+                $('#jyz_mov').addClass('f-hide');
+                mover.videoPause();
+            });
+            $(".begin_test_btn").on("click",function(){
+                //测试
+                !isLookMov?$.fn.toolTip({msg:"请点击播放完视频课件后，再进入测试",arrow:false}):(
+                        $(".page_1").addClass("f-hide"),$(".page_2").removeClass("f-hide"),mover&&mover.videoPause()
+                );
+//                console.log(CKobject.getObjectById('ckplayer_a1').getStatus());
+            });
+
+            function createTopic(){
+                var ul='<p class="topic">{{title}}</p><ul class="answer_options">{{ul}}</ul><a href="javascript:;" class="answer_btn">提交</a>';
+                var li=$("#checkbox_radio_html").html();
+                var topicesObj={
+                    $test_block:$(".test_block"),
+                    $dialog:$("#answer_result"),
+                    data:topices,
+                    size:topices.length,
+                    ul:ul,
+                    li:li,
+                    current:0,
+                    addEvents:function(){
+                        var me=this,topic=me.data[me.current];
+                        $(".answer_btn").off("click").on("click",function(){
+                            var result="",answers=$(".regular-"+topic.input_type+":checked");
+                            if(answers.length<=0){
+                                $.fn.toolTip({msg:"请先选择答案，选择答案后方可提交",arrow:false});
+                                return;
+                            }
+                            $.each(answers,function(){
+                                result+=this.value;
+                            });
+                            if(topic.result==result){
+                                $(".result_title").text("恭喜你，答对了！");
+                                $(".result_tip").hide();
+                            }else{
+                                $(".result_title").text("对不起，答错了！");
+                                $(".result_tip").text("正确答案是："+topic.result).show();
+                            }
+                            if(me.current==me.size-1){
+                                $(".next_btn").addClass("finish");
+                            }
+                            me.$dialog.removeClass("f-hide");
+                        });
+                        $(".next_btn").off("click").on("click",function(){
+                            me.next();
+                            me.$dialog.addClass("f-hide");
+                        });
+                    },
+                    createDom:function(){
+                        var me=this,topice=me.data[me.current],l=me.li,u=me.ul,li_html="",t;
+                        l=l.replace(/\{\{input_type\}\}/g, topice.input_type);
+                        $.each(topice.options,function(i,v){
+                            t=l;
+                            t=t.replace(/\{\{id\}\}/g,i);
+                            t=t.replace(/\{\{choice\}\}/g, v.substr(0,1));
+                            t=t.replace(/\{\{item\}\}/g,v);
+                            li_html+=t;
+                        });
+                        u= u.replace(/\{\{title\}\}/g,topice.title+(topice.input_type=="checkbox"?"（多选题）":"（单选题）"));
+                        u= u.replace(/\{\{ul\}\}/g,li_html);
+                        me.$test_block.html(u);
+                        me.addEvents();
+                    },
+                    end:function(){
+                        $(".page_2").addClass("f-hide"),$(".page_1").removeClass("f-hide");
+                        this.current=0;
+                        this.createDom();
+                        $(".next_btn").removeClass("finish");
+                        console.log("doMobileCommit completed!!!");
+                        try{
+                            // 获取值
+                            App.call("doMobileGetValue","cmi.core.lesson_status",function(e){ });
+                            // 设置值
+                            App.call("doMobileSetValue","cmi.core.lesson_status","completed",function(e){
+                            });
+                            App.call("doMobileCommit");
+                        }catch(e){
+                        }
+                    },
+                    next:function(){
+                        var me=this;
+                        me.current++;
+                        me.current>=me.size?me.end():me.createDom();
+                    }
+                }
+                topicesObj.createDom();
+            }
+        });
+    });
+</script>
+</body>
+</html>

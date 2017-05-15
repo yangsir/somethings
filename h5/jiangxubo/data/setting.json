@@ -1,0 +1,64 @@
+﻿{
+  "error": 0,
+  "msg": "Success.",
+  "data": {
+    "bgs": "data/1P-01.jpg,data/2P-01.jpg,data/3P-01.jpg,data/4P-01.jpg,data/5P-01.jpg,data/6P-01.jpg,data/7P-01.jpg,data/8P-01.jpg,data/9P-01.jpg,data/10P-01.jpg,data/11P-01.jpg,data/12P-01.jpg,data/13P-01.jpg,data/14P-01.jpg,data/15P-01.jpg,data/16P-01.jpg,data/17P-01.jpg,data/18P-01.jpg,data/19P-01.jpg,data/20P-01.jpg,data/21P-01.jpg,data/22P-01.jpg,data/23P-01.jpg,data/24P-01.jpg,data/25P-01.jpg,data/25P-02.jpg,data/26-01.jpg,data/27P-01.jpg,data/28P-01.jpg,data/29P-01.jpg,data/30P-01.jpg,data/test.png",
+    "music": null,
+    "pdata": "2"
+  },
+  "test": [
+    {"title": "客户港股通知识测评必须达到（  ）分及以上，未满足条件需客户重新测试",
+      "ops": [
+        "100",
+        "90",
+        "80",
+        "70"
+      ],
+      "ok": [2]
+    },
+    {"title": "港股通每个买卖盘手数上限为(   )手",
+      "ops": [
+        "1000",
+        "2000",
+        "3000",
+        "4000"
+      ],
+      "ok": [2]
+    },
+    {"title": "港股通的早市连续竞价的时间为（）",
+      "ops": [
+        "9:30—11:30",
+        "9:30—12:00",
+        "9:15—12:00",
+        "9:30—11:00"
+      ],
+      "ok": [1]
+    },
+    {"title": "港股通(    )交收，可(   )交易",
+      "ops": [
+        "T + 1,T + 0",
+        "T+1,T+1",
+        "T+2,T+0",
+        "T+2,T+1"
+      ],
+      "ok": [2]
+    },
+    {"title": "对于A+H，因股价敏感信息未披露导致的盘中停牌，两所约定",
+      "ops": [
+        "A股保留",
+        "H股保留",
+        "同步停牌",
+        "以公告为准"
+      ],
+      "ok": [2]
+    }
+  ],
+  "title": "",
+  "content": " ",
+  "thum": "",
+  "version": "53",
+  "status": "0",
+  "pubdata": null,
+  "user_thum": null,
+  "author": null
+}
