@@ -1,0 +1,179 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>美包包-躲猫猫游戏</title>
+    <meta name="description" content="美包包-躲猫猫游戏">
+    <meta name="author" content="美包包">
+    <meta name="keywords" content="美包包-躲猫猫游戏">
+    <meta name="expires" content="7776000">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css?v=150403">
+</head>
+<body>
+<div class="container" style="background:#43d6ff">
+    <!--loading-->
+    <div class="loading mask">
+        <div class="loader loader--glisteningWindow"></div>
+    </div>
+    <!--/loading-->
+    <!--主内容-->
+    <div class="end_main">
+        <img src="./images/end_game_bg_01.png"/>
+        <div class="end_top_msg">
+            <div class="cloud">
+                <p>目前积分：</p>
+                <p>0</p><!--最多5位-->
+                <p>总排行：</p>
+                <p>第0位</p><!--最多4位-->
+            </div>
+        </div>
+        <div class="end_score">
+            <span>999999</span>
+        </div>
+        <img src="./images/end_game_bg_02.png"/>
+        <div class="end_footer">
+            <div class="left_side">
+                <div class="ranking_list">
+                    <ul>
+                        <li data-num="1"><div><img class="one" src="./images/wx_head_01.png"/><span class="two">xxxxxx</span><span class="three">99999</span></div></li>
+                        <li data-num="2"><div><img class="one" src="./images/wx_head_02.png"/><span class="two">xxxxxx</span><span class="three">99999</span></div></li>
+                        <li data-num="3"></li>
+                        <li data-num="3999"><div><img class="one" src="./images/wx_head_04.png"/><span class="two">你的排名</span><span class="three">99999</span></div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blank"></div>
+            <div class="right_side">
+                <div class="btns">
+                    <a href="./game.html" class="btn btn_f8323c">继续游戏</a>
+                    <a id='onMenuShareAppMessage' onclick="appmessageTips()" href="javascript:;" class="btn btn_4ecb39">朋友帮忙</a>
+                </div>
+                <div class="line"></div>
+                <div class="btns small">
+                    <a href="javascript:;" class="btn btn_ffb852">送手袋</a>
+                    <a href="javascript:;" class="btn btn_75d5c7">109换购</a>
+                    <a href="javascript:;" class="btn btn_fe8453 no_b_a">269换购</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--全屏遮罩-->
+    <div class="full_mask hide"></div>
+    <!--/全屏遮罩-->
+    <!--礼品详情对话框-->
+    <div id="lp_xq_dialog" class="dialog lp_xq_dialog hide">
+        <div class="d_title" data-title=""><span class="d_close" data-id="lp_xq_dialog"></span></div>
+        <div class="d_content">
+            <img src="./images/jp_bg_01_1.png" />
+            <img src="./images/jp_bg_02_1.jpg" />
+            <img src="./images/jp_bg_03_1.jpg" />
+        </div>
+    </div>
+    <!--/礼品详情对话框-->
+    <!--送手袋领取信息填写对话框-->
+    <div id="lp_from_dialog" class="dialog lp_from_dialog hide">
+        <div class="d_title" data-title="填写领奖信息"><span class="d_close" data-id="lp_from_dialog"></span></div>
+        <div class="d_content">
+            <input type="text" placeholder="收货姓名" id="name" nmae="name" />
+            <input type="text" placeholder="联系手机" id="phone" nmae="phone" />
+            <input type="text" placeholder="收货地址" id="address" nmae="address" />
+            <div class="btns tc">
+                <a href="javascript:;" class="btn_a">提交</a>
+            </div>
+        </div>
+    </div>
+    <!--/送手袋领取信息填写对话框-->
+    <!--分享给朋友-->
+    <div id="fxpy" class="fx hide">
+        <img src="./images/fxpy.png"/>
+    </div>
+    <!--/分享给朋友-->
+    <div class="js-audio" data-src="./css/bg_music.mp3"></div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/public.js"></script>
+
+<script src="./js/zepto.min.js"></script>
+<script src="./js/head.min.js"></script>
+<script>
+    request_url =domain_url + 'index.php/Credit/getRank';
+    $(document).ready(function () {
+        head.load("./js/fastclick.min.js","./js/util.js","./js/game_end.js",function (){
+            $(".end_score").find("span").text(getParamFormURL("score"));//得到本局得分
+            var init=function(){
+                try{
+                    $.ajax({
+                        url:request_url,//todo
+                        type:"get",
+                        dataType:"json",
+                        data:{pagename:"game_end",'score':getParamFormURL("score")},
+                        success:function(result){
+                            //报文格式：{totalScore:999,rankings:89}
+                            (result&&result.result==1)?(function(){
+                                var p=$(".cloud").find("p");
+                                p.eq(1).text(result.data.credit);
+                                p.eq(3).text(result.data.rank);
+
+                                /*weixin js share start*/
+                                wx.config({
+                                    //debug: true,
+                                    appId: result.signPackage.appId,
+                                    timestamp: result.signPackage.timestamp,
+                                    nonceStr: result.signPackage.nonceStr,
+                                    signature: result.signPackage.signature,
+                                    jsApiList: [
+                                        'onMenuShareTimeline',
+                                        'onMenuShareAppMessage',
+                                        'addCard',
+                                    ]
+                                });
+                                wx.ready(function () { //方便扩展
+                                    WxShareTimeline();
+                                    WxShareAppMessage(result.data.ucode);
+                                    
+                                    //卡卷
+                                    if(result.cardcount >=1 ) {
+                                        document.querySelector('.btn_75d5c7').onclick = function () { //89
+                                            WxaddCard(result.card[0]);
+                                        };
+                                    }
+                                    if(result.cardcount ==2 ) {
+                                        document.querySelector('.btn_fe8453').onclick = function () { //199
+                                            WxaddCard(result.card[1]);
+                                        };
+                                    }
+
+                                });
+                                /*weixin js share end*/
+
+                            }()):showError("请求分数及名次失败");
+
+                        },
+                        error:function(){
+                            showError("请求分数及名次失败");
+                        },
+                        complete:function(){
+                            $(".loading").hide();
+                        }
+                    });
+                }catch(e){}
+            };
+            init();
+            getList();
+            getAward();
+
+            $(".d_close").on("click",function(){
+                $(".full_mask").hide();
+                $(".dialog").hide();
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

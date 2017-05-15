@@ -1,0 +1,23 @@
+.p2__f_des{background:url(../images/p2_1title.png) no-repeat;width:331px;height:112px;top:-66px;left:50%;margin-left:-90px;opacity:0;-webkit-transition:opacity .5s ease-out;transition:opacity .5s ease-out}
+.p2__b_des{background:url(../images/p2_2title.png) no-repeat;width:492px;height:69px;top:-46px;left:50%;margin-left:-110px;opacity:0;-webkit-transition:opacity .5s ease-out;transition:opacity .5s ease-out}
+.p2__f_img{background:url(../images/p2_1_bg.png) no-repeat;width:267px;height:300px;top:50%;margin-top:-10px;-webkit-background-size:267px 300px;background-size:267px 300px}
+.p2__b_img{background:url(../images/p2_2_bg.png) no-repeat;width:267px;height:300px;-webkit-background-size:267px 300px;background-size:267px 300px}
+.p2__b_dialogue,.p2__f_dialogue{width:267px;top:-20px;left:0}
+.p2__f_avatar_1{left:14px;top:3px;opacity:0;-webkit-transition:opacity .2s ease-out;transition:opacity .2s ease-out}
+.p2__f_bubble_1{background:url(../images/p2_1img02.png) no-repeat;width:320px;height:156px;top:150px;left:23px}
+.p2__f_1{background:url(../images/p2_1img01.png) no-repeat;width:235px;height:163px;top:40px;left:150px;opacity:0;-webkit-transition:opacity .5s ease-out;transition:opacity .5s ease-out}
+
+.p2__b_avatar_1{left:15px;top:3px;opacity:0;-webkit-transition:opacity .2s ease-out;transition:opacity .2s ease-out}
+.p2__b_avatar_2{right:12px;top:50px;opacity:0;-webkit-transition:opacity .2s ease-out;transition:opacity .2s ease-out}
+.p2__b_bubble_1{background:url(../images/p2_2img01.png) no-repeat;top:20px;width:164px;height:135px;top:;left:103px}
+.p2__b_bubble_2{background:url(../images/p2_2img02.png) no-repeat;width:291px;height:142px;top:180px;left:25px}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
+.p2__f_des{background-size:150px}
+.p2__b_des{background-size:200px}
+.p2__f_bubble_1{background-size:80px}
+.p2__f_1{background-size:100px}
+.p2__b_bubble_1{background:url(../images/p2_2img01.png) no-repeat;background-size:150px}
+.p2__b_bubble_2{background:url(../images/p2_2img02.png) no-repeat;background-size:120px}
+}
+

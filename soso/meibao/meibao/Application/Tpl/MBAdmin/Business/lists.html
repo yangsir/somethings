@@ -1,0 +1,73 @@
+<include file='Public:header' />
+
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+	<ul class="breadcrumb">
+		<li>
+			<i class="ace-icon fa fa-home home-icon"></i>
+			<a href="#">管理列表</a>
+		</li>
+		<li class="active">商家列表</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	<div class="page-content-area">
+
+		<div class="row">
+		<div class="col-xs-12">
+						<div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline no-footer">
+							<div class="row">
+							<form method="post">
+								<input name="listrows" type="hidden" value="{$req_data['listrows']|default=20}"/>
+								<div class="col-xs-4"><div class="dataTables_length" id="sample-table-2_length">
+									<label>店铺名称 
+									<input name="keyword" value="{$req_data['keyword']}" class="form-control input-sm"></label>
+								</div></div>
+								<div class="col-xs-2"><button type="submit" class="btn btn-white btn-default">搜索</button></div>
+								<div class="col-xs-2"><a href="{:U('Business/add')}" class="btn btn-white btn-default">添加分店</a></div>
+							</form>	
+							</div>
+							<table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="sample-table-2_info">
+								<thead>
+									<tr role="row">
+										<th>序号</th>
+										<th>店铺名称</th>
+										<th>联系电话</th>
+										<th>地址</th>
+										<th>介绍</th>
+										<th>编辑</th>
+								</thead>
+
+								<tbody>
+								<if condition="count($tickets) gt 0">
+								<volist name="tickets" id="vo">
+								<tr role="row" class="odd">
+										<td>{$key+1}</td>
+										<td>{$vo.shop_title}</td>
+										<td>{$vo.shop_tel}</td>
+										<td>{$vo.shop_addr}</td>
+										<td>{$vo.shop_info}</td>
+										<td><a href="{:U('Business/edit',array('bid'=>$vo['business_shop_id']))}">编辑</a> |
+											<a href="{:U('Business/dele',array('bid'=>$vo['business_shop_id']))}">删除</a></td>
+								</tr>
+								</volist>
+								<else/>
+								<tr><td colspan="10">暂无数据</td></tr>
+								</if>
+								</tbody>
+							</table>
+						</div>
+							
+		</div>
+		</div><!-- /.row -->
+	</div><!-- /.page-content-area -->
+</div><!-- /.page-content -->
+				
+<include file='Public:footer' />

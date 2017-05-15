@@ -1,0 +1,123 @@
+<include file='Public:header' />
+<!-- #section:basics/content.breadcrumbs -->
+				<div class="breadcrumbs" id="breadcrumbs">
+					<script type="text/javascript">
+						try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+					</script>
+
+					<ul class="breadcrumb">
+						<li class="active">修改密码</li>
+					</ul><!-- /.breadcrumb -->
+
+				</div>
+
+				
+				<!-- /section:basics/content.breadcrumbs -->
+				<div class="page-content">
+					
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- PAGE CONTENT BEGINS -->
+							<form class="form-horizontal" role="form" action="{:U('Login/modifypwd')}" method="post" id="myform1">
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 当前密码 </label>
+
+									<div class="col-sm-9">
+										<input name="oldpwd" type="password" id="oldpwd" placeholder="当前密码" class="col-xs-10 col-sm-5">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 新密码 </label>
+
+									<div class="col-sm-9">
+										<input name="newpwd" type="password" id="newpwd" placeholder="新密码" class="col-xs-10 col-sm-5">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 确认新密码 </label>
+
+									<div class="col-sm-9">
+										<input name="cnewpwd" type="password" id="cnewpwd" placeholder="确认新密码" class="col-xs-10 col-sm-5">
+									</div>
+								</div>
+
+
+								<div class="clearfix form-actions">
+									<div class="col-md-offset-3 col-md-9">
+										<button class="btn btn-info" type="submit">
+											<i class="ace-icon fa fa-check bigger-110"></i>
+											提交
+										</button>
+
+										&nbsp; &nbsp; &nbsp;
+										<button class="btn" type="reset">
+											<i class="ace-icon fa fa-undo bigger-110"></i>
+											取消
+										</button>
+									</div>
+								</div>
+
+
+							</form>
+<!-- PAGE CONTENT ENDS -->
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+				</div><!-- /.page-content -->
+				
+				
+<include file='Public:footer' />
+<style>
+label.error { color:red;font-size:12px; }
+span.error{font-size:12px;color:red}
+</style>
+<script src="__ROOT__/Public/js/jquery.validate.min.js"></script>
+<script>
+$("#myform1").validate({
+    rules: {
+		oldpwd: {
+			required: true,
+			remote: {
+				type: "post",
+				url: "{:U('Login/getUserAjax')}",
+				data: {
+					pwd: function() {
+						return $("#oldpwd").val();
+					}
+				},
+				dataType: "html",
+				dataFilter: function(data, type) {
+					if ( data==1 ) return true;
+					else return false;
+				}
+			}
+		},
+        newpwd: {
+			required: true,
+			minlength: 6,
+			maxlength: 12
+		},
+		cnewpwd: {
+			required: true,
+			equalTo: "#newpwd"
+		}
+	},
+    messages: {
+		oldpwd: {
+			required: " * 当前密码不能为空",
+			remote:" * 当前密码输入错误",
+		},
+		newpwd: {
+			required: " * 请输入密码",
+			minlength: " * 密码不足6位",
+			maxlength: " * 密码长度最多12位",
+		},
+		cnewpwd: {
+			required: " * 请输入确认密码",
+			equalTo: " * 两次输入密码不一致"
+		}
+	}
+});
+
+</script>

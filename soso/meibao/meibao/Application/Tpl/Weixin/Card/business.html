@@ -1,0 +1,35 @@
+<include file="Public/mobile_head"/>	
+<link href="{$tmplmobile}/css/card.css" rel="stylesheet" type="text/css">
+
+<body>
+	<div class="container body">
+        <div class="p_10"> 
+            <div class="vipcard_content">
+                <div class="card geted">
+                	<span style="color:#fff;font-size:18px;">Contact US</span>
+                </div>
+                <div class="card_info get_card_info">
+                    <volist name="lists" id="vo">
+                    <div class="single_item m_15">
+                        <a class="p_10 mr_10">店铺：{$vo.shop_title}</a>
+						<div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10" href="tel:{$vo.shop_tel}">电话：{$vo.shop_tel}</a>
+						<div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10" href="http://api.map.baidu.com/marker?location={$vo.shop_jingdu},{$vo.shop_weidu}&title={$vo.shop_addr}&name={$vo.shop_addr}&content={$vo.shop_addr}&output=html">地址：{$vo.shop_addr}</a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10" href="{:U('Card/shop_info',array('bid'=>$vo['business_shop_id']))}">查看介绍</a>
+                    </div>
+                    </volist>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">{$system_copy_right}</p>
+    </div>
+    <div class="bottom_nav_blank"></div>
+</body>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</html>

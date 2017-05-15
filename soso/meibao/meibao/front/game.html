@@ -1,0 +1,266 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>美包包-躲猫猫游戏</title>
+    <meta name="description" content="美包包-躲猫猫游戏">
+    <meta name="author" content="美包包">
+    <meta name="keywords" content="美包包-躲猫猫游戏">
+    <meta name="expires" content="7776000">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css?v=150403">
+</head>
+<body>
+<div class="container">
+    <!--loading-->
+    <div class="loading mask" style="display:block">
+        <div class="loader loader--glisteningWindow"></div>
+    </div>
+    <!--/loading-->
+    <!--主内容-->
+    <div class="main" style="background:#3fd5ff">
+        <div class="game_top">
+            <a class="pause"><span></span><span></span></a>
+            <p class="timer"><span class="timer_bar"></span></p>
+            <p class="score" data-score="0"></p>
+        </div>
+        <div class="game_mian">
+            <img src="./images/game_bg_01.jpg" />
+            <img src="./images/game_bg_02.jpg" />
+            <div class="mouses">
+                <div class="hole"><img src="./images/m_0.png" /></div><div class="hole">
+                <img src="./images/m_0.png" /></div><div class="hole"><img src="./images/m_0.png" /></div>
+            </div>
+            <img src="./images/game_bg_03.jpg" />
+            <div class="mouses">
+                <div class="hole"><img src="./images/m_0.png" /></div><div class="hole">
+                <img src="./images/m_0.png" /></div><div class="hole"><img src="./images/m_0.png" /></div>
+            </div>
+            <img src="./images/game_bg_04.jpg" />
+            <div class="mouses">
+                <div class="hole"><img src="./images/m_0.png" /></div><div class="hole">
+                <img src="./images/m_0.png" /></div><div class="hole"><img src="./images/m_0.png" /></div>
+            </div>
+            <img src="./images/game_bg_05.jpg" />
+        </div>
+    </div>
+    <div class="ready hide">Ready!</div>
+    <!--全屏遮罩-->
+    <div class="full_mask hide"></div>
+    <!--/全屏遮罩-->
+    <!--游戏规则及奖励-->
+    <div id="explain_dialog" class="dialog hide">
+        <div class="d_title" data-title="游戏规则及奖励"><span class="d_close" data-id="explain_dialog"></span></div>
+        <div class="d_content">
+            <dl>
+                <dt>活动时间：</dt>
+                <dd>2015年4月25日-2015年5月11日</dd>
+            </dl>
+            <dl class="d_list">
+                <dt>游戏规则及奖励：</dt>
+                <dd>活动开始后每隔一天游戏积分在1万分以上且排行第一名的可免费领取美的真皮手袋一个，即27、29、1、3、5、7、9、11日开奖，兑换后积分会清零哦；</dd>
+                <dd>分享朋友圈获取双倍积分，一天只能一次噢；</dd>
+                <dd>找你的朋友帮忙玩，获取积分；</dd>
+                <dd>5000积分能以269购指定真皮手袋，3000积分能以109购买指定真皮银包。</dd>
+            </dl>
+        </div>
+        <div class="btns">
+            <a id='onMenuShareTimeline' onclick="timelineTips()" href="javascript:;" class="btn btn_ffb852">立即分享获双倍积分</a><a id='onMenuShareAppMessage' onclick="appmessageTips()" href="javascript:;" class="btn btn_4ecb39">找朋友帮忙获积分</a>
+        </div>
+    </div>
+    <!--/游戏规则及奖励-->
+    <!--游戏暂停中-->
+    <div id="pause_dialog" class="dialog hide">
+        <div class="d_title" data-title="游戏暂停中..."><span class="d_close" data-id="pause_dialog"></span></div>
+        <div class="d_content">
+            <div class="d_score" data-score="9999">
+                <p>目前得分：</p>
+            </div>
+            <div class="ranking_list">
+                <div class="d_title_img"><img  src="./images/ranking_list.png" /></div>
+                <ul>
+                    <li data-num="1"><div><img class="one" src="./images/wx_head_01.png"/><span class="two">xxxxxx</span><span class="three">99999</span></div></li>
+                    <li data-num="2"><div><img class="one" src="./images/wx_head_02.png"/><span class="two">xxxxxx</span><span class="three">99999</span></div></li>
+                    <li data-num="3"><div><img class="one" src="./images/wx_head_03.png"/><span class="two">xxxxxx</span><span class="three">99999</span></div></li>
+                    <li data-num="3999"><div><img class="one" src="./images/wx_head_04.png"/><span class="two">你的排名</span><span class="three">99999</span></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btns">
+            <a href="javascript:;" class="btn bold btn_ff691f">继续游戏</a><a href="javascript:;" class="btn bold btn_a5a5a5">结束游戏</a>
+        </div>
+    </div>
+    <!--/游戏暂停中-->
+    <!--礼品开启对话框-->
+    <div id="open_lp_dialog" class="dialog lp_dialog hide">
+        <div class="d_title" data-title=""><span class="d_close" data-id="open_lp_dialog"></span></div>
+        <div class="d_content">
+            <p id="lp_tips">喵，主人，</br>
+                你已开启<span id="lp_name">269元购精品银包</span>的特权，</br>
+                时间有限，快快点击兑换吧</p>
+            <img id="lp_img" src="./images/lp_3000.png" />
+        </div>
+        <div class="btns">
+            <!--
+               1. a标签加.btn_bdbdbd 为不可点击
+               2. a标签加.btn_fe8453 为开启，可点击
+            -->
+            <a href="javascript:;" data-credit="10000" class="btn bold btn_bdbdbd">送手袋</a><a href="javascript:;"  data-credit="3000" class="btn bold btn_bdbdbd">89换购</a><a href="javascript:;"  data-credit="5000" class="btn bold btn_bdbdbd">269换购</a>
+        </div>
+    </div>
+    <!--/礼品开启对话框-->
+
+    <!--礼品详情对话框-->
+    <div id="lp_xq_dialog" class="dialog lp_xq_dialog hide">
+        <div class="d_title" data-title=""><span class="d_close" data-id="lp_xq_dialog"></span></div>
+        <div class="d_content">
+            <img src="./images/jp_bg_01_1.png" />
+            <img src="./images/jp_bg_02_1.jpg" />
+            <img src="./images/jp_bg_03_1.jpg" />
+        </div>
+    </div>
+    <!--/礼品详情对话框-->
+
+    <!--送手袋领取信息填写对话框-->
+    <div id="lp_from_dialog" class="dialog lp_from_dialog hide">
+        <div class="d_title" data-title="填写领奖信息"><span class="d_close" data-id="lp_from_dialog"></span></div>
+        <div class="d_content">
+            <input type="text" placeholder="收货姓名" id="name" nmae="name" />
+            <input type="text" placeholder="联系手机" id="phone" nmae="phone" />
+            <input type="text" placeholder="收货地址" id="address" nmae="address" />
+            <div class="btns tc">
+                <a href="javascript:;" class="btn_a">提交</a>
+            </div>
+        </div>
+    </div>
+    <!--/送手袋领取信息填写对话框-->
+    <!--分享给朋友-->
+    <div id="fxpy" class="fx hide">
+        <img src="./images/fxpy.png"/>
+    </div>
+    <!--/分享给朋友-->
+    <!--分享到朋友圈-->
+    <div id="fxpyj" class="fx hide">
+        <img src="./images/fxpyj.png"/>
+    </div>
+    <!--/分享到朋友圈-->
+    <div class="js-audio" data-src="./css/bg_music.mp3"></div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/public.js"></script>
+
+<script src="./js/zepto.min.js"></script>
+<script src="./js/head.min.js"></script>
+<script>
+    request_url =domain_url + 'index.php/Credit/getWxshare';
+    $(document).ready(function () {
+        head.load("./js/fastclick.min.js","./js/util.js","./js/game.js",function () {
+            loadImg();//加载图片
+            getGameShow();
+            showDialog($("#explain_dialog"));//提示游戏规则及奖励
+//            showDialog($("#lp_from_dialog"));//提示游戏规则及奖励
+            $(".loading").hide();
+            $(".d_close").on("click",function(){
+                //关闭对话框
+                var me=$(this),id=me.data("id");
+                if(id=="lp_xq_dialog"){//关闭礼品详情对话框
+                    $("#lp_xq_dialog").hide();
+                    return;
+                }
+                if(id=="lp_from_dialog"){//送手袋领取信息填写对话框
+                    $("#lp_from_dialog").hide();
+                    return;
+                }
+                if(id=='pause_dialog'){game_continue()}
+                else if(id=='explain_dialog'){
+                    game_start();
+                }else if(id=='open_lp_dialog'){
+                    location.href="./game_end.html?score="+score;
+                }
+                $(".full_mask").hide();
+                $(".dialog").hide();
+            });
+            $(".btn_ff691f").on("click",function(){
+                //继续游戏
+                $(".full_mask").hide();
+                $(".dialog").hide();
+                game_continue();
+            });
+            $(".btn_a5a5a5").on("click",function(){
+                //结束游戏
+                game_end();
+            });
+
+            $(".fx").on("click",function(){
+                $(this).hide();
+            });
+
+            //add by yang
+            var init=function(){
+                try{
+                    $.ajax({
+                        url:request_url,//todo
+                        type:"post",
+                        dataType:"json",
+                        data:{pagename:"game"},
+                        success:function(result){
+                            //报文格式：{"result":1,"data":{"credit":0,"rank":2,"ucode":""}}
+                            result.result==1&&(function(){
+                                /*weixin js share start*/
+                                wx.config({
+                                    //debug: true,
+                                    appId: result.signPackage.appId,
+                                    timestamp: result.signPackage.timestamp,
+                                    nonceStr: result.signPackage.nonceStr,
+                                    signature: result.signPackage.signature,
+                                    jsApiList: [
+                                        'onMenuShareTimeline',
+                                        'onMenuShareAppMessage',
+                                        'addCard',
+                                    ]
+                                });
+
+                                wx.ready(function () { //方便扩展
+                                    WxShareTimeline();
+                                    WxShareAppMessage(result.data.ucode);
+
+                                    //卡卷
+                                    if(result.cardcount >=1 ) {
+                                        $(".btn[data-credit='3000']").live("click",function () { //89
+                                            WxaddCard(result.card[0]);
+
+                                        });
+                                    }
+                                    if(result.cardcount ==2 ) {
+                                        $(".btn[data-credit='5000']").live("click",function () { //199
+                                            WxaddCard(result.card[1]);
+                                        });
+                                    }
+
+                                });
+                                /*weixin js share end*/
+                            }());
+
+                        },
+                        error:function(){
+                            $.fn.toolTip("请求微信分享配置失败");
+                        },
+                        complete:function(){
+                            $(".loading").hide();
+                        }
+                    });
+                }catch(e){}
+            };
+            init();
+
+        });
+    });
+
+</script>
+</body>
+</html>
+

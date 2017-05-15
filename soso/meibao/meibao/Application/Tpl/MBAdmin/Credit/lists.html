@@ -1,0 +1,78 @@
+<include file='Public:header' />
+
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+	<ul class="breadcrumb">
+		<li>
+			<i class="ace-icon fa fa-home home-icon"></i>
+			<a href="#">管理列表</a>
+		</li>
+		<li class="active">积分列表</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	<div class="page-content-area">
+
+		<div class="row">
+		<div class="col-xs-12">
+						<div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline no-footer">
+							<div class="row">
+							<form method="post" action="{:U('Credit/lists')}" id="ticketlistform">
+								<input name="listrows" type="hidden" value="{$req_data['listrows']|default=20}"/>
+								<div class="col-xs-4"><div class="dataTables_length" id="sample-table-2_length">
+									<label>用户 
+									<input name="keyword" value="{$req_data['keyword']}" class="form-control input-sm"></label>
+								</div></div>
+								<div class="col-xs-2"><button type="submit" class="btn btn-white btn-default">搜索</button></div>
+							</form>	
+							</div>
+							<table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="sample-table-2_info">
+								<thead>
+									<tr role="row">
+										<th>序号</th>
+										<th>用户</th>
+										<th>积分</th>
+										<th>操作</th>
+								</thead>
+
+								<tbody>
+								<if condition="count($tickets) gt 0">
+								<volist name="tickets" id="vo">
+								<tr role="row" class="odd">
+										<td>{$key+1}</td>
+										<td>{$vo.nickname}</td>
+										<td>{$vo.credit}</td>
+                                        <td>
+                                        <a href="{:U('Credit/config',array('credit_id'=>$vo['credit_id']))}">编辑</a>&nbsp;
+                                        <eq name='flag' value='1'><a href="{:U('Credit/doconfig',array('credit_id'=>$vo['credit_id'],'set'=>'1'))}">设为中奖名单</a>&nbsp;</eq>
+                                        <a href="{:U('Credit/doconfig',array('credit_id'=>$vo['credit_id'],'del'=>'1'))}">删除</a>
+										</td>
+								</tr>
+								</volist>
+								<else/>
+								<tr><td colspan="10">暂无数据</td></tr>
+								</if>
+								</tbody>
+							</table>
+							<if condition="$count gt 0">
+							<div class="row">
+								<!--<div class="col-xs-6"><div class="dataTables_info" id="sample-table-2_info" role="status" aria-live="polite">总共{$count}条记录</div></div>-->
+								<div class="col-xs-6"><a href="{:U('Credit/export')}">导出>></a></div>
+								<div class="col-xs-6 pull-right"><div class="dataTables_paginate paging_simple_numbers" id="sample-table-2_paginate">{$pagehtml}</div></div>
+							</div>
+							</if>
+						</div>
+							
+		</div>
+		</div><!-- /.row -->
+	</div><!-- /.page-content-area -->
+</div><!-- /.page-content -->
+				
+<include file='Public:footer' />

@@ -1,0 +1,54 @@
+<include file="Public/mobile_head"/>	
+<link href="{$tmplmobile}/css/card.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.hasseek strong { font-weight:normal; }
+</style>
+<body>
+	<div id="container" class="container body">
+        <h5 class="page_title top_line">最新通知</h5>
+    	<ul class="toggle_list" style="margin-top:50px">
+        <volist name='lists' id="vo">
+        	<li class="single_item m_15 p_10">
+            	<div class="title <php>echo in_array($vo['notice_id'],$nids) ? 'hasseek' : 'seektitle';</php> icon_arrow_right" ref="{$vo.notice_id}">
+                	<img width="30" class="fl mr_10" src="{$tmplmobile}/img/pic_card.png"/>
+                	<p><strong>{$vo.notice_title}</strong></p>
+                </div>
+                <div class="content">
+                <p>发布时间：{$vo.add_time|date="Y-m-d H:i:s",###}</p>
+                <p>{$vo.notice_des}</p>
+                </div>
+            </li>
+            </volist>
+        </ul>   	
+        <if condition="empty($lists)" >
+        	<div class="empty_default">
+            	<p><img src="{$tmplmobile}/img/vip_card_gray.png"/><br/>会员卡目前还没通知~</p>
+            </div>
+        </if>
+        <p class="copyright">{$system_copy_right}</p>
+        <div class="bottom_nav_blank"></div>       
+    </div>
+</body>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+var seekarr = Array();
+$('.toggle_list .seektitle').click(function(){
+
+	var o = $(this),seekid=o.attr('ref');
+	if ( $.inArray(seekid,seekarr) >=0 ) {
+	} else {
+		$.ajax({
+		   type: "POST",
+		   url: "{:U('Card/ajaxseek')}",
+		   data: "nid="+seekid,
+		   success: function(msg){
+			o.addClass('hasseek');
+		   }
+		});
+	}
+	$.merge( seekarr,seekid );
+})
+</script>
+</html>

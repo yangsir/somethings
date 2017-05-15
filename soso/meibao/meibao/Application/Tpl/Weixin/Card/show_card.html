@@ -1,0 +1,58 @@
+<include file="Public/mobile_head"/>	
+<link href="{$tmplmobile}/css/card.css" rel="stylesheet" type="text/css">
+
+<body>
+	<div class="container body">
+        <div class="p_10"> 
+            <div class="vipcard_content">
+                <div class="card geted">
+                	<img src="{$card.bgurl}" width="90%"/>
+                    <span class="card_name">{$card.card_name}</span>
+                    <span class="card_num">卡号：{$card.cart_no}</span>
+                </div>
+                <div class="card_info get_card_info">
+                    
+                    <p class="m_15"><strong><center>使用时向服务员出示此卡</center></strong></p>
+                    <!--<div class="single_item m_15">
+                        <a class="p_10 arrow_icon mr_10" href="">最新通知</a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10" href="">会员优惠券</a>
+						<div class="single_item_line"></div>
+                    </div>-->
+                    <div class="single_item m_15">
+                        <a class="p_10 arrow_icon mr_10 posrel" href="{:U('Card/clog')}">业绩记录
+							<span class="badge">{$valsum}元</span></a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 mr_10 posrel">剩余积分
+							<span class="badge">{$card.card_value}分</span></a>
+                    </div>
+                    <div class="single_item m_15">
+                        <a class="p_10 arrow_icon mr_10 posrel" href="{:U('Card/notice_show')}">最新通知
+							<if condition="$noticecount gt 0"><span class="badge roll_yellow">{$noticecount}</span></if></a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10 posrel" href="{:U('Card/exchange')}">积分兑换礼品</a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 mr_10 posrel">会员卡特权
+							<span class="badge roll_blue">{$card.privilege}</span></a>
+                    </div>
+                    <div class="single_item m_15">
+                        <a class="p_10 arrow_icon mr_10" href="{:U('Card/introduction')}" >会员卡使用说明</a>
+                        <div class="single_item_line"></div>
+                        <a class="p_10 arrow_icon mr_10" href="{:U('Card/business')}" >商家电话及地址</a>
+                        <div class="single_item_line"></div>						
+                        <a class="p_10 arrow_icon mr_10 posrel" href="{:U('Card/edit_cardmem')}">个人资料</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <p class="copyright">{$system_copy_right}</p>
+    </div>
+    <div class="bottom_nav_blank"></div>
+</body>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</html>

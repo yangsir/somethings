@@ -1,0 +1,13 @@
+.badge{
+  position: absolute;
+  top: 9px;
+  right: 13px;
+  opacity: 0.88;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.roll_yellow { background-color:#f89406;color:#fff;border-radius: 10px; }
+.roll_blue    { background-color:#3a87ad;color:#fff;border-radius: 5px; }
+.posrel { position:relative; }
+

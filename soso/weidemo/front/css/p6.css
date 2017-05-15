@@ -1,0 +1,11 @@
+.p6{width:320px;height:504px;margin:-252px 0 0 -160px}
+.p6__t_1{background:url(../images/p6_title.png) no-repeat;width:586px;height:116px;top:98px;left:50%;margin-left:-119px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p6__t_3{background:url(../images/p6_img01.png) no-repeat;width:300px;height:232px;top:180px;left:50%;margin-left:-86px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p6__t_4{background:url(../images/p6_img02.png) no-repeat;width:300px;height:232px;top:180px;left:50%;margin-left:-110px;opacity:0;-webkit-transition:opacity 1s linear;transition:opacity 1s linear}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi)
+{
+.p6__t_1{background-size:200px}
+.p6__t_3{background-size:210px}
+.p6__t_4{background-size:210px}
+    }

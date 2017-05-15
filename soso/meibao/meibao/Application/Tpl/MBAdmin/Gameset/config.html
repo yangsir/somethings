@@ -1,0 +1,90 @@
+<include file='Public:header' />
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+	<ul class="breadcrumb">
+		<li class="active">游戏设置</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- PAGE CONTENT BEGINS -->
+            <p style='margin-left:10px'>
+            <b><a href="{:U('Gameset/config')}">游戏说明</a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><a href="{:U('Gameset/dateconfig')}">开奖设置</a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><a href="{:U('Gameset/exchange')}">积分兑换礼品说明</a></b>
+            </p>
+
+			<form class="form-horizontal" role="form" action="{:U('Gameset/config')}" method="post" id="myform12qwe">
+				<div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 开始时间 </label>
+					<div class="col-sm-9">
+						<input name="starttime" value="{:date('Y-m-d',$data['starttime'])}" type="text" id="newpwd" placeholder="开始时间，格式：2015-5-13" class="col-xs-10 col-sm-5">
+                        <p style='color:red'>注意格式：年-月-日</p>
+					</div>
+				</div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 结束时间 </label>
+					<div class="col-sm-9">
+						<input name="endtime" value="{:date('Y-m-d',$data['endtime'])}" type="text" id="newpwd" placeholder="结束时间，格式：2015-5-13" class="col-xs-10 col-sm-5">
+                        <p style='color:red'>注意格式：年-月-日</p>
+					</div>
+                </div>
+
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 游戏规则及奖励说明1 </label>
+					<div class="col-sm-9">
+						<textarea name="tip1" class="col-xs-10 col-sm-5">{$data['tip1']}</textarea>
+					</div>
+				</div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 游戏规则及奖励说明2 </label>
+					<div class="col-sm-9">
+						<textarea name="tip2" class="col-xs-10 col-sm-5">{$data['tip2']}</textarea>
+					</div>
+                </div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 游戏规则及奖励说明3 </label>
+					<div class="col-sm-9">
+						<textarea name="tip3" class="col-xs-10 col-sm-5">{$data['tip3']}</textarea>
+					</div>
+                </div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 游戏规则及奖励说明4 </label>
+					<div class="col-sm-9">
+						<textarea name="tip4" class="col-xs-10 col-sm-5">{$data['tip4']}</textarea>
+					</div>
+				</div>
+                
+				<div class="clearfix form-actions">
+					<div class="col-md-offset-3 col-md-9">
+						<button class="btn btn-info" type="submit">
+							<i class="ace-icon fa fa-check bigger-110"></i>
+							提交
+						</button>
+
+						&nbsp; &nbsp; &nbsp;
+						<button class="btn" type="reset">
+							<i class="ace-icon fa fa-undo bigger-110"></i>
+							取消
+						</button>
+					</div>
+				</div>
+
+
+			</form>
+<!-- PAGE CONTENT ENDS -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div><!-- /.page-content -->
+
+<include file='Public:footer' />

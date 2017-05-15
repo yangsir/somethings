@@ -1,0 +1,9 @@
+.p10{width:100%;left:0%;top:0%;margin-left:0px;height:100%;margin-top:0px}
+.p10 .fx_img img{display: block;overflow: hidden;width: 100%;}
+.p10 .fx_btn a{width: 50%;display: block;border-radius: 0.5em;background-color: #c52b2b;color: #fff;margin: 0 auto 1em auto;padding:0.5em 0;text-align: center}
+.p10 .fx_btn a:nth-child(1){background-color: #3264b7}
+@media only screen and (max-width:320px){
+    .p10 .fx_btn{text-align:center;}
+    .p10 .fx_btn a{display:inline-block;width:45%}
+}
+

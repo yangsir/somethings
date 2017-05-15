@@ -1,0 +1,88 @@
+<include file='Public:header' />
+
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+	<ul class="breadcrumb">
+		<li>
+			<i class="ace-icon fa fa-home home-icon"></i>
+			<a href="#">管理列表</a>
+		</li>
+		<li class="active">消费记录</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	<div class="page-content-area">
+
+		<div class="row">
+		<div class="col-xs-12">
+						<div id="sample-table-2_wrapper" class="dataTables_wrapper form-inline no-footer">
+							<div class="row">
+							<form method="post" action="{:U('Card/cloglists')}" id="ticketlistform">
+								<input name="listrows" type="hidden" value="{$req_data['listrows']|default=20}"/>
+								<div class="col-xs-4"><div class="dataTables_length" id="sample-table-2_length">
+									<label>微信名 
+									<input name="keyword" value="{$req_data['keyword']}" class="form-control input-sm"></label>
+								</div></div>
+								<div class="col-xs-2"><button type="submit" class="btn btn-white btn-default">搜索</button></div>
+								<div class="col-xs-2"><a href="{:U('Card/clogadd')}" class="btn btn-white btn-default">添加消费记录</a></div>
+							</form>	
+							</div>
+							<table id="sample-table-2" class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="sample-table-2_info">
+								<thead>
+									<tr role="row">
+										<th>序号</th>
+										<th>微信名</th>
+										<th>卡号</th>
+										<th>姓名</th>
+										<th>电话</th>
+										<th>消费日期</th>
+										<th>消费金额</th>
+										<th>抵扣积分</th>
+										<th>折扣</th>
+										<th>商品货号</th>
+										<th>操作人员</th>
+								</thead>
+
+								<tbody>
+								<if condition="count($tickets) gt 0">
+								<volist name="tickets" id="vo">
+								<tr role="row" class="odd">
+										<td>{$key+1}</td>
+										<td>{$vo.nickname}</td>
+										<td>{$vo.cart_no}</td>
+										<td>{$vo.card_name}</td>
+										<td>{$vo.card_tel}</td>
+										<td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+										<td>{$vo.cdeduction}</td>
+										<td>{$vo.cvalue}</td>
+										<td>{$vo.discount}折</td>
+										<td>{$vo.productnumber}</td>
+										<td>{$vo.username}</td>
+								</tr>
+								</volist>
+								<else/>
+								<tr><td colspan="10">暂无数据</td></tr>
+								</if>
+								</tbody>
+							</table>
+							<if condition="$count gt 0">
+							<div class="row">
+								<div class="col-xs-6"><a href="{:U('Card/export_clog')}">导出>></a></div>
+								<div class="col-xs-6 pull-right"><div class="dataTables_paginate paging_simple_numbers" id="sample-table-2_paginate">{$pagehtml}</div></div>
+							</div>
+							</if>
+						</div>
+							
+		</div>
+		</div><!-- /.row -->
+	</div><!-- /.page-content-area -->
+</div><!-- /.page-content -->
+				
+<include file='Public:footer' />

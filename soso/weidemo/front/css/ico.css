@@ -1,0 +1,13 @@
+.notice-swipe-up{width:30px;height:17px;z-index:2;bottom:12px;left:50%;margin-left:-20px;opacity:0}
+.band{background-image:url(../images/arrow_down);width:30px;height:17px;z-index:4;bottom:-8px;right:-10px;opacity:0;-webkit-transition:opacity .5s ease-out;transition:opacity .5s ease-out}
+.speaker{background:url(../images/music_ico.png) no-repeat;width:35px;height:30px;z-index:8;right:15px;top:10px;}
+.speaker_muted{background:url(../images/music_muted_ico.png) no-repeat;width:35px;height:30px;}
+.avatar{width:39px;height:40px}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi)
+{
+.notice-swipe-up{background-image:url(../images/arrow_down.png);width:30px;height:17px;background-size:cover}
+.band{background-image:url(../images/arrow_down.png);width:30px;height:17px;background-size:cover}
+.speaker{background:url(../images/music_ico.png) no-repeat;background-size:30px}
+.speaker_muted{background:url(../images/music_muted_ico.png) no-repeat;background-size:30px}
+}
+

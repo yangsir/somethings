@@ -1,0 +1,149 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>发财助理</title>
+    <meta name="description" content="发财助理">
+    <meta name="author" content="发财助理">
+    <meta name="keywords" content="发财助理">
+    <meta name="expires" content="7776000">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="container">
+    <!--loading-->
+    <div class="loading mask" style="display:block">
+        <div class="loader loader--glisteningWindow"></div>
+    </div>
+    <!--/loading-->
+    <!--主内容-->
+    <ul class="content-list">
+        <li class="content-li">
+            <div class="page p0">
+                <img class="p0_title" src="./images/sy_bg_01.png"/>
+                <img class="p0_head" src="./images/sy_bg_02.png"/>
+                <div class="up_arrow"><img src="./images/up_arrow.png"/></div>
+            </div>
+
+        </li>
+        <li class="content-li">
+            <div class="page p1">
+                <div class="row">
+                    <div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col12 ws_title">
+                        <img src="./images/p1_title.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div><div class="col3">
+                        <a href="javascript:;" class="box" data-state="fliped">
+                            <div class="fliped"><img src="./images/head_00.jpg"/></div>
+                            <div class="flip"><img src="./images/head_00.jpg"/></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="content-li">
+            <div class="page p2">
+                <div class="row">
+                    <div class="col12 intro">
+                        <img src="./images/intro.jpg"/>
+                        <img class="ewm" src="./images/ewm.jpg"/>
+                        <img class="footer" src="./images/footer.png"/>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/head.min.js"></script>
+<script>
+    $(document).ready(function () {
+        head.load("./js/fastclick.min.js","./js/index.js",function () {
+            var firstImg=new Image();
+            firstImg.src=$(".p0").find("img").last().attr("src");
+            $(".box").addClass(isIos?"ios":"android");
+            var init=function(){
+                loader.hide();
+                $(".content-li").css({"visibility":"visible"});
+                arrow.addClass("swipeMove").show();
+                $(".p0_title").addClass("scaleIn");
+                $(".p0_head").addClass("eleCircle");
+                (function(){
+                    //第2页3列人物图片自适应，以避免溢出
+                    var num=$(".p1").height()-$(window).height();
+                    var box=$(".box").find("img").eq(0);
+                    if(num>0){
+                        var box_w=box.width();
+                        var box_h=box.height();
+                        $(".col3").width(box_w-(box_w*(num/3))/box_h);
+                    }
+                }());
+                begin();
+            };
+            if(firstImg.complete){
+                init();
+            }else{
+                firstImg.onload=function(){
+                    init();
+                };
+            }
+
+        });
+    });
+</script>
+</body>
+</html>
+

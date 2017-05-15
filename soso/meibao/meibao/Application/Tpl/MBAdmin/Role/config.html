@@ -1,0 +1,115 @@
+<include file='Public:header' />
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+    <ul class="breadcrumb">
+		<li>
+			<i class="ace-icon fa fa-home home-icon"></i>
+			<a href="#">管理列表</a>
+		</li>
+		<li class="active">角色配置</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- PAGE CONTENT BEGINS -->
+			<form class="form-horizontal" role="form" action="{:U('Role/doconfig')}" method="post" id="myform12qwe">
+				<input name="admin_id" value="{$data['admin_id']}" type="hidden"/>
+
+				<div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户名 </label>
+					<div class="col-sm-9">
+						<input name="username" value="{$data['username']}" type="text" id="oldpwd" placeholder="用户名..." class="col-xs-10 col-sm-5">
+						<input name="oldusername" value="{$data['username']}" type="hidden">
+					</div>
+				</div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 密码 </label>
+
+					<div class="col-sm-9">
+						<input name="pwd" value="{$data['pwd']}" type="password" id="oldpwd" placeholder="密码..." class="col-xs-10 col-sm-5">
+						<input name="oldpwd" value="{$data['pwd']}" type="hidden">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 所属店铺 </label>
+
+					<div class="col-sm-9">
+						<input name="store" value="{$data['store']}" type="text" id="newpwd" placeholder="所属店铺..." class="col-xs-10 col-sm-5">
+					</div>
+				</div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 姓名 </label>
+
+					<div class="col-sm-9">
+						<input name="nickname" value="{$data['nickname']}" type="text" id="newpwd" placeholder="姓名..." class="col-xs-10 col-sm-5">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 电话 </label>
+
+					<div class="col-sm-9">
+						<input name="phone" value="{$data['phone']}" type="text" id="newpwd" placeholder="输入电话..." class="col-xs-10 col-sm-5">
+					</div>
+				</div>
+
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 管理员 </label>
+
+					<div class="col-sm-9">
+                        <select id='issuper' name='issuper'>
+                            <option value='0'>普通</option>
+                            <option value='1'>超级</option>
+                        </select>
+					</div>
+                </div>
+
+                <div class="form-group" id='show'>
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 权限 </label>
+
+					<div class="col-sm-9">
+                        <volist name='menuArr' id='vo'>
+                        <input type='checkbox' name='menu_id[]' <php>if(strpos($data['menu_ids'],$vo['menu_id']) !== false) echo 'checked';</php> value='{$vo.menu_id}'>{$vo.name}&nbsp;&nbsp;
+                        </volist>
+					</div>
+				</div>
+
+				<div class="clearfix form-actions">
+					<div class="col-md-offset-3 col-md-9">
+						<button class="btn btn-info" type="submit">
+							<i class="ace-icon fa fa-check bigger-110"></i>
+							提交
+						</button>
+
+						&nbsp; &nbsp; &nbsp;
+						<button class="btn" type="reset">
+							<i class="ace-icon fa fa-undo bigger-110"></i>
+							取消
+						</button>
+					</div>
+				</div>
+
+
+			</form>
+<!-- PAGE CONTENT ENDS -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div><!-- /.page-content -->
+
+<include file='Public:footer' />
+<script>
+$('#issuper').change(function() {
+    var val = $(this).val();
+    if(val == 0) $('#show').show();
+    else $('#show').hide();
+});
+</script>

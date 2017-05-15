@@ -1,0 +1,55 @@
+<include file="Public/mobile_head"/>	
+<link href="{$tmplmobile}/css/card.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+table { width:100%;  }
+td { text-align:center; }
+th { text-align:center;background:#bbb;padding:5px 0; }
+td { background:#f6f6f6; }
+</style>
+<body>
+	<div id="container" class="container body">
+        <h5 class="page_title top_line">Shopping history</h5>
+		  <ul style="margin-top:50px" class="toggle_list">
+        	<li class="single_item m_15  toggle_list_open">
+            	
+                <div class="content" style="padding:0;margin:0;">
+                	<div class="data-table">
+			<div class="table-striped   ">
+			  <table cellspacing="1" style="width:100%">
+				<!-- 表头 -->
+				<thead>
+				<tr>
+					<th>日期</th><th>消费（元）</th><th>积分</th><th>类型</th></tr>
+				</thead>
+				<!-- 列表 -->
+				<tbody>
+				<volist name='cloglists' id="vo">
+				<tr><td>{$vo['add_time']|date="m-d",###}</td>
+					<td>{$vo.cdeduction}</td>
+					<td>{$vo.cvalue}</td>
+					<td style="font-size:12px;">会员卡{$vo.discount}折<br />兑换{$vo.cdeduction}元现金券</td></tr>
+				</volist>
+				</tbody>
+			  </table>
+			  <div style="text-align:center;margin-top:10px;">
+				<if condition="$p gt 0"><a href="{:U('Card/clog',array('p'=>$p))}" style="color:#666;font-size:18px;">>></a></if></div>
+			</div>
+		  </div>
+                </div>
+            </li>
+        </ul>
+        <if condition="empty($cloglists)" >
+        	<div class="empty_default">
+            	<p><img src="{$tmplmobile}/img/vip_card_gray.png"/><br/>还没有消费记录~</p>
+            </div>
+        </if>
+        <p class="copyright">{$system_copy_right}</p>
+        <div class="bottom_nav_blank"></div>       
+    </div>
+</body>
+<script type="text/javascript">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.call('hideToolbar');
+});
+</script>
+</html>

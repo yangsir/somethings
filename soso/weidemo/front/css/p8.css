@@ -1,0 +1,11 @@
+.p8{width:320px;height:504px;margin:-252px 0 0 -160px}
+.p8__t_1{background:url(../images/p8_title.png) no-repeat;width:586px;height:116px;top:50%;left:50%;margin-top:-200px;margin-left:-119px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p8__t_3{background:url(../images/p8_img02.png) no-repeat;width:320px;height:250px;bottom:0%;left:0%;margin-left:20px;margin-bottom:-40px;-webkit-background-size:320px 250px;background-size:320px 250px;margin-left:0px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p8__hourglass{background:url(../images/p8_img01.png) no-repeat;width:250px;height:271px;-webkit-background-size:220px 271px;background-size:220px 271px;top:50%;left:50%;margin-top:-140px;margin-left:-114px;opacity:0;-webkit-transition:opacity 2s linear;transition:opacity 2s linear}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi)
+{
+.p8__t_1{background-size:200px}
+.p8__t_2{background-size:80px}
+.p8__t_3{background-size:100%}
+.p8__t_4{background-size:210px}
+ }

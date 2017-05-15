@@ -1,0 +1,64 @@
+<include file='Public:header' />
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+    <ul class="breadcrumb">
+		<li>
+			<i class="ace-icon fa fa-home home-icon"></i>
+			<a href="#">管理列表</a>
+		</li>
+		<li class="active">积分设置</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- PAGE CONTENT BEGINS -->
+			<form class="form-horizontal" role="form" action="{:U('Credit/doconfig')}" method="post" id="myform12qwe">
+				<input name="credit_id" value="{$data['credit_id']}" type="hidden"/>
+
+				<div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 用户名 </label>
+					<div class="col-sm-9">
+						<input name="username" value="{$data['nickname']}" type="text" id="oldpwd" readonly class="col-xs-10 col-sm-5">
+					</div>
+				</div>
+                <div class="form-group">
+					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 积分 </label>
+
+					<div class="col-sm-9">
+						<input name="credit" value="{$data['credit']}" type="text" id="oldpwd" placeholder="积分" class="col-xs-10 col-sm-5">
+						<input name="oldcredit" value="{$data['credit']}" type="hidden">
+					</div>
+				</div>
+
+				<div class="clearfix form-actions">
+					<div class="col-md-offset-3 col-md-9">
+						<button class="btn btn-info" type="submit">
+							<i class="ace-icon fa fa-check bigger-110"></i>
+							提交
+						</button>
+
+						&nbsp; &nbsp; &nbsp;
+						<button class="btn" type="reset">
+							<i class="ace-icon fa fa-undo bigger-110"></i>
+							取消
+						</button>
+					</div>
+				</div>
+
+
+			</form>
+<!-- PAGE CONTENT ENDS -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div><!-- /.page-content -->
+
+<include file='Public:footer' />

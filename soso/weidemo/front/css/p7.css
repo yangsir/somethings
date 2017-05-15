@@ -1,0 +1,20 @@
+.p7{width:320px;height:504px;margin:-252px 0 0 -160px}
+.p7__t_1{background:url(../images/p7_img01.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:-100px;margin-left:-106px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p7__t_2{background:url(../images/p7_img02.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:-65px;margin-left:-106px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p7__t_3{background:url(../images/p7_img03.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:-30px;left:50%;margin-left:-106px;opacity:0;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0)}
+.p7__hourglass{background:url(../images/p7_bg.png) no-repeat;width:300px;height:612px;top:50%;margin-top:-135px;left:50%;margin-left:-150px;opacity:0;-webkit-background-size:300px 300px;background-size:300px 300px;-webkit-transition:opacity 2s linear;transition:opacity 2s linear}
+.p7__t_4{background:url(../images/p7_img04.png) no-repeat;width:300px;height:62px;top:50%;margin-top:0px;left:50%;margin-left:-106px;opacity:0;-webkit-transition:opacity 1s linear;transition:opacity 1s linear }
+
+.p7__t_5{background:url(../images/p7_img05.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:30px;margin-left:-106px;opacity:0;-webkit-transition:opacity 1s linear;transition:opacity 1s linear}
+.p7__t_6{background:url(../images/p7_img06.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:60px;margin-left:-106px;opacity:0;-webkit-transition:opacity 1s linear;transition:opacity 1s linear}
+.p7__t_7{background:url(../images/p7_img07.png) no-repeat;width:300px;height:62px;top:50%;left:50%;margin-top:90px;margin-left:-106px;opacity:0;-webkit-transition:opacity 1s linear;transition:opacity 1s linear}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi)
+{
+.p7__t_1{background-size:200px}
+.p7__t_2{background-size:200px}
+.p7__t_3{background-size:200px}
+.p7__t_4{background-size:200px}
+.p7__t_5{background-size:200px}
+.p7__t_6{background-size:200px}
+.p7__t_7{background-size:200px}
+    }

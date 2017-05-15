@@ -1,0 +1,73 @@
+<include file='Public:header' />
+<!-- #section:basics/content.breadcrumbs -->
+<div class="breadcrumbs" id="breadcrumbs">
+	<script type="text/javascript">
+		try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+	</script>
+
+	<ul class="breadcrumb">
+		<li class="active">游戏设置</li>
+	</ul><!-- /.breadcrumb -->
+
+</div>
+
+
+<!-- /section:basics/content.breadcrumbs -->
+<div class="page-content">
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- PAGE CONTENT BEGINS -->
+            <p style='margin-left:10px'>
+            <b><a href="{:U('Gameset/config')}">游戏说明</a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><a href="{:U('Gameset/dateconfig')}">开奖设置</a></b>&nbsp;&nbsp;&nbsp;&nbsp;
+            <b><a href="{:U('Gameset/exchange')}">积分兑换礼品说明</a></b>
+            </p>
+
+			<form class="form-horizontal" role="form" method="post" id="myform12qwe">
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 积分兑换礼品说明 </label>
+					<div class="col-sm-9">
+						<textarea name="content" style="height:300px;">{$data.content}</textarea>
+					</div>
+				</div>
+                
+				<div class="clearfix form-actions">
+					<div class="col-md-offset-3 col-md-9">
+						<button class="btn btn-info" type="submit">
+							<i class="ace-icon fa fa-check bigger-110"></i>
+							提交
+						</button>
+
+						&nbsp; &nbsp; &nbsp;
+						<button class="btn" type="reset">
+							<i class="ace-icon fa fa-undo bigger-110"></i>
+							取消
+						</button>
+					</div>
+				</div>
+
+
+			</form>
+<!-- PAGE CONTENT ENDS -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div><!-- /.page-content -->
+<link rel="stylesheet" href="{$kindeditor}/themes/default/default.css" />
+<script charset="utf-8" src="{$kindeditor}/kindeditor-min.js"></script>
+<script charset="utf-8" src="{$kindeditor}/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+		editor = K.create('textarea[name="content"]', {
+			resizeType : 1,
+			allowPreviewEmoticons : false,
+			allowImageUpload : false,
+			items : [
+				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+				'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+				'insertunorderedlist', '|', 'emoticons', 'multiimage', 'link']
+		});
+	});
+</script>
+<include file='Public:footer' />

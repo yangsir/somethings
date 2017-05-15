@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>美包包-躲猫猫游戏</title>
+    <meta name="description" content="美包包-躲猫猫游戏">
+    <meta name="author" content="美包包">
+    <meta name="keywords" content="美包包-躲猫猫游戏">
+    <meta name="expires" content="7776000">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css?v=150403">
+</head>
+<body style="background:#40d5ff">
+<div class="container" style="background:#40d5ff">
+    <!--loading-->
+    <div class="loading mask">
+        <div class="loader loader--glisteningWindow"></div>
+    </div>
+    <!--/loading-->
+    <!--主内容-->
+    <div class="dhcg_main">
+        <img src="./images/zj_bg.png"/>
+        <div class="d_content zj_content">
+            <div class="ranking_list">
+                <div class="d_title_img"><img  src="./images/zj_md.png" /></div>
+                <ul>
+                    <li data-num="1"><div><img class="one" src="./images/wx_head_01.png"/><span class="two">xxxxxx</span><span class="time">2015.01.01</span><span class="three">99999</span></div></li>
+                    <li data-num="2"><div><img class="one" src="./images/wx_head_02.png"/><span class="two">xxxxxx</span><span class="time">2015.01.01</span><span class="three">99999</span></div></li>
+                    <li data-num="3"><div><img class="one" src="./images/wx_head_03.png"/><span class="two">xxxxxx</span><span class="time">2015.01.01</span><span class="three">99999</span></div></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <a href="javascript:;" class="btn bold btn_ff691f">返回</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="./js/public.js"></script>
+
+<script src="./js/zepto.min.js"></script>
+<script src="./js/head.min.js"></script>
+<script>
+    $(document).ready(function () {
+        head.load("./js/fastclick.min.js","./js/util.js",function () {
+            var init=function(){
+                try{
+                    $.ajax({
+                        url:domain_url + 'index.php/Credit/getAwardMem',
+                        type:"get",
+                        dataType:"json",
+                        data:{pagename:"zj"},
+//                        data:{},
+                        async:false,//同步请求
+                        success:function(result){
+                            typeof result=="string"&&(result=JSON.parse(result));
+                            /*weixin js share start*/
+                            try{
+                                wx.config({
+                                    //debug: true,
+                                    appId: result.signPackage.appId,
+                                    timestamp: result.signPackage.timestamp,
+                                    nonceStr: result.signPackage.nonceStr,
+                                    signature: result.signPackage.signature,
+                                    jsApiList: [
+                                        'onMenuShareTimeline',
+                                        'onMenuShareAppMessage',
+                                    ]
+                                });
+                                wx.ready(function () { //方便扩展
+                                    WxShareTimeline();
+                                    WxShareAppMessage(result.data.ucode);
+                                });
+                            }catch(e){}
+                            /*weixin js share end*/
+                            (result&&result.result==1)?(function(){
+                                var html="";
+                                $.each(result.data,function(){
+                                    html+='<li data-num="'+this.rank+'"><div><img class="one" src="'+this.headimgurl+'"/><span class="two">'+this.nickname+'</span><span class="time">'+this.add_time+'</span><span class="three">'+this.credit+'</span></div></li>';
+                                });
+                                for(var i=result.data.length;i<3;i++){
+                                    html+='<li data-num="'+(i+1)+'"></li>';
+                                }
+                                $(".ranking_list").find("ul").html(html);
+                            }()):showError("请求手袋获得名次失败");
+                        },
+                        error:function(){
+                            showError("请求手袋获得名次失败");
+                        },
+                        complete:function(){
+                            $(".loading").hide();
+                        }
+                    });
+                }catch(e){}
+            };
+            init();
+
+        });
+    });
+
+</script>
+</body>
+</html>
