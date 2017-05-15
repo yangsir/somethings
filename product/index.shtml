@@ -1,0 +1,122 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner1.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_product.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+<div class="page_right_tit">
+<span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">产品介绍</a>
+</span>产品介绍</div>
+
+<div class="prohotpro prolistpro">
+<ul>
+
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='宣传型网站建设' src="../uploads/product/1.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>宣传型网站建设</b>
+    <div class="hotpro_d">企业宣传性网站包罗万象，很难做细，因而市场细分出宣传型网站，保证精准定位，强化细节执行。宣传型网站建设主要从展示企业产品和建设形象、扩大企业知名度出发，力求简约大方，具有一定的艺术性、观瞻性。</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='营销型网站建设' src="../uploads/product/2.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>营销型网站建设</b>
+    <div class="hotpro_d">营销型网站建设解决方案为满足企业网站营销目的，精准分析客户需求，以服务客户为主要，以销售、营销为目的，以网站访问者对公司企业在网站内订单成交率为基本。营销门户网站建立，不但能宣传公司产品，还能让企业在激烈的市场竞争中，占据一定地位。</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='电子商务网站建设' src="../uploads/product/3.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>电子商务网站建设</b>
+    <div class="hotpro_d">随着网络的普及程度的提高，消费者网络购物习惯的形成，电子商务已经成为企业的主要销售模式之一，电子商务也成为了一种新的创业模式。对于整个市场来说，这种新型的购物模式可在更大的范围内、更多的层面上以更高的效率实现资源配置。</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='微信项目开发' src="../uploads/product/4.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>微信项目开发</b>
+    <div class="hotpro_d">将企业信息、服务、活动等内容通过微信网页的方式进行表现，用户通过简单的设置，就能生成微信3G网站。通过微信公众平台将企业品牌展示给微信用户，减少宣传成本，建立企业与消费者、客户的一对一互动和沟通，将消费者接入企业CRM系统，进行促销、推广、宣传、售后等。形成了一种主流的线上线下微信互动营销方式。</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='服务器搭建、迁移' src="../uploads/product/5.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>服务器搭建、迁移</b>
+    <div class="hotpro_d">根据企业的实际需求针对安装有服务器操作系统的设备进行软件或者硬件的相应设置、操作，从而实现企业的业务活动需求。比如多平台的web站点搭建、web站点迁移、数据库的主从搭建、以及nginx lb架构的搭建等~</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='APP开发' src="../uploads/product/6.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>APP开发</b>
+    <div class="hotpro_d">App是application的缩写，通常专指手机上的应用软件，或称手机客户端。苹果公司的App store开创了手机软件业发展的新篇章，使得第三方软件的提供者参与其中的积极性空前高涨。随着智能手机越发普及、用户越发依赖手机软件商店，App开发的市场需求与发展前景也逐渐蓬勃。</div>
+    </div>
+    </li>                              
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='注册公司' src="../uploads/product/7.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>代理注册公司</b>
+    <div class="hotpro_d">随着我国国有企业的不断深化改革，我国创业环境也逐渐改善，越来越多的创业者开始申请注册公司，进一步推动了代理注册公司行业的发展。成立一家公司虽说不难，但其步骤较为繁琐，花费的时间也比较长。交给代理注册公司来办理公司注册手续可以帮助企业降低时间成本，摆脱内部资源的局限性、为企业的战略性决策提供支持。</div>
+    </div>
+    </li>
+    
+    <li class="fixed">
+    <div class="hotpro_l">
+    <img title='代理记账报税' src="../uploads/product/8.jpg" width="152" height="114" />
+    </div>
+    <div class="hotpro_r">
+    <b>代理记账报税</b>
+    <div class="hotpro_d">为中小型企业提供记帐、报税、咨询、顾问监督等专业性财务公司，企业只要支付一个专职会计百分之十的费用，享用一个专业的团队服务。</div>
+    </div>
+    </li>  
+
+    <li class="fixed">
+<div class="hotpro_l">
+<img title='代缴社保' src="../uploads/product/9.jpg" width="152" height="114" />
+</div>
+<div class="hotpro_r">
+<b>代缴社保</b>
+<div class="hotpro_d">按照国家有关人事政策法规要求，接受单位或个人委托，在其服务项目范围内，为个人或单位缴纳养老保险、生育保险、医疗保险、失业保险及工伤保险等社会保险的费用。</div>
+</div>
+</li>
+
+</ul>
+</div>                         
+    <div class="page_sty_pro pagination">
+        <div class="dede_pages"><ul class="pagelist"><li><span class="pageinfo">共 <strong>1</strong>页<strong>9</strong>条记录</span></li></ul></div>  
+    </div>
+</div>
+
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

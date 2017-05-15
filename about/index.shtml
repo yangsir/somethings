@@ -1,0 +1,47 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner5.jpg) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <div class="page_left_list page_left_about"> 
+    <h1>关于我们</h1>  
+    <ul class="fixed">    
+    <li><a title="公司简介" href="#">公司简介</a></li>
+    <li><a title="公司宗旨" href="#002">公司宗旨</a></li>
+    </ul>
+    </div>
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+<div class="page_right_tit">
+<span class="pcrt_span"><a><a href="/">主页</a> > <a href="index.shtml">关于我们</a></a>
+</span>关于我们</div>
+<div class="AboutInfo">
+<span style="display:block;margin:0px 0px 10px;line-height: 24px; font-family: Verdana; color: rgb(78,130,191); font-size: 16px; font-weight: bold">公司简介</span>
+<p>我们是一家年轻的互联网公司（深圳市扬和宏科技有限公司），我们是一支拥有丰富互联网经验和线下经验的创业团队。我们的小伙伴均来自知名电商、软件等各个行业。我们崇尚自由，思想开放；我们关注用户，追求完美；我们充满激情，迎难而上。</p>
+<p>对技术的热情和对商业的敏锐确保了扬和宏科技在客户预算范围内，按时提交高质量的产品和服务并同时满足客户对业务和技术两方面的需求。扬和宏科技致力于通过提供全球符合质量和安全标准的ITO和BPO服务来改善客户的业务绩效。</p>
+<p>与扬和宏科技合作，您就拥有了一个经验丰富、技术精湛的合作伙伴，可帮助您提高软件解决方案的质量，缩短软件开发时间并降低软件开发成本。我们承诺你的商业价值。</p>
+<p>
+因为有责任，因此有了扬和宏科技！<br/>
+因为有梦想，我们一直在奋斗！<br/>
+因为有激情，我们更加努力！<br/>
+扬和宏科技正在成长，希望您一路相伴！
+</p>
+<span id='002' name='002' style="display:block;margin:20px 0px 10px;line-height: 24px; font-family: Verdana; color: rgb(78,130,191); font-size: 16px; font-weight: bold">公司宗旨</span>
+<p>
+企业愿景：你好我好大家好才是真的好。<br/>
+企业使命：持续创新，做服务行业的变革者。<br/>
+企业宗旨：相伴客户，共同成长。<br/>
+企业文化：轻松、愉悦、真诚、活力。
+</p>
+</div>
+</div>  
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

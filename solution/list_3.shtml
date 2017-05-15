@@ -1,0 +1,40 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner2.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_solution.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+
+<div class="page_right_tit">
+    <span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">解决方案</a></span>解决方案
+</div>
+
+<div class='AboutComInfo'>
+<ul class="aboutcom_ul fixed">
+    <li>
+        <div class="aboutcom_div">
+        <a href="http://www.choumei.cn" target='_blank' title="臭美美发APP"><img width="182" height="138" src="../uploads/solution/app_1.png"></a>
+        <h3 style="overflow:hidden;"><a href="http://www.choumei.cn" target='_blank' title="臭美美发APP"><b>臭美美发APP</b></a></h3>
+        <div class="aboutcom_des">打通线上线下理发店，营造一个不用办卡的美发平台。</div>
+        <a href="http://www.choumei.cn" target='_blank' title=""><img src="../images/com_view.gif"></a>
+        </div>
+    </li>
+</ul>
+</div>
+    <div class="page_sty_pro pagination">
+        <div class="dede_pages"><ul class="pagelist"><li><span class="pageinfo">共 <strong>1</strong>页<strong>1</strong>条记录</span></li></ul></div>  
+    </div>
+</div>
+
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

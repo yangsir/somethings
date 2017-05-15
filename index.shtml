@@ -1,0 +1,88 @@
+<!--#include file="public/header.htm"-->
+
+<div id="banner">
+	<div class="slider">
+	  <div class="bd">
+		<ul>
+		  <li><a href="#"><img src="images/banner1.jpg" /></a></li>
+          <li><a href="#"><img src="images/banner2.jpg" /></a></li>
+          <li><a href="#"><img src="images/banner3.jpg" /></a></li>
+          <li><a href="#"><img src="images/banner4.jpg" /></a></li>
+          </ul>
+	  </div>
+
+	  <div class="hd"><ul></ul></div>
+
+	  <div class="pnBtn prev"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+	  <div class="pnBtn next"> <span class="blackBg"></span> <a class="arrow" href="javascript:void(0)"></a> </div>
+	</div>
+	<script type="text/javascript">
+		jQuery(".slider .bd li").last().before( jQuery(".slider .bd li").first() );
+		jQuery(".slider").hover(function(){ jQuery(this).find(".arrow").stop(true,true).fadeIn(300) },function(){ jQuery(this).find(".arrow").fadeOut(300) });
+		jQuery(".slider").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",autoPlay:true, vis:3,defaultIndex:0,autoPage:true, trigger:"click"});
+	</script>
+</div>
+
+<div id="wraper">
+<div class="main" id="home_bj">
+<div class="anc">
+
+<div class="a_about">
+    <div class="tit blue font16">
+    <span class="more"><a href="about/index.shtml" title="公司简介">更多&gt;</a></span>
+    <b>公司简介</b>					
+    </div>
+    <p class="img"><img src="images/i_about_img.jpg"></p>
+    <p class="img" style="text-indent:2em;line-height:24px;">我们是一家年轻的互联网公司（深圳市扬和宏科技有限公司），我们是一支拥有丰富互联网经验和线下经验的创业团队。我们的小伙伴均来自知名电商、软件等各个行业。我们崇尚自由，思想开放；我们关注用户，追求完美；我们充满激情，迎难而上。</p>
+</div>
+
+<div class="n_products">
+    <div class="tit blue font16">
+    <span class="more"><a href="news/index.shtml" title="新闻中心">更多&gt;</a></span>
+    <b>公司动态</b>					
+    </div>
+    <p class="img"><img src="images/i_products_img.jpg"></p>
+    <ul class="i_news">
+        <li><span class='more'>15-03-02</span><a href="news/detail_3.shtml" style='width:230px;height:24px;overflow:hidden;display:block;' class='blue' title="内容营销：企业千万莫做“会说话的哑巴”！">内容营销：企业千万莫做“会说话的哑巴”！</a></li>
+        <li><span class='more'>15-03-03</span><a href="news/detail_5.shtml" style='width:230px;height:24px;overflow:hidden;display:block;' class='blue' title="传统企业转型互联网的十大死法">传统企业转型互联网的十大死法</a></li>
+        <li><span class='more'>15-04-01</span><a href="news/detail_7.shtml" style='width:230px;height:24px;overflow:hidden;display:block;' class='blue' title="重视五个小细节让你的网站更受用户喜爱！">重视五个小细节让你的网站更受用户喜爱！</a></li>
+        <li><span class='more'>15-04-02</span><a href="news/detail_9.shtml" style='width:230px;height:24px;overflow:hidden;display:block;' class='blue' title="移动时代，创业者应抛弃三大思维">移动时代，创业者应抛弃三大思维</a></li>
+        <li><span class='more'>15-04-03</span><a href="news/detail_11.shtml" style='width:230px;height:24px;overflow:hidden;display:block;' class='blue' title="浅析行业门户网站的盈利模式">浅析行业门户网站的盈利模式</a></li>
+    </ul>
+</div>
+
+<div class="c_contact">
+    <div class="tit blue font16">
+    <span class="more"><a href="contact/index.shtml" title="联系我们">更多&gt;</a></span>
+    <b>联系我们</b>					
+    </div>
+    <p class="img"><img src="images/i_contacts_img.jpg"></p>
+    咨询热线：18617072406<br>
+    咨询邮件：503717513@qq.com<br>
+    咨询Q Q：503717513
+</div>
+
+<div class="clear"></div>
+</div>
+
+<div class="products">
+    <div class="tit blue font16">
+    <span class="more"><a href="product/index.shtml" title="产品展示">更多&gt;</a></span>
+    <b>我们的产品</b>
+    </div>
+    <div class="list">
+    <ul>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/1.jpg"><br>宣传型网站建设</a></li>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/2.jpg"><br>营销型网站建设</a></li>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/3.jpg"><br>电子商务网站建设</a></li>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/4.jpg"><br>微信项目开发</a></li>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/5.jpg"><br>服务器搭建、迁移</a></li>
+    <li><a href="product/index.shtml" class="blue"><img src="uploads/product/6.jpg"><br>APP开发</a></li>
+    </ul>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!--#include file="public/footer.htm"-->

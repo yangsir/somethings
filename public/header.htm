@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深圳扬和宏科技有限公司-打造专业建站资源整合平台</title>
+<meta name="keywords" content="扬和宏科技,专业建站,WEB站点开发,微信项目承接,APP开发,网站建设,网站开发,网站模板,企业站模板,商城模板,二次开发,PHP开发,代理记账" />
+<meta name="description" content="扬和宏科技有限公司-打造专业建站资源整合平台,我们是一家年轻的互联网公司,我们是一支拥有丰富互联网经验和线下经验的创业团队,我们竭诚为你服务。" />
+<link href="images/favicon32.ico" rel="Shortcut Icon" type="image/x-icon">
+<link href="images/favicon32.ico" rel="Bookmark" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/all.css">
+<link rel="stylesheet" type="text/css" href="css/banner.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/iepng.js"></script>
+<script type="text/javascript">
+EvPNG.fix('.hd li,.menu_div'); 
+</script>
+<![endif]-->
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++)  {  
+    if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}
+if(flag){
+    //window.location='http://127.0.0.1/wap/';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+$(function(){
+    $(".nav li").mouseover(function(){
+        $(this).addClass("over");
+    }).mouseleave(function() {
+        $(this).removeClass("over");
+    });
+});	 
+</script>
+<style>
+.wapbox{ width:160px; height:160px; display:none; overflow:hidden; background:#FFF; position:absolute; top:24px; right:30px; z-index:999;}
+.wapbox img{width:140px; height:140px; padding:10px;}
+</style>
+<div id="hearder">
+<div class="n_header">
+
+<div id="top">
+<div class="search">
+<form action="" method="get">
+<input type="hidden" name="kwtype" value="0" />
+<input name="q" class="search_input" onclick="if(this.value=='输入搜索信息')this.value='';" onblur="if(this.value=='')this.value='输入搜索信息';" autocomplete="off" value="输入搜索信息" type="text"><input class="search_but" value="" type="submit">
+</form>
+</div>
+<div class="login" style="position:relative;">
+<a href="javascript:;" >手机站</a>
+<!--<a href="javascript:;" onMouseOver="show('wap')" onMouseOut="none('wap')">手机站</a>-->
+<a href="#" onclick="SetHome(this,window.location)">设为首页</a>
+<div class="wapbox" id="wap" onMouseOver="show('wap')" onMouseOut="none('wap')"><img src="images/wap.png"/></div>
+<script type="text/javascript">
+	function show(obj){
+	   document.getElementById(obj).style.display="block";
+	   }
+	function none(obj){
+	   document.getElementById(obj).style.display="none";
+	   }   
+	</script>
+</div>
+<div class="lang"><a href="#" onclick="AddFavorite(window.location,document.title)">收藏本站</a></div>
+</div>
+
+<div class="nav">
+<ul>
+<li><a href="index.shtml">首页</a></li>
+<li><a href="product/index.shtml">产品介绍</a></li>
+<li><a href="about/index.shtml">关于我们</a></li>
+<li><a href="news/index.shtml">新闻中心</a></li>
+<li><a href="solution/index.shtml">解决方案</a></li>
+<li><a href="contact/index.shtml">联系我们</a></li>
+</ul> 
+</div>
+
+</div>
+</div>

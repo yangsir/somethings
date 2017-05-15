@@ -1,0 +1,42 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner7.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_news.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+<div class="page_right_tit">
+<span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">新闻中心</a>
+</span>新闻中心</div>
+<div class="AboutInfo">
+    <ul class="newslist_news">
+        <li><a href="../news/detail_1.shtml" title="网络营销盈利关键：精准流量！"><span>2015-03-01</span>网络营销盈利关键：精准流量！</a></li>
+        <li><a href="../news/detail_2.shtml" title="十三个细节 他做到了极致口碑营销"><span>2015-03-01</span>十三个细节 他做到了极致口碑营销</a></li>
+        <li><a href="../news/detail_3.shtml" title="内容营销：企业千万莫做“会说话的哑巴”！"><span>2015-03-02</span>内容营销：企业千万莫做“会说话的哑巴”！</a></li>
+        <li><a href="../news/detail_4.shtml" title="解读冰桶算法：只有优质资源能稳守宝座？"><span>2015-03-02</span>解读冰桶算法：只有优质资源能稳守宝座？</a></li>
+        <li><a href="../news/detail_5.shtml" title="传统企业转型互联网的十大死法"><span>2015-03-03</span>传统企业转型互联网的十大死法</a></li>
+        <li><a href="../news/detail_6.shtml" title="痛点不痛的社区O2O解决什么问题？"><span>2015-03-03</span>痛点不痛的社区O2O解决什么问题？</a></li>
+        <li><a href="../news/detail_7.shtml" title="重视五个小细节让你的网站更受用户喜爱！"><span>2015-04-01</span>重视五个小细节让你的网站更受用户喜爱！</a></li>
+        <li><a href="../news/detail_8.shtml" title="只有大胸是不够的！互联网该如何做流量？"><span>2015-04-01</span>只有大胸是不够的！互联网该如何做流量？</a></li>
+        <li><a href="../news/detail_9.shtml" title="移动时代，创业者应抛弃三大思维"><span>2015-04-02</span>移动时代，创业者应抛弃三大思维</a></li>
+        <li><a href="../news/detail_10.shtml" title="老鸟谈速成法则：如何打造一个成功自媒体"><span>2015-04-02</span>老鸟谈速成法则：如何打造一个成功自媒体</a></li>
+        <li><a href="../news/detail_11.shtml" title="浅析行业门户网站的盈利模式"><span>2015-04-03</span>浅析行业门户网站的盈利模式</a></li>
+        <li><a href="../news/detail_12.shtml" title="网络公司突破发展瓶颈的私家秘笈"><span>2015-04-03</span>网络公司突破发展瓶颈的私家秘笈</a></li>
+    </ul>
+    <div class="page_sty_pro pagination">
+        <div class="dede_pages"><ul class="pagelist"><li><span class="pageinfo">共 <strong>1</strong>页<strong>12</strong>条记录</span></li></ul></div>  
+    </div>
+</div>
+</div>  
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

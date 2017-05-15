@@ -1,0 +1,35 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner7.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_news.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+<div class="page_right_tit">
+<span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">新闻中心</a>
+</span>新闻中心</div>
+<div class="AboutInfo">
+    <div class="newsinfo_tit">
+    <span class="newsinfo_t">网络营销盈利关键：精准流量！</span><br>
+    发布日期：2015-03-01 11:15&nbsp;&nbsp;&nbsp;&nbsp;分享：扬和宏科技&nbsp;&nbsp;&nbsp;&nbsp;           
+    </div>
+    <p>网站流量是运营推广工作的一部分，流量就意味着可以给网站带来排名的提升、转化率的提升。不管是哪个源头的流量，对网站而言都是有利的，但是对于网络营销来说只有精准流量才能盈利。</p>
+    <p>一般来说，网站的流量来自于外链流量、广告流量、自然搜索排名流量和一下聊天交互工具中的封闭空间流量，但是能给我们网站带来转化率的则是其中的部分流量，亦可说是主动搜索用户群。</p>
+    <p>精准流量给网站带来的收益是不能估算的，而精准流量的根本是“被动”满足而非“主动”出击。最简单的列子就是网站关键字排名优化，用户群体通过自己的需求进行的主动点击，这部分流量可以说是受众流量，也可以看成是精准流量。当然竞价广告也是其中之一，只不过它的费用成本过高，这里笔者小丹不予多讲。</p>
+    <p>通过排名而来的精准流量其影响因素很多，甚至页面文字的大小都会影响到用户的体验和对网站的好管度。再者通过其他方式而得到的IP数量其中可以被认定为精准用户群的也不过其中的3%左右，而能够转化为潜在客户群体的则少之又少。网站的存在的本质目的就是为了销售盈利，而精准流量的则与其息息相关。如何提升网站的精准流量就成为了众站长所关注的问题。</p>
+    <p>就现在网络营销方式来说，会议营销、微信营销、QQ群营销、邮件营销等为网站带来多是精准流量，之所以如此判定是因为这些营销方式都有相对的用户群体定位。而正确的用户定位所带来的流量其转化率是比较高的，故此我们认为这些定位清晰的网络营销方式对网上销售来说是最为有效的方法。当然这里笔者小丹要多说一句，就邮件营销模式来说，多适用于外贸行业，倘若你的定义经营范围在国内，那么该形式的可转向性很低，因为中国人多数对于邮件的态度是置之不理，或者直接垃圾箱。</p>
+    <p>此外，对于精准流量提升，我们不用局限在本站，可以通过高权威平台和高流量平台来进行。想百度旗下产品和行业综合型门户站我们都可以通过遗留链接的形式而为网站吸引流量。当然经营这些平台是需耗费精力的，但是其效果也是可圈可点的，毕竟站在巨人肩膀上效果必然是更上一层楼的。</p>
+</div>
+</div>  
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

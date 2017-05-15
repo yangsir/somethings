@@ -1,0 +1,44 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner7.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_news.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+<div class="page_right_tit">
+<span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">新闻中心</a>
+</span>新闻中心</div>
+<div class="AboutInfo">
+
+<div class="newsinfo_tit">
+<span class="newsinfo_t">浅析行业门户网站的盈利模式</span><br>
+发布日期：2015-04-03 11:15&nbsp;&nbsp;&nbsp;&nbsp;分享：扬和宏科技&nbsp;&nbsp;&nbsp;&nbsp;           
+</div>
+
+<p>我与各位朋友一样，同样是很喜欢研究那些牛人的收入情况，我更喜欢研究那些牛人是如何赚到这些钱的，最近这段时间，我研究很多门户网站，发现不一样的门户网站的盈利模式都有不一样，那么今天分享出来给大家一起来看看，这些门户网站是怎么赚钱的。</p>
+<p>无论你是做什么，赚钱无非就是赚2个人的钱，要么就赚用户的钱，要么就赚商家的钱，如果不是用户也不商家，你自然赚不到钱，而在互联网上，想要赚用户的钱除非你卖东西了，想用其他方法赚用户的钱是不可取的，因为互联网的免费营销已经被做臭了，用户不可能来你网站看一篇文章付你1块钱或者几块钱什么的？那自然不可能，当然有人说自媒体一样有付费阅读，试问一下，一个人新人能够写出非常牛逼的文章，但在圈子里没有一点名气，他的文章有人愿意付费看吗？自然不会。好吧，转入正题，那么重点我来说说，门户网站如何赚到商家的钱。</p>
+<p style="text-align: center; text-indent: 0;"><img border="0" src="../uploads/allimg/c141001/141213325BP-61251.jpg"></p>
+<p><strong>广告盈利</strong></p>
+<p>这是比较常规的盈利模式，一般的情况下，适用于地方新闻门户站主要盈利模式，比如：某某地方社区、或者腾讯的地方门户，大部分的收入是以地方广告盈利的，但一个行业门户站也有不少的网站被门户的广告所吸引，通常情况下门户站都有广告位，而这些广告却不是他们主要盈利模式，这些只是附带的。</p>
+<p><strong>会员盈利</strong></p>
+<p>我看到很多门户站，出售自己站点的头条，当你加入他们的会员以后，你可以每天投稿一篇到首页头条，当同有会员一样投稿了，你的头条自然会被排挤下去，他们将收取会员的服务费，当然一个网站不可能仅仅只有头条，可能还有其他地方的文章位置，也可以同样的形式展现出来。</p>
+<p><strong>抽成盈利</strong></p>
+<p>也有网站以抽成的模式进行盈利，比如免费给你加入到我的门户网站，免费让你发出信息，但交易的时候，商家可能就与门户站长进行分红，也就是说门户的站长在这个订单上抽成了。类似于这种抽成的方法一般都用户狭窄的行业。比如地方性装修门户网站很多都是以这种形式盈利。</p>
+<p><strong>投标盈利</strong></p>
+<p>类似于大型的装修网站，主要的收入来源是依靠网站上的投标，门户站提供装修知识，同时提供用户发布招标功能，商家通过投标的方式进行找到用户的联系方式，但要有投标的权限，必须要加入其网站，加入其网站需要交纳部分费用。</p>
+<p>总结：从以上几个案例可以看出，盈利模式是我们在建站之前就需要考虑的，同时盈利最好是在商家入手，而不是用户。</p>
+
+</div>
+</div>  
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->

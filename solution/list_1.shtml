@@ -1,0 +1,64 @@
+<!--#include virtual="/public/sheader.htm"-->
+
+<div class="page_banner" style="background:url(../images/ny_banner2.png) no-repeat center top;">
+<div class="banner_pos"></div>
+</div>
+<div id="page_content" class="fixed">  
+<div class="page_contents">  
+
+<div class="page_left">	
+    <!--#include virtual="/public/page_left_common_solution.htm"--> 
+    <!--#include virtual="/public/page_left_common.htm"--> 
+</div>
+
+<div class="page_right">
+
+<div class="page_right_tit">
+    <span class="pcrt_span"><a href="/">主页</a> > <a href="index.shtml">解决方案</a></span>解决方案
+</div>
+
+<div class='AboutComInfo'>
+<ul class="aboutcom_ul fixed">
+    <li>
+        <div class="aboutcom_div">
+        <a href="http://www.df3c.com" target='_blank' title="东方电脑城网上商城"><img width="182" height="138" src="../uploads/solution/df3c.jpg"></a>
+        <h3 style="overflow:hidden;"><a href="http://www.df3c.com" target='_blank' title="国内电商系统"><b>国内电商系统</b></a></h3>
+        <div class="aboutcom_des">手机、电脑、数码及周边产品的销售平台，及后台ERP系统的支撑</div>
+        <a href="http://www.df3c.com" target='_blank' title="国内电商系统"><img src="../images/com_view.gif"></a>
+        </div>
+    </li>
+    <li>
+        <div class="aboutcom_div">
+        <a href="http://www.fever38.com" target='_blank' title="发烧好康"><img width="182" height="138" src="../uploads/solution/web_1.jpg"></a>
+        <h3 style="overflow:hidden;"><a href="http://www.fever38.com" target='_blank' title="发烧好康"><b>台湾发烧网</b></a></h3>
+        <div class="aboutcom_des">功能性宣传平台，商家线上办活动，用户线上参加，线下去领取</div>
+        <a href="http://www.fever38.com" target='_blank' title="发烧好康"><img src="../images/com_view.gif"></a>
+        </div>
+    </li>
+    <li>
+        <div class="aboutcom_div">
+        <a href="http://www.wuna.ru/" target='_blank' title="wuna外贸电商"><img width="182" height="138" src="../uploads/solution/wuna.png"></a>
+        <h3 style="overflow:hidden;"><a href="http://www.wuna.ru/" target='_blank' title="少语种外贸电商平台"><b>少语种外贸电商平台</b></a></h3>
+        <div class="aboutcom_des">针对某些特定国家、地区销售的外贸电商平台，多语言多风格</div>
+        <a href="http://www.wuna.ru/" target='_blank' title="电商网"><img src="../images/com_view.gif"></a>
+        </div>
+    </li>
+    <li>
+        <div class="aboutcom_div">
+        <a href="http://www.szshijiuji.com/" target='_blank' title="深圳十九己面膜"><img width="182" height="138" src="../uploads/solution/shijuiji.jpg"></a>
+        <h3 style="overflow:hidden;"><a href="http://www.szshijiuji.com/" target='_blank' title="企业营销系统"><b>企业营销系统</b></a></h3>
+        <div class="aboutcom_des">展示公司产品，公司资质、品牌价值，极大的宣传推广企业、产品影响度</div>
+        <a href="http://www.szshijiuji.com/" target='_blank' title="企业营销网"><img src="../images/com_view.gif"></a>
+        </div>
+    </li>
+</ul>
+</div>
+    <div class="page_sty_pro pagination">
+        <div class="dede_pages"><ul class="pagelist"><li><span class="pageinfo">共 <strong>1</strong>页<strong>4</strong>条记录</span></li></ul></div>  
+    </div>
+</div>
+
+</div>
+</div>
+
+<!--#include virtual="/public/sfooter.htm"-->
