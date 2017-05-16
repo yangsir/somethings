@@ -1,0 +1,170 @@
+*{padding:0;margin:0;}
+fieldset,img,html,body,iframe{border:0;}
+table{border-collapse:collapse;border-spacing:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;font-size:100%;}
+em,strong{font-weight:bold;font-style:normal;}
+body,textarea,select,input{font-family:Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,tahoma,arial,simsun,\5B8B\4F53;font-size:12px;color:#444;}
+a{text-decoration:none;color:#888;}
+a:hover{text-decoration:none;color:#7594B3;}
+
+.clear:after{clear:both; display:block; visibility:hidden; height:0; overflow:hidden; content:".";}
+.clear{zoom:1;}
+
+.arr,.arr span,.page a{background:url(images/abg.png) no-repeat 999px 999px;}
+.img{background:url(images/imgbg.png) no-repeat 999px 999px;}
+
+.list li,.block{box-shadow:0 2px 3px -2px rgba(0,0,0,0.3); -webkit-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3); -moz-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3); -o-box-shadow:0 2px 3px -2px rgba(0,0,0,0.3); *border:1px solid #ededed; *border-width:0 1px 1px; *border-bottom-color:#e0e0e0;}
+.list li:hover{box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-webkit-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-moz-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);-o-box-shadow:0 2px 3px -2px rgba(0,0,0,0.6);}
+
+/*-------------------*/
+/* 背景色和背景图 */
+body{background-color:#fff;background-image:url(images/bg.png);background-repeat:repeat;}
+/* 侧栏：文字色和分割线颜色 */
+.b1{border-color:#96999D;}
+.c1,.c1 a{color:#96999D;}
+/* 侧栏：文字色hover色 */
+a.c1:hover,.c1 a:hover{color:#000;}
+/* 侧栏：博客名称色和hover色 */
+.c2,a.c2:hover{color:#444;}
+
+/*--------*/
+.mt-10{margin-top:10px;}
+.line{height:1px; overflow:hidden; background:#ccc; clear:both; margin:5px auto;}
+/*-------------*/
+.header{height:55px; line-height:55px; width:100%; z-index:120; background:url(images/pic_repeat_x.png) repeat-x; clear:both; position:fixed; top:0; left:0;}
+.header .top{width:990px; height:55px; background:url(images/logo.png) no-repeat; margin:0 auto;}
+.top #logo{width:160px; height:55px; background:url(images/logo.png) no-repeat; float:left;}
+.top .nav{float:left; height:55px; line-height:55px;}
+.top .nav ul li{float:left;}
+.top .nav ul li a{font-size:16px; font-family:"微软雅黑"; font-weight:bold; text-decoration:none; color:#666; padding-left:30px;}
+/*------------------------------*/
+/*----------用户登录-----------------*/
+.top #login{float:right; height:55px; width:120px;}
+#login ul li a{ text-align:center;}
+#login span{float:left; font-size:16px;}
+#login label{float:left; width:50px; text-align:right; padding-right:5px;}
+#login ul li ul{width:180px; height:150px; display:none; position:absolute; top:53px;}
+#login ul li:hover ul{width:230px; height:150px; background:#fff; display:block;}
+#login ul li ul li{height:25px; line-height:25px; clear:both;}
+#login .btn-1{width:80px; height:25px; line-height:25px; margin-left:5px;}
+/*.side{position:fixed !important;_position:absolute;top:0;left:0;width:136px;padding:30px 30px 0;line-height:1.5;text-shadow:1px 1px 0 rgba(255,255,255,0.5);-webkit-text-shadow:1px 1px 0 rgba(255,255,255,0.5);-moz-text-shadow:1px 1px 0 rgba(255,255,255,0.5);-o-text-shadow:1px 1px 0 rgba(255,255,255,0.5);}
+.sbox{width:100%;overflow:hidden;}
+.face{margin:0 0 20px;}
+.face img{display:block;box-shadow:1px 1px 0 rgba(255,255,255,0.5);-webkit-box-shadow:1px 1px 0 rgba(255,255,255,0.5);-moz-box-shadow:1px 1px 0 rgba(255,255,255,0.5);-o-box-shadow:1px 1px 0 rgba(255,255,255,0.5);}
+.name{margin:0 0 8px;font-size:18px;}
+.info,.name{word-wrap:break-word;word-break:break-all;}
+.line{width:24px;height:0;overflow:hidden;margin:20px 0;border-style:solid;border-width:1px 0 0;opacity:0.4;filter:alpha(opacity=40);}
+.nav li,.nav li a{float:left;width:100%;line-height:21px;}
+.search{width:112px;padding:6px 10px;border-style:solid;border-width:1px;background:#fff;opacity:0.4;filter:alpha(opacity=40);}
+.copy{margin:20px 0 0;}
+*/
+.body{width:990px; margin:0px auto; padding-top:60px;}
+.body .left{width:630px; height:auto; float:left; padding:10px; background:#fff;}
+.left h2{height:35px; line-height:35px; text-align:center; font-size:20px;}
+.left .ainfo{height:22px; line-height:22px; text-align:center;}
+.ainfo span{padding-left:15px;}
+.left .content{line-height:2em;}
+.left .content p{text-indent:4em;}
+.left .content img{margin-top:10px;}
+.left .smallinfo{height:80px; margin-top:35px; border-top:2px solid #ccc; border-bottom:2px solid #ccc;}
+.left .decmt-box2{margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #ccc;}
+.decmt-box2 .plpic{width:80px; height:80px; float:left;}
+.decmt-box2 .plpic img{width:80px; height:80px;}
+.tbox dt{height:30px; line-height:30px; border-bottom:1px dotted #ccc; margin-bottom:10px;}
+.decmt-box2 span.title a{padding-left:8px;}
+/*----------*/
+
+.body .right {width:330px; height:auto; float:right;}
+.right .jbox{width:330px; min-height:300px; height:auto; margin-bottom:10px; background:#fff;}
+.right h2{height:45px; line-height:45px; border-bottom:1px dotted #ccc;}
+.right h2 span{padding-left:10px; font-size:16px; font-weight:normal;}
+.jbox ul{marign:0; padding:5px; list-style:none;}
+.jbox ul li{width:80px; height:80px; float:left;}
+.jbox ul li img{width:76px; height:76px; margin:2px;}
+
+.list{overflow:hidden; zoom:1;}
+.list ul{margin:-21px 0 0 -21px;padding:1px 2px 3px;position:relative;}
+.list li,.link{float:left;width:230px;overflow:hidden;}
+.list .post{width:230px; margin:21px 0 0 21px; float:left; display:block; position:relative;}
+
+.list li span.sc{width:76px; height:27px; display:none;  position:absolute; left:10px; top:10px; z-index:100; color:#333; text-align:center;}
+.list li:hover span.sc{width:76px; height:27px; display:block;  position:absolute; left:10px; top:10px; z-index:100;}
+.list span.sc a{width:76px; height:27px; line-height:27px; display:block; background:url(images/pic_ilike.png) left -140px; color:#333;} 
+.list span.sc a:hover{width:76px; height:27px; display:block;  position:absolute; background:url(images/pic_ilike.png) left -167px; color:#333;}
+
+.list li:hover span.view{}
+
+p.info{height:20px; line-height:20px; padding-top:5px; margin-top:8px; border-top:1px dotted #ccc; clear:both;}
+p.info a.view{width:35px; height:18px; line-height:18px; background:url(images/pic_ilike.png) left -1230px; padding-left:15px; float:left;}
+p.info a.good{width:35px; height:18px; line-height:18px; background:url(images/pic_ilike.png) left -523px; padding-left:15px; float:left;}
+
+
+.link{position:relative;display:block;background:#fff;cursor:pointer;}
+.img{display:block;position:relative;width:100%;height:auto;overflow:hidden;cursor:pointer;}
+.img img{display:block;width:100%;}
+.arr{position:absolute;top:0;left:0;width:100%;height:100%;background-position:999px 999px;}
+.arr span{position:absolute;right:18px;bottom:0;width:16px;height:8px;overflow:hidden;background-position:0 0;cursor:pointer;}
+.text{display:block;width:200px;overflow:hidden;margin:15px auto 10px;line-height:21px;color:#aaa;cursor:pointer;word-wrap:break-word;word-break:break-all;}
+.text strong,.text em{display:block;font-weight:normal;}
+.text em img{width:115%;}
+.text strong{margin:0 0 4px;color:#606060;}
+.link:hover .text strong{color:#333;}
+.link:hover .text em{color:#999}
+
+
+.page{margin:20px 0;}
+.pages{float:right;}
+.page a{float:left; width:21px; height:21px; margin-right:5px; overflow:hidden; text-indent:-2000px;}
+.page .prv{background-position:-27px 0;}
+.page .nxt{background-position:-79px 0;}
+.page .back{background-position:-53px 0;}
+.side2 .pages{float:left;}
+
+
+
+/*---------go to top----------*/
+#goTopBtn {
+	position: fixed; text-align: center; line-height: 45px; width: 80px; bottom:35px; right:10px; height: 45px; font-size: 12px; cursor: pointer; _position: absolute; _right: auto; border:1px solid #ccc;
+}
+
+.dede_pages{
+}
+.dede_pages ul{
+	float:left;
+	padding:12px 0px 12px 16px;
+}
+.dede_pages ul li{
+	float:left;
+	font-family:Tahoma;
+	line-height:17px;
+	margin-right:6px;
+	border:1px solid #E9E9E9;
+}
+.dede_pages ul li a{
+	float:left;
+	padding:2px 4px 2px;
+	color:#555;
+	display:block;
+}
+.dede_pages ul li a:hover{
+	color:#000;
+	text-decoration:none;
+	padding:2px 4px 2px;
+}
+.dede_pages ul li.thisclass,
+.dede_pages ul li.thisclass a,.pagebox ul li.thisclass a:hover{
+	background-color:#F8F8F8;
+	padding:2px 4px 2px;
+	font-weight:bold;
+}
+.dede_pages .pageinfo{
+	line-height:21px;
+	padding:12px 10px 12px 16px;
+	color:#999;
+}
+.dede_pages .pageinfo strong{
+	color:#555;
+	font-weight:normal;
+	margin:0px 2px;
+}

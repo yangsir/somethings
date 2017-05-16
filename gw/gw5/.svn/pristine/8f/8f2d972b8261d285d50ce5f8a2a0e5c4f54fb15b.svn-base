@@ -1,0 +1,20 @@
+<div class='footer_links'>
+<ul>
+<li>友情链接：</li>
+{dede:flink row='8'}
+<li>[field:link /]</li>
+{/dede:flink}
+</ul>
+</div>
+
+<div style="width:100%; background-image:url(/templets/wuge/Images/footbg.jpg);height:81px;">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td style="line-height:1.5"><div align="center">      <br />
+      Copyright &copy; 2013 深圳市有技劳务派遣服务有限公司,All right reserved. 粤ICP号014695641<br />
+      TEL:86 - (0)769 - 8686 3703 FAX:86 - (0)769 - 8686 3703 &nbsp;&nbsp;&nbsp;E-mail:http://www.dgyouji88.com&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

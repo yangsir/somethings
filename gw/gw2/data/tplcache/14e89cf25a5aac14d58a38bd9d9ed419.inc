@@ -1,0 +1,1 @@
+files+='|[field:picname/]';links+='|[field:arcurl/]';texts+='|[field:title/]';

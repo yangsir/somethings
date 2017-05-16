@@ -1,0 +1,1 @@
+<span class="box15a_a">·<a target="_blank" href="/bbs/forumdisplay.php?fid=[field:fid /]" >[field:name function="cn_substr('@me',24)" /]</a></span>

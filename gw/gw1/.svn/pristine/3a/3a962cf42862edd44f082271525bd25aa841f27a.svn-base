@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]"><img src="/templets/youqi/images/btn_fh.gif" width="88" height="22" border="0" /></a>

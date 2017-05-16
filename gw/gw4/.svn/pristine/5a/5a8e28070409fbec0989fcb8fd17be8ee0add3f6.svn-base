@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="baidu_union_verify" content="d800d13ffed13882c3a77a58a3b9e425">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>美女排行榜_中国美女排行榜_网络美女排行榜_韩国美女排行榜-模特天使网美女排行榜</title>
+<meta name="description" content="模特天使网美女排行榜为您提供最新中国美女排行榜,网络美女排行榜,韩国美女排行榜等美女排行榜。" />
+<meta name="keywords" content="美女排行榜,中国美女排行榜,网络美女排行榜,国美女排行榜" />
+<link rel="stylesheet" href="/templets/mm/css/css.css?s" />
+<!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+<style type="text/css">
+.box330{ width:330px; float:left; margin:10px 10px 0 0; }
+.box330 .mod{border:1px solid #cacaca;}
+.picTxt img{ width:120px; height:160px;}
+.picTxt {height: 167px;padding: 0 12px 0 159px;position: relative;}
+.ulTxt a{ font-size:14px;}
+.box330 .th{ line-height:25px; height:25px; border-bottom:1px solid #cacaca; background: url("http://imgcache.qq.com/mediastyle/tenvideo/img/bg.png") repeat-x scroll 0 -692px transparent;}
+.box330 .mod .th .tit{ background:none; width:auto; padding-left:10px;}
+.box330 .mod .th a{ color:#2b2b2b;}
+.box330 .tb{ padding-left:5px;}
+.ulTxt li{ position:relative;}
+.ulTxt em{ position:absolute; right:5px; top:0; display:block; font-size:12px; color:#777777;}
+.box310E{ float:right; width:310px; margin:10px 0 0; height:594px;}
+.box310E .mod{ height:604px; overflow:hidden;}
+.box310E li{
+  background: url("/templets/mm/pic/list.png") no-repeat scroll 5px 13px transparent;
+  padding-left: 15px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="box990 logoC">
+  <h2 class="logo" ><a href="/"   title="模特天使网">美女_美女图片_性感美女_mm_丝袜美女_清纯美女_美女模特---92Game.Net</a></h2>
+  <form action="/plus/search.php" target="_blank" class="search" id="searForm">
+  <input type=text name="q" class="txt" value="丝袜美女,私房图..." onfocus="if(this.value=='丝袜美女,私房图...'){this.value='';}"  onblur="if(this.value==''){this.value='丝袜美女,私房图...';}">
+  <input type="submit" value="" class="btn">
+  <input type="hidden" value="24" name="pagesize"/>
+  <input name="searchtype" type=hidden value="title">
+  </form>
+  <div class="hotWords">热门搜索：<a href="/tag/xiezhen_32_1.html">写真美女图片</a><a href="/tag/xinggan_8_1.html">性感美女图片</a><a href="/tag/qingchun_57_1.html">清纯美女图片</a> </div>
+  <div class="topLink"><a href="http://ny1985.92game.net/page_rank.html" style="color:#dd0000;">美女排行榜
+</a> | <a href="javascript://" onclick="SetHome(this);" target="_self">设为首页</a> | <a href="javascript://" onclick="SetFavorite();" target="_self">加入收藏夹</a> | <a href="http://ny1985.92game.net/data/sitemap.html" target="_blank">网站地图</a></div>
+</div>
+<div class="navC">
+    <ul class="nav box990 f14" id="nav">
+          <li><a href='/' id="home">网站主页</a></li>
+          
+          <li><a href='http://ny1985.92game.net/beautymodel/' >美女模特</a></li>
+          
+          <li><a href='http://ny1985.92game.net/starmodel/' >明星模特</a></li>
+          
+          <li><a href='http://ny1985.92game.net/underwearmodel/' >内衣模特</a></li>
+          
+          <li><a href='http://ny1985.92game.net/silkmodel/' >丝袜美女</a></li>
+          
+          <li><a href='http://ny1985.92game.net/nonmainstream/' >非主流美女</a></li>
+          
+          <li><a href='http://ny1985.92game.net/sexmodel/' >性感模特</a></li>
+          
+          <li><a href='http://ny1985.92game.net/puremodel/' >清纯模特</a></li>
+          
+          <li><a href='http://ny1985.92game.net/planemodel/' >平面模特</a></li>
+          
+    </ul>      
+</div>
+
+</div><!--end of header-->
+<script>
+var domain = "ny1985.92game.net";
+var website = '模特天使网';
+var curUrl = window.location.href;
+var curTitle = document.title;
+var enUrl = encodeURIComponent(curUrl);
+var enTitle = encodeURIComponent(curTitle);
+
+function SetFavorite(sURL, sTitle) {
+  try {
+    window.external.addFavorite('http://ny1985.92game.net/?fav', website);
+  } catch(e) {
+    try {
+      window.sidebar.addPanel("http://ny1985.92game.net/?fav", "");
+    } catch(e) {
+      alert("加入收藏失败，请使用Ctrl+D进行添加");
+    }
+  }
+}
+
+function SetHome(obj) {
+  vrl = 'http://'+domain+'/';
+  try {
+    obj.style.behavior = 'url(#default#homepage)';
+    obj.setHomePage(vrl+"?setHome");
+  } catch(e) {
+    if (window.netscape) {
+      try {
+        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+      } catch(e) {
+        alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+      }
+      var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+      prefs.setCharPref('browser.startup.homepage', vrl+"?setHome");
+    }
+  }
+}
+
+if(document.URL=="http://ny1985.92game.net/"||document.URL=="http://ny1985.92game.net/"){document.getElementById("home").className="cur";}
+var _cur=document.getElementById("nav").getElementsByTagName("li")[4];
+_cur.innerHTML=_cur.innerHTML+"<em></em>";
+</script>
+<div class="wrapperC">
+  <div class="wrapper fix">
+
+<div class="box330">
+<div class="mod">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>点击排行榜总排行榜</a></li>
+    </ul>
+  </div>
+  <div class="tb pt5  pb5">
+    <ul class="ulTxt">
+<li><i>1.</i><a  href="/sexmodel/2012/0416/162.html" target="_blank">妩媚美女极度性感诱人娇躯</a><em>点击:201</em></li>
+<li><i>2.</i><a  href="/silkmodel/2012/0416/318.html" target="_blank">美女校花美腿丝袜写真</a><em>点击:200</em></li>
+<li><i>3.</i><a  href="/silkmodel/2012/0416/325.html" target="_blank">狂野奔放的性感女孩丝袜写真</a><em>点击:200</em></li>
+<li><i>4.</i><a  href="/underwearmodel/2012/0417/494.html" target="_blank">性感内衣模特舒舒好丰满</a><em>点击:200</em></li>
+<li><i>5.</i><a  href="/starmodel/2012/0417/553.html" target="_blank">立花サキ巨乳性感写真</a><em>点击:200</em></li>
+<li><i>6.</i><a  href="/starmodel/2012/0417/576.html" target="_blank">性感美女许允美魔鬼身材</a><em>点击:200</em></li>
+<li><i>7.</i><a  href="/starmodel/2012/0417/596.html" target="_blank">超嫩韩国明星模特韩佳恩诱人写真</a><em>点击:200</em></li>
+<li><i>8.</i><a  href="/beautymodel/2012/0417/666.html" target="_blank">卷发模特秀性感靓丽身材</a><em>点击:200</em></li>
+<li><i>9.</i><a  href="/beautymodel/2012/0417/682.html" target="_blank">性感火辣美女浴室写真</a><em>点击:200</em></li>
+<li><i>10.</i><a  href="/beautymodel/2012/0417/795.html" target="_blank">杭州美女模特既清纯又性感</a><em>点击:200</em></li>
+
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->  
+  
+<div class="box330">
+<div class="mod">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>点击排行榜季排行榜</a></li>
+    </ul>
+  </div>
+  <div class="tb  pt5  pb5">
+    <ul class="ulTxt">
+<li><i>1.</i><a  href="/sexmodel/2012/0416/162.html" target="_blank">妩媚美女极度性感诱人娇躯</a><em>点击:201</em></li>
+<li><i>2.</i><a  href="/silkmodel/2012/0416/318.html" target="_blank">美女校花美腿丝袜写真</a><em>点击:200</em></li>
+<li><i>3.</i><a  href="/silkmodel/2012/0416/325.html" target="_blank">狂野奔放的性感女孩丝袜写真</a><em>点击:200</em></li>
+<li><i>4.</i><a  href="/underwearmodel/2012/0417/494.html" target="_blank">性感内衣模特舒舒好丰满</a><em>点击:200</em></li>
+<li><i>5.</i><a  href="/starmodel/2012/0417/553.html" target="_blank">立花サキ巨乳性感写真</a><em>点击:200</em></li>
+<li><i>6.</i><a  href="/starmodel/2012/0417/576.html" target="_blank">性感美女许允美魔鬼身材</a><em>点击:200</em></li>
+<li><i>7.</i><a  href="/starmodel/2012/0417/596.html" target="_blank">超嫩韩国明星模特韩佳恩诱人写真</a><em>点击:200</em></li>
+<li><i>8.</i><a  href="/beautymodel/2012/0417/666.html" target="_blank">卷发模特秀性感靓丽身材</a><em>点击:200</em></li>
+<li><i>9.</i><a  href="/beautymodel/2012/0417/682.html" target="_blank">性感火辣美女浴室写真</a><em>点击:200</em></li>
+<li><i>10.</i><a  href="/beautymodel/2012/0417/795.html" target="_blank">杭州美女模特既清纯又性感</a><em>点击:200</em></li>
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->  
+
+<div class="box330 box310E">
+<div class="mod">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>48小时更新最新排行</a></li>
+    </ul>
+  </div>
+  <div class="tb  pb5 pt5">
+    <ul class="ulTxt">
+
+
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->  
+
+
+<div class="box330">
+<div class="mod">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>点击排行榜月排行榜</a></li>
+    </ul>
+  </div>
+  <div class="tb pt5  pb5">
+    <ul class="ulTxt">
+<li><i>1.</i><a  href="/sexmodel/2012/0416/162.html" target="_blank">妩媚美女极度性感诱人娇躯</a><em>点击:201</em></li>
+<li><i>2.</i><a  href="/silkmodel/2012/0416/318.html" target="_blank">美女校花美腿丝袜写真</a><em>点击:200</em></li>
+<li><i>3.</i><a  href="/silkmodel/2012/0416/325.html" target="_blank">狂野奔放的性感女孩丝袜写真</a><em>点击:200</em></li>
+<li><i>4.</i><a  href="/underwearmodel/2012/0417/494.html" target="_blank">性感内衣模特舒舒好丰满</a><em>点击:200</em></li>
+<li><i>5.</i><a  href="/starmodel/2012/0417/553.html" target="_blank">立花サキ巨乳性感写真</a><em>点击:200</em></li>
+<li><i>6.</i><a  href="/starmodel/2012/0417/576.html" target="_blank">性感美女许允美魔鬼身材</a><em>点击:200</em></li>
+<li><i>7.</i><a  href="/starmodel/2012/0417/596.html" target="_blank">超嫩韩国明星模特韩佳恩诱人写真</a><em>点击:200</em></li>
+<li><i>8.</i><a  href="/beautymodel/2012/0417/666.html" target="_blank">卷发模特秀性感靓丽身材</a><em>点击:200</em></li>
+<li><i>9.</i><a  href="/beautymodel/2012/0417/682.html" target="_blank">性感火辣美女浴室写真</a><em>点击:200</em></li>
+<li><i>10.</i><a  href="/beautymodel/2012/0417/795.html" target="_blank">杭州美女模特既清纯又性感</a><em>点击:200</em></li>
+
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->  
+
+
+
+<div class="box330">
+<div class="mod">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>点击排行榜周排行榜</a></li>
+    </ul>
+  </div>
+  <div class="tb  pt5  pb5">
+    <ul class="ulTxt">
+<li><i>1.</i><a  href="/sexmodel/2012/0416/162.html" target="_blank">妩媚美女极度性感诱人娇躯</a><em>点击:201</em></li>
+<li><i>2.</i><a  href="/silkmodel/2012/0416/318.html" target="_blank">美女校花美腿丝袜写真</a><em>点击:200</em></li>
+<li><i>3.</i><a  href="/silkmodel/2012/0416/325.html" target="_blank">狂野奔放的性感女孩丝袜写真</a><em>点击:200</em></li>
+<li><i>4.</i><a  href="/underwearmodel/2012/0417/494.html" target="_blank">性感内衣模特舒舒好丰满</a><em>点击:200</em></li>
+<li><i>5.</i><a  href="/starmodel/2012/0417/553.html" target="_blank">立花サキ巨乳性感写真</a><em>点击:200</em></li>
+<li><i>6.</i><a  href="/starmodel/2012/0417/576.html" target="_blank">性感美女许允美魔鬼身材</a><em>点击:200</em></li>
+<li><i>7.</i><a  href="/starmodel/2012/0417/596.html" target="_blank">超嫩韩国明星模特韩佳恩诱人写真</a><em>点击:200</em></li>
+<li><i>8.</i><a  href="/beautymodel/2012/0417/666.html" target="_blank">卷发模特秀性感靓丽身材</a><em>点击:200</em></li>
+<li><i>9.</i><a  href="/beautymodel/2012/0417/682.html" target="_blank">性感火辣美女浴室写真</a><em>点击:200</em></li>
+<li><i>10.</i><a  href="/beautymodel/2012/0417/795.html" target="_blank">杭州美女模特既清纯又性感</a><em>点击:200</em></li>
+
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->    
+ </div>
+  <!--end of wrapper-->
+</div>
+<!--end of wrapperC-->
+<!-- //底部模板 -->
+<div class="footer tc">
+<a target="_blank" href="http://ny1985.92game.net">美女</a><a target="_blank" href="http://ny1985.92game.net">性感美女</a><a target="_blank" href="http://ny1985.92game.net">美女图片</a><a target="_blank" href="http://ny1985.92game.net">清纯美女</a><a target="_blank" href="http://ny1985.92game.net">模特</a><a target="_blank" href="http://ny1985.92game.net">mm</a>
+<a target="_blank" href="http://ny1985.92game.net/beautymodel/">美女模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/starmodel/">明星模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/underwearmodel/">内衣模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/planemodel/">平面模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/nonmainstream/">非主流美女</a> 
+<a target="_blank" href="http://ny1985.92game.net/sexmodel/">性感模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/puremodel/">清纯模特</a> 
+<a target="_blank" href="http://ny1985.92game.net/silkmodel/">丝袜美女</a> 
+<a target="_blank" href="http://ny1985.92game.net/tags.html">站内标签</a> 
+
+ <br>Copyright@2010-2012 www.92Game.Net 版权所有 粤ICP备09197178号网站统计<br>
+声明：本站所有图片来源于互联网！若有任何版权问题，请联系我们，我们将立即予以纠正注明来源！<br>
+谢谢您对模特天使网网的支持！！！ 
+</div>
+</body>
+</html>

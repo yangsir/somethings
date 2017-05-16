@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" target="_self"><img src="[field:litpic/]" width="205" height="203"  alt="[field:title/]" onerror="this.src='/templets/youqi/images/error1.jpg';"/></a></li>

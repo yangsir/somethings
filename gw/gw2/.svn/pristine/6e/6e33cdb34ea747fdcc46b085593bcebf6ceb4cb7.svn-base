@@ -1,0 +1,1 @@
+·[field:body/]<span class="time">[[field:senddate function="strftime('%y-%m-%d %H:%M',@me)"/]]</span>

@@ -1,0 +1,2 @@
+<div class="Prodiv"><a href="[field:arcurl/]"><img src="[field:litpic/]"  alt="[field:title/]"  border=0 style='border:1px #00A8D5 solid; background:#FFFFFF; padding:2px' onerror="this.src='/templets/youqi/images/error1.jpg';"></a><a href="[field:arcurl/]" >[field:title/]</a>
+	           </div>

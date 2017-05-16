@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<LINK href="{dede:global.cfg_cmsurl/}/p3/jhpic.css" type="text/css" rel="stylesheet">		
+<link href="{dede:global.cfg_cmspath/}/1/header.css" rel="stylesheet" type="text/css" />
+	</HEAD>
+	<BODY>
+
+		{dede:include filename="head.htm"/}
+	
+		<DIV id="content_big">
+		  <DIV id="content_liebiao">
+            <tr>
+              <td><DIV class="left_dd">
+                  <DIV class="title"><a href="http://">企业站</a></DIV>
+                  <UL>
+                    <LI> <A href="http://" target="_parent">工厂造业</A>
+                    <LI> <A href="http://" target="_parent">酒店管理</A>
+                    <LI> <A href="http://" target="_parent">窗帘设计</A>
+                    <LI> <A href="http://" target="_parent">装修公司</A> </LI>
+                  </UL>
+                  <DIV class="title"><a href="http://">门户站</a></DIV>
+                  <UL>
+                    <LI> <A href="http://" target="_parent">婚纱摄影</A>
+                    <LI> <A href="http://" target="_parent">新闻媒体</A> </LI>
+                  </UL>
+                 
+              </DIV></td>
+            </tr>
+          </DIV>
+		  <DIV id="content_list">
+<table width="100%"  border="0" cellspacing="0" cellpadding="3">
+              <tr>
+                <td><DIV id="newneiye">
+                  <div style="width: 400px; float:left;">&nbsp;&nbsp;&nbsp;&nbsp;{dede:field name='position'/} > </div>
+                  
+                </DIV></td>
+                <td width="280" align="right"></td>
+              </tr>
+            </table>
+			<DIV>
+			
+<DIV class='sitejh6' >
+{dede:list row='10' pagesize='10'}
+
+	
+		<ul class="newslist">
+<li>[[field:typelink/]] <a href="[field:arcurl/]
+				<p class="tit"><a href="[field:arcurl/]">[field:title/]</a> <span>  点击次数：[field:click/] 次</span> [field:pubdate function=MyDate('y-m-d',@me)/] <a href="[field:arcurl/]">查阅全文</a></p>
+			</li>
+		</ul>
+		
+	
+
+{/dede:list}
+</DIV>
+
+
+                <TABLE cellSpacing=0 cellPadding=0 width='100%' border=0>
+<TBODY>
+<TR>
+<TD align=middle>
+<DIV class=yahoo>
+
+ <div class="dede_pages">
+			<ul class="pagelist">
+             {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+			</ul>
+		</div><!-- /pages --> 
+
+</DIV>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+</DIV>
+		</DIV> 
+	{dede:include filename="footer1.htm"/}
+	</BODY>
+</HTML>

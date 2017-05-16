@@ -1,0 +1,39 @@
+{dede:include filename="header.htm"/}
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" style="margin-bottom:20px;">
+  <tr>
+
+    {dede:include filename="left_news.htm"/}
+
+    <td align="left" valign="top"><table width="764" border="0" cellpadding="0" cellspacing="0" background="/templets/wuge/Images/right1.jpg" >
+      <tr>
+        <td width="210" height="40" align="left" style="color:#0b73a9;font-size:16px; font-family:黑体;">　　新闻资讯</td>
+        <td width="554" align="right"><img src="/templets/wuge/Images/Arrow_02.gif" />&nbsp;您现在的位置：{dede:field name='position'/}&nbsp;&nbsp;</td>
+      </tr>
+    </table>
+      <table width="764" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td background="/templets/wuge/Images/right2.jpg" style="background-repeat:repeat-x;border-left:1px solid #cccccc;border-right:1px solid #cccccc;">
+                <div class="Bodyer_right_page_content">
+                    <div class="Bodyer_right_page_content_infolist">
+                        {dede:list pagesize='15'}
+                        <div style="border-bottom:1px dashed #cccccc;width:730px;clear:both;float:left;height:25px;line-height:25px;"><span style="float:left;color:#4bae5b;">·<a href="[field:arcurl/]">[field:title/]</a></span><span class="Black-bbb">[field:pubdate function="MyDate('Y.m.d',@me)"/]</span></div>
+                        {/dede:list}  
+                    </div>
+                </div>
+                <div class="Bodyer_right_page_end">
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+<!--|&nbsp;共计：<font color="#ff6600">12</font>条记录&nbsp;&nbsp;页次：<font color="#ff6600">1</font></strong>/1&nbsp;&nbsp;每页：<font color="#ff6600">20</font>条&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6600">1</font>&nbsp;-->
+</div>
+</td>
+        </tr>
+      </table>
+      <table width="764" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/templets/wuge/Images/right3.jpg" width="764" height="8" /></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+{dede:include filename="footer.htm"/}

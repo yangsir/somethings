@@ -1,0 +1,22 @@
+<td width="232" align="left" valign="top"><table width="217" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="32" background="/templets/wuge/images/left1.jpg" style="color:#0b73a9;font-size:16px; font-family:黑体;">　　新闻资讯</td>
+      </tr>
+      
+      <tr>
+        <td height="31" background="/templets/wuge/images/left2.jpg" style="line-height:31px;">　　 <a href="/a/xinwenzixun/xingyezixun/" >行业资讯</a></td>
+      </tr>
+      
+      <tr>
+        <td height="31" background="/templets/wuge/images/left2.jpg" style="line-height:31px;">　　 <a href="/a/xinwenzixun/gongsixinwen/" >公司新闻</a></td>
+      </tr>
+      
+      <tr>
+        <td><img src="/templets/wuge/Images/left3.jpg" width="217" height="5" /></td>
+      </tr>
+    </table>&nbsp;
+    
+    {dede:include filename="left_common.htm"/}
+
+    </td>
+

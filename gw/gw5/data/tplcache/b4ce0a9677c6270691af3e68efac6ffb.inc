@@ -1,0 +1,1 @@
+<div style="border-bottom:1px dashed #cccccc;width:730px;clear:both;float:left;height:25px;line-height:25px;"><span style="float:left;color:#4bae5b;">·<a href="[field:arcurl/]">[field:title/]</a></span><span class="Black-bbb">[field:pubdate function="MyDate('Y.m.d',@me)"/]</span></div>

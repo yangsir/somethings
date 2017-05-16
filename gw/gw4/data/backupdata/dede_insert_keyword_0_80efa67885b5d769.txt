@@ -1,0 +1,4 @@
+INSERT INTO `dede_insert_keyword` VALUES('1','金乌团','hhtp://www.84tom.com');
+INSERT INTO `dede_insert_keyword` VALUES('2','我草你吗','http://www.84tom.com');
+INSERT INTO `dede_insert_keyword` VALUES('4','外挂','http://www.baidu.com');
+INSERT INTO `dede_insert_keyword` VALUES('5','CF外挂','hhtp://www.84tom.com');

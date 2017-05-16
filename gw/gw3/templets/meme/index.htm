@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_cmspath/}/statics/style/index.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="alternate" type="application/rss+xml" href="{dede:global.cfg_cmspath/}/rss.php" title="{dede:global.cfg_webname/}" />
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/statics/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/statics/js/superfish.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/statics/js/slides.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/statics/js/myjs.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript"> 
+function CheckLogin(){          
+var taget_obj = document.getElementById('_userlogin');          
+myajax = new DedeAjax(taget_obj,false,false,'','','');          
+myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");          
+ DedeXHTTP = null;
+ }   
+function CheckLogintop(){          
+var taget_obj = document.getElementById('_userlogintop');          
+myajax = new DedeAjax(taget_obj,false,false,'','','');          
+myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginstatop.php");          
+ DedeXHTTP = null;
+}   
+$(function () {
+$('.mainbox img').hover(
+function() {$(this).fadeTo("fast", 0.6);},
+function() {$(this).fadeTo("fast", 1);
+});
+});
+</script>
+</head>
+<body>
+{dede:include filename="head_index.htm"/}
+<div class="wrapbox">
+  <div class="mainbox">
+    <h3 class="title_a nobg"><span class="fl">特别推荐</span></h3>
+    <div id="slides">
+      <div class="slides_container" > {dede:arclist flag='h' row='5' infolen='260' titlelen='50' type='image.' imgwidth='150' imgheight='150'}
+        <div class="slide"> <a class="pic" href="[field:arcurl/]" title="[field:title/]">[field:image /]</a>
+          <div class="caption" style="bottom: 20px;">
+            <div class="cap">
+              <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+              <p>[field:info /]...<a href="[field:arcurl/]">[查看全文]</a></p>
+            </div>
+          </div>
+        </div>
+        {/dede:arclist} </div>
+    </div>
+    <div class="recommend_list"> {dede:arclist flag='a' row='6' titlelen='50'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+      {/dede:arclist} </div>
+    <div class="clear"></div>
+    <h3 class="title_a"><span class="fl">创意杂货</span><a target="_blank" href="/zahuo/" class="fr">查看更多</a></h3>
+    <div class="list_shop"> {dede:arclist row='4' type='image.' typeid='3' titlelen='40' imgwidth='150' imgheight='160'}
+      <li><a class="pic" href="[field:arcurl/]" title="[field:title/]">[field:image /]</a>
+        <p><a href="[field:arcurl/]">[field:title/]</a></p>
+      </li>
+      {/dede:arclist}
+      <div class="clear"></div>
+    </div>
+    <h3 class="title_a"><span class="fl">创意家居</span><a target="_blank" href="/jiaju/" class="fr">查看更多</a></h3>
+    <div class="idiy"> {dede:arclist row='3' type='image.' typeid='1' imgwidth='120' imgheight='140' infolen='260' titlelen='60'}
+      <dl>
+        <span class="pic"><a href="[field:arcurl/]" title="[field:title/]">[field:image /]</a></span>
+        <dt class="info">
+          <h2><a class="title" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h2>
+        </dt>
+        <dd class="des">[field:info/]...<a href="[field:arcurl/]">【More】</a></dd>
+      </dl>
+      {/dede:arclist}
+      <div class="clear"></div>
+    </div>
+    <h3 class="title_a"><span class="fl">创意礼物</span><a target="_blank" href="/liwu/" class="fr">查看更多</a></h3>
+    <div class="graphic">
+      <ul>
+        {dede:arclist row='6' titlelen='60' typeid='2'}
+        <li><span>[[field:typelink/]]</span> <a href="[field:arcurl/]">[field:title/]</a><em class="time">[field:pubdate function="MyDate('m-d',@me)"/]</em></li>
+        {/dede:arclist}
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <h3 class="title_a"><span class="fl">手工DIY</span><a target="_blank" href="/diy/" class="fr">查看更多</a></h3>
+    <div class="graphic">
+      <ul>
+        {dede:arclist row='6' titlelen='60' typeid='5'}
+        <li><span>[[field:typelink/]]</span> <a href="[field:arcurl/]">[field:title/]</a><em class="time">[field:pubdate function="MyDate('m-d',@me)"/]</em></li>
+        {/dede:arclist}
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="sidebox">
+       <div id="_userlogin">
+       <div class="indexlogin">
+       <form name="userlogin" action="{dede:global.cfg_memberurl/}/index_do.php" method="POST" class="loginform">
+        <input type="hidden" name="fmdo" value="login" />
+        <input type="hidden" name="dopost" value="login" />
+        <input type="hidden" name="keeptime" value="604800" />
+        <div class="logintxt"><span>用户名:</span>
+         <input type="text" name="userid" size="20" class="ipt-txt inputbox" />
+        </div>
+        <div class="logintxt"><span>密&nbsp;&nbsp;&nbsp;码:</span>
+         <input type="password" name="pwd" size="20" class="ipt-txt inputbox" />
+        </div>
+        {dede:php}
+        if(preg_match("#2#", $safe_gdopen))
+        {
+        echo '
+        <div class="logintxt"><span>验证码:</span>
+         <input type="text" name="vdcode" size="8" class="ipt-txt inputbox" />
+         <img id="vdimgck" align="absmiddle" onClick="this.src=this.src+\'?\'" style="cursor:pointer;margin-left:0px;text-transform:uppercase;" alt="看不清？点击更换" src="'.$cfg_cmspath.'/include/vdimgck.php"/></div>
+        ';
+        }
+        {/dede:php}
+        <div class="submit">
+         <button type="submit" class="btn-1">登录</button>
+         <a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew" >注册帐号</a> <a href="{dede:global.cfg_memberurl/}/resetpassword.php">忘记密码?</a> </div>
+       </form>
+           <div class="userface">
+        <img src="{dede:global.cfg_cmspath/}/statics/images/none.gif" title="还没登陆？" width="52" height="52" />
+    </div>
+    </div>
+     </div>
+     <!-- /userlogin -->
+      <script language="javascript" type="text/javascript">CheckLogin();</script>
+  <div class="dingyue">
+  订阅到：<a href="http://mail.qq.com/cgi-bin/feed?u={dede:global.cfg_cmspath/}/rss.php" target="blank" rel="nofollow">QQ邮箱</a> <a href="http://www.xianguo.com/subscribe.php?url={dede:global.cfg_cmspath/}/rss.php" target="blank" rel="nofollow">鲜果</a> <a href="http://www.zhuaxia.com/add_channel.php?url={dede:global.cfg_cmspath/}/rss.php"
+target="_blank" rel="nifollow">抓虾</a> <a href="http://fusion.google.com/add?feedurl={dede:global.cfg_cmspath/}/rss.php" target="blank" rel="nofollow">谷歌</a> <a href="http://reader.youdao.com/b.do?keyfrom=bookmarklet&url={dede:global.cfg_cmspath/}/rss.php" target="blank" rel="nofollow">有道</a> <a target="_blank" href="http://9.douban.com/reader/subscribe?url={dede:global.cfg_cmspath/}/rss.php"  rel="nofollow">豆瓣九点</a> <a href="{dede:global.cfg_cmspath/}/rss.php" target="_blank">RSS</a></div>
+  <div class="clear"></div>
+    <h3 class="title_a nobg"><span class="fl">创意格子</span></h3>
+    <div class="picwall"> {dede:arclist row='16' type='image.' imgwidth='65' imgheight='65' titlelen='50' orderby='rand'}
+      <li><a href="[field:arcurl/]" title="[field:title/]">[field:image /]</a>
+        <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+      </li>
+      {/dede:arclist} </div>
+    <div class="clear"></div>
+    <div class="tags">
+      <ul>
+        <p><span class="fl">热门关注</span><a target="_blank" href="/tags.html" class="fr">查看更多</a></p>
+        {dede:tag row='30' getall='1' sort='month'}
+        <li><a href='[field:link/]'>[field:tag /]</a></li>
+        {/dede:tag}
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <h3 class="title_a mt1"><span class="fl">创意铺子</span><a target="_blank" href="/puzi/" class="fr">查看更多</a></h3>
+    <div class="i_shops">{dede:include filename="i_shops.htm"/}</div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="links wrapbox mt1"><span>友情链接：</span>
+  <ul class="c3">
+    {dede:flink row='40'/}
+  </ul>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

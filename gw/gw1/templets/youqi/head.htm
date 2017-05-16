@@ -1,0 +1,83 @@
+<div class="index_top">
+	<div class="top_box">
+		<div class="top_l">
+		  <script>
+        function chek(){
+		if(document.getElementById("sear_key").value==''){
+			alert('请输入搜索关键字！');
+			document.getElementById('sear_key').focus();
+			return false;
+		}
+		return true;
+		}
+        </script>
+        <!--
+        <form  id="search_form" method="post" action="/" onsubmit="return chek();">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="56%"><input name="sear_key" id="sear_key" type="text" style="width:174px; height:19px; line-height:19px; border:1px solid #d3d3d3; padding-left:10px;"/></td>
+              <td width="22%"><input type="image" src="/templets/youqi/images/a_05.jpg"/></td>
+              <td width="22%">
+                <select name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+                  <option>标题</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          </form>
+          -->
+		</div>
+		<div class="top_r"><a href="/" target="_blank">微博关注</a>&nbsp;|&nbsp;微信关注&nbsp;|&nbsp;<a href="/">返回首页</a>&nbsp;|&nbsp;<a href="/a/lianxiwomen/">联系我们</a>&nbsp;|&nbsp;<a href="/a/bangzhuzhongxin/">帮助中心</a></div>
+	</div>
+</div>
+<div id="header">
+	<div class="header_box">
+		<div class="logo"><a href="/"><img src="/templets/youqi/images/a_12.jpg" width="700" height="83" /></a></div>
+		<div class="rxdh"><p><i>全国统一服务热线<br/>138-8888-8888</i><p></div>
+	</div>
+</div>
+<div id="nav_box">
+	<ul id="nav" class="nav clearfix">
+<li class="nLi on">
+				<h3><a href="/" target="_self" style="background:none">网站首页</a></h3>
+			</li>
+			
+{dede:channel type='top' row='8'}		
+<li class="nLi"><h3><a href="[field:typeurl/]" target="_self">[field:typename/]</a></h3></li>
+{/dede:channel}					
+  </ul>
+  
+<script id="jsID" type="text/javascript">
+			
+			jQuery("#nav").slide({ 
+				type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+				titCell:".nLi", //鼠标触发对象
+				targetCell:".sub", //titCell里面包含的要显示/消失的对象
+				effect:"slideDown", //targetCell下拉效果
+				delayTime:300 , //效果时间
+				triggerTime:0, //鼠标延迟触发时间（默认150）
+				returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+			});
+		</script>
+
+</div>
+<div class="TB-focus" style="margin:0 auto">
+		<div class="hd">
+			<ul>
+            				<li>1</li>
+            				<li>2</li>
+            				<li>3</li>
+            				<li>4</li>
+            				<li>5</li>
+            			</ul>
+		</div>
+		<div class="bd">
+			<ul>
+            				<li><a href="/" target="_blank"><img src="/templets/youqi/upimg/201406/image/20140620062848734.jpg" width="950" height="210" border="0" /></a></li>
+							<li><a href="/" target="_blank"><img src="/templets/youqi/upimg/201407/image/20140719115420938.jpg" width="950" height="210" border="0" /></a></li>
+							<li><a href="/" target="_blank"><img src="/templets/youqi/upimg/201406/image/20140620065130510.jpg" width="950" height="210" border="0" /></a></li>
+							<li><a href="/" target="_blank"><img src="/templets/youqi/upimg/201406/image/20140621095507495.jpg" width="950" height="210" border="0" /></a></li>
+							<li><a href="/" target="_blank"><img src="/templets/youqi/upimg/201406/image/20140621095314615.jpg" width="950" height="210" border="0" /></a></li>
+						</ul>
+		</div>
+</div>

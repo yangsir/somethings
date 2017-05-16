@@ -1,0 +1,1 @@
+INSERT INTO `dede_homepageset` VALUES('92gamenet9ccbc6285gd978c1t/index.htm','../index.html','1');

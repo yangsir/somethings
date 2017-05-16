@@ -1,0 +1,1 @@
+<td><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" border=0 width="160" height="120"  name="picautozoom"></a></td>

@@ -1,0 +1,15 @@
+INSERT INTO `dede_gamecard_jl` VALUES('104','admin','1','MMME-8KN4-JB5Q-P26Z\r','outbox','admin获得一枚《《梦幻西游》尊贵新手序列号》的','1310471649','1310471649','0','0','admin获得一枚《《梦幻西游》尊贵新手序列号》的为MMME-8KN4-JB5Q-P26Z\r');
+INSERT INTO `dede_gamecard_jl` VALUES('105','comxk','2','XS1477047389\r','outbox','小鱼儿获得一枚《《3D斗地主》新手包开始免费发放》的','1310805327','1310805327','0','0','小鱼儿获得一枚《《3D斗地主》新手包开始免费发放》的为XS1477047389\r');
+INSERT INTO `dede_gamecard_jl` VALUES('106','xskwy','3','XS1426455404\r','outbox','新手卡无忧获得一枚《《3D斗地主》新手包开始免费发放》的','1311117340','1311117340','0','0','新手卡无忧获得一枚《《3D斗地主》新手包开始免费发放》的为XS1426455404\r');
+INSERT INTO `dede_gamecard_jl` VALUES('107','comxk','2','MMME-8KNY-H8S2-B6KP\r','outbox','小鱼儿获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1312083622','1312083622','0','0','小鱼儿获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KNY-H8S2-B6KP\r');
+INSERT INTO `dede_gamecard_jl` VALUES('108','dsfsdf','28','XS1440141154\r','outbox',' ¤ SHE I LOVE ¤获得一枚《《3D斗地主》新手包开始免费发放》','1313421726','1313421726','0','0',' ¤ SHE I LOVE ¤获得一枚《《3D斗地主》新手包开始免费发放》的为XS1440141154\r');
+INSERT INTO `dede_gamecard_jl` VALUES('109','zhihefeihong','31','XS1474324972\r','outbox','sdgdfg获得一枚《《3D斗地主》新手包开始免费发放》的','1313470878','1313470878','0','0','sdgdfg获得一枚《《3D斗地主》新手包开始免费发放》的为XS1474324972\r');
+INSERT INTO `dede_gamecard_jl` VALUES('110','han7689','27','MMME-8KPM-DV3K-XF93\r','outbox','7758258获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1313510781','1313510781','0','0','7758258获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KPM-DV3K-XF93\r');
+INSERT INTO `dede_gamecard_jl` VALUES('111','han7689','27','XS1435137137\r','outbox','7758258获得一枚《《3D斗地主》新手包开始免费发放》的','1313513683','1313513683','0','0','7758258获得一枚《《3D斗地主》新手包开始免费发放》的为XS1435137137\r');
+INSERT INTO `dede_gamecard_jl` VALUES('112','kanyixia','40','MMME-8KPK-HTE4-V9WC\r','outbox','看一下获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1314875925','1314875925','0','0','看一下获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KPK-HTE4-V9WC\r');
+INSERT INTO `dede_gamecard_jl` VALUES('113','list88','43','MMME-8KPV-245J-AJH7\r','outbox','goodliu获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1315240049','1315240049','0','0','goodliu获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KPV-245J-AJH7\r');
+INSERT INTO `dede_gamecard_jl` VALUES('114','111111','45','MMME-8KP2-PE8X-5FWG\r','outbox','111111获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1315662153','1315662153','0','0','111111获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KP2-PE8X-5FWG\r');
+INSERT INTO `dede_gamecard_jl` VALUES('115','love51jie','47','XS1403558128\r','outbox',' 灰色的狼。获得一枚《《3D斗地主》新手包开始免费发放》的','1315875567','1315875567','0','0',' 灰色的狼。获得一枚《《3D斗地主》新手包开始免费发放》的为XS1403558128\r');
+INSERT INTO `dede_gamecard_jl` VALUES('116','a12345','48','MMME-8KPW-8GFS-9NC9\r','outbox','a12345获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1315886241','1315886241','0','0','a12345获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KPW-8GFS-9NC9\r');
+INSERT INTO `dede_gamecard_jl` VALUES('117','43458401','55','MMME-8KPA-I8CQ-FR8T\r','outbox','guyun获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的','1316618379','1316618379','0','0','guyun获得一枚《《梦幻西游》尊贵新手序列号开始免费发放》的为MMME-8KPA-I8CQ-FR8T\r');
+INSERT INTO `dede_gamecard_jl` VALUES('118','kankanla','57','XS1486973359\r','outbox','kankanla获得一枚《《3D斗地主》新手包开始免费发放》的','1316789109','1316789109','0','0','kankanla获得一枚《《3D斗地主》新手包开始免费发放》的为XS1486973359\r');

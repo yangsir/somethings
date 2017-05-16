@@ -1,0 +1,152 @@
+
+*{margin:0; padding:0;}
+html{border:0;}
+
+body{font-size:12px; font-family:"宋体"; color:#575757; background:#fff;}/*
+h1{font:inherit; font-size:26px; color:#f30; line-height:135%;}
+h2{font:inherit; font-size:14px; font-weight:bold; color:#575757;}
+h3{font:inherit; font-size:12px; font-weight:bold; color:#575757;}*/
+ul{list-style:none;}
+ul li{line-height:20px;}
+p{line-height:20px;}
+a img{border:0;}
+a{ color:#000; text-decoration:none;}
+a:hover{ color:#f30; text-decoration:underline;}
+.c{zoom:1;}
+.c:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.l{float:left;}
+.r{float:right;}
+.fixed{overflow:hidden; white-space :nowrap; text-overflow:ellipsis;}
+.dn{display:none;}
+.noborder{border:none !important;}
+.b{font-weight:bold !important;}
+.tac{text-align:center !important;}
+.tal{text-align:left !important;}
+.tar{text-align:right !important;}
+.in24{text-indent:24px;}
+.ch{cursor:pointer;}
+.inside{float:left; width:100%;}
+label{margin-left:5px;}/*
+em{ color:#c2c2c2; font-style:normal; text-decoration:line-through; padding-left:15px;}*/
+.clear{ clear:both; height:0; line-height:0; font-size:0; overflow:hidden;}
+
+
+.m_l5{ margin-left:5px;}
+
+
+/*************** header  ****************/
+#c_header{ background:url(t_header.gif) repeat-x left top; margin-bottom:12px;}
+#c_toplinks{ background:url(c_toplin.gif) repeat-x; height:24px;}
+/******* t_login *****/
+.t_login{
+	float:right;
+	padding:0 10px 0 0;
+	list-style:none;
+	margin-top:2px; *margin-top:-4px;
+	}
+.t_login li{
+	padding-top:0;
+	*padding-top:5px;
+	color:#000;
+	}
+.t_shopping{
+	padding-left:53px;
+	background:url(t_shoppi.gif) no-repeat 33px 0; *background:url(t_shoppi.gif) no-repeat 33px 4px;
+	margin-top:5px;
+	}
+.t_login a{
+	color:#585858;
+	}
+	
+
+/*** t_motiveNews ****/
+.t_motiveNews{
+	float:right;
+	padding:3px 26px 0 0;
+	*padding:5px 26px 0 0;
+	color:#666;
+	}
+.t_motiveNews span{
+	padding-left:18px;
+	background:url(t_icon10.gif) no-repeat left center;
+	}
+.t_motiveNews a{
+	text-decoration:none;
+	margin:0 6px;
+	color:#666;
+	}
+.t_motiveNews img{
+	vertical-align:middle;
+	margin:0 4px;
+	}
+.t_motiveNews .t_icon{
+	margin:0 0 0 6px;
+	}
+.t_motiveNews .t_platform{
+	padding-right:12px;
+	background:url(t_icon20.gif) no-repeat right top; 
+	}
+.t_motiveNews a:hover{
+	text-decoration:underline;
+	}
+	
+	
+/*** c_logo ****/
+#c_logo{ background:url(c_logo_b.gif) repeat-x; height:87px;}
+#c_header .t_logo{ display:block; float:left; width:180px; height:70px; padding:3px 0 0 9px; margin:0;}
+#c_header .t_logo img{ display:block;}
+#c_header .t_hotline{ float:left; padding:25px 0 14px 145px;}
+#c_header .logo_wltzq{ float:left; padding:30px 0 0 35px;}
+#c_header .logo_wltzq a{ display:block; float:left; width:246px; height:46px;}	
+#c_header .logo_wltzq img{ display:block; vertical-align:top;}
+
+/* #c_mainnav */
+#c_mainnav{ background:url(c_mainna.gif) repeat-x; height:56px; overflow:hidden; margin:0; padding:0;}
+#c_mainnav li{ float:left; height:56px;}
+#c_mainnav li a{ display:block; float:left; width:80px; height:46px; padding-top:20px; text-align:center; font:bold 14px "宋体"; color:#f3f3f3;}
+#c_mainnav li a:hover{ background:url(c_mainnb.gif) repeat-x; text-decoration:none;}
+#c_mainnav li .on{ background:url(c_mainnb.gif) repeat-x;}
+
+
+/*-- #search --*/
+#c_search{ background:url(c_search.gif) no-repeat; width:960px; height:35px;}
+#c_search .query{ float:left; width:380px;}
+#c_search .query li{ float:left;}
+#c_search .query li.selectbox{ height:16px; margin:4px 4px 0 15px; _margin:4px 4px 0 8px;}
+#c_search .query li.selectbox select{ border:2px solid #313131; margin:4px auto 0 10px; *margin:4px auto 0 10px; width:130px; font-size:12px;}
+#c_search .query li.inputbox{ background:url(c_input_.gif) no-repeat; width:202px; height:20px; position:relative; margin:8px 7px 0 7px; display:inline;}
+#c_search .query li.inputbox .inputt{ border:0; width:168px; height:15px; line-height:15px; margin:2px 0 0 2px; font-size:12px; color:#999;}
+/*#c_search .query li.inputbox a{ display:block; background:url(../images/c_btn_go.gif) no-repeat; width:36px; height:20px; position:absolute; right:0; top:0;}*/
+#c_search .query li .t_goBtnt{ display:block; background:url(c_btn_go.gif) no-repeat; width:36px; height:20px; position:absolute; right:0; top:0;}
+#c_search .query li.submitbox{ height:35px; line-height:35px; margin-top:4px;}
+#c_search .hot{ float:left; width:546px; padding:0 0 0 0;}
+#c_search .hot ul li{ float:left; margin:0 5px 0; height:35px;}
+#c_search .hot ul li a{ line-height:35px;}
+#c_search .hot .a_d{ font:bold 12px "宋体"; color:#f30; line-height:35px;}
+
+
+
+/**** t_footer ****/
+.t_footerOut{ background:#fff; width:100%; margin:10px 0 0 0; text-align:center;}
+.t_footer{ background:url(t_footer.gif) no-repeat left top; width:959px; height:26px; margin:0 auto; padding-top:20px; margin-top:10px; text-align:center; color:#fff;}
+.t_footer a{ color:#fff; text-decoration:none; margin:0 16px;}
+.t_footer a:hover{ color:#fff; text-decoration:underline;}
+/***** t_copyright ******/
+.t_copyright{
+	text-align:center;
+	color:#666;
+	line-height:22px;
+	margin:10px 0;
+	}
+.t_copyright img{
+	vertical-align:middle;
+	}
+	
+	
+#sug{　position:absolute;　z-index:999; left: 215px; top: 195px; background-color:#F2F2F2;}
+
+#linkPush A {DISPLAY: block; PADDING-BOTTOM: 0px; COLOR: #333; HEIGHT: 33px; width:23px; TEXT-ALIGN: center; TEXT-DECORATION: none}
+#linkPush A:hover {BACKGROUND: url(pushHere.gif) no-repeat; FONT-FAMILY: "宋体"; TEXT-ALIGN: center}
+
+#linkPush .linkPushHere {BACKGROUND: url(pushHere.gif) no-repeat;FONT-FAMILY: "宋体"; TEXT-ALIGN: center;DISPLAY: block;HEIGHT: 33px; width:23px;}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT type="text/javascript">
+function out1()
+{
+if(window.event.toElement.id!="menu1" )
+      menu1.style.visibility="hidden";
+}
+function out2()
+{
+if(window.event.toElement.id!="menu2" )
+      menu2.style.visibility="hidden";
+}
+
+function out3()
+{
+if(window.event.toElement.id!="menu3" )
+      menu3.style.visibility="hidden";
+}
+function out4()
+{
+if(window.event.toElement.id!="menu4" )
+      menu4.style.visibility="hidden";
+}
+function out5()
+{
+if(window.event.toElement.id!="menu5" )
+      menu5.style.visibility="hidden";
+}
+function out6()
+{
+if(window.event.toElement.id!="menu6" )
+      menu6.style.visibility="hidden";
+}
+</SCRIPT>
+</head>
+<body>
+
+<div id="container">
+{dede:include filename="head.htm"/}
+  	<div id="content">
+    	<table width="952" border="0" cellpadding="0" cellspacing="0">
+    	  <tr><td valign="top">
+        <div id="fenlei" style="margin-top:3px;">
+            <!--
+            <div style="background:url({dede:global.cfg_templets_skin/}/images/lanmu_liebiao_head.jpg) no-repeat; width:225px; height:24px; padding:7px 0px 0px 20px; color:#fff; font-size:14px; font-weight:bold;">{dede:field.typename/}</div>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:10px;"> 
+  <tr>
+    <td><img src="{dede:global.cfg_templets_skin/}/images/lanmu_liebiao_t.jpg" width="245" height="15" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#92CF46">
+    	<ul>
+		{dede:sonchannel }
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+  
+        {/dede:sonchannel}
+
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="{dede:global.cfg_templets_skin/}/images/lanmu_liebiao_d.jpg" alt="" width="245" height="15" /></td>
+  </tr>
+</table>
+-->
+{dede:include filename="left.htm"/}
+        </div>
+        <div id="right">
+          <div style="margin:23px 0px 0px 0px; padding:0px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" background="{dede:global.cfg_templets_skin/}/images/lanmu_bg.jpg">
+              <tr>
+                <td width="62%" height="40" style="background:url({dede:global.cfg_templets_skin/}/images/lanmu_left.jpg) no-repeat; padding-left:60px; font-size:14px; font-weight:bold; color:#fff; padding-top:6px; height:34px;">{dede:field.typename/}</td>
+                <td width="38%" height="40" class="xunyangweb" align="right" style="background:url(images/lanmu_right.jpg) no-repeat right; padding-right:10px; padding-top:6px; height:34px;">当前位置：{dede:field name='position'/}</td>
+              </tr>
+            </table>
+            </div>
+            <div style="margin:10px 10px 0px 10px; padding:0px; line-height:26px; height:auto; ">
+         <table width="98%" border="0" cellpadding="0" cellspacing="0" style="font-size:12px; line-height:26px;">
+				
+            <tr>
+                        <td align="center" colspan="2"><b><div style="font-size:16px">{dede:field.title/}</div></b></td>
+                </tr>
+
+					  <tr>
+                		<td height="26" align="center" colspan="2">发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}　<a href="Javascript:window.history.go(-1)" class="style3">【返回上页】</a>&nbsp;共点击： <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>次</font></td>
+              		</tr>
+					 <TR>
+          				<TD class=l2 align=middle bgColor=#cacaca colspan="2"></TD>
+		  			</TR>
+		  			<tr><td height="5" colspan="2"></td></tr>
+		   <tr>
+            <td colspan="2" align="left" style="padding:5px; font-size:12px;" height="350" valign="top">
+
+<DIV class=Section1 style="LAYOUT-GRID:  15.6pt none">
+{dede:field.body/}
+</DIV></td>
+          </tr>
+		   <tr>
+                <td align="right"><a href="Javascript:window.history.go(-1)" class="style3">【返回上页】</a></td>
+              </tr> 
+		  
+
+      </table>
+			      
+          </div>
+            <div><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/hua1.jpg" width="670" height="137" border="0"/></a></div>
+        </div>
+     </td></tr></table>   
+</div>
+{dede:include filename="footer.htm"/}
+
+</div>
+</body>
+</html>

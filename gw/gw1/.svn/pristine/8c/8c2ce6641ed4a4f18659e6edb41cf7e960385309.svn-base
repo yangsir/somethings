@@ -1,0 +1,16 @@
+<div id="footer">
+	<div class="footer_box">
+		<ul>
+			<li><a href="javascript:alert('ctrl+d收藏本站')">收藏本站</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/gongsixinwen">公司新闻</a>&nbsp;|&nbsp;</li>
+            <li><a href="/a/chanpinjieshao">产品介绍</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/jiejuefangan/">解决方案</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/tongzhigonggao/">通知公告</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/guanyuwomen/">关于我们</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/lianxiwomen/">联系我们</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/rencaizhaopin/">人才招聘</a>&nbsp;|&nbsp;</li>
+			<li><a href="/a/bangzhuzhongxin/">帮助中心</a>&nbsp;</li>
+		</ul>
+		<p><p><span style="font-size: small"><span style="line-height: 26px">{dede:global.cfg_powerby/}</span></span></p>
+<p><span style="font-size: small"><span style="line-height: 26px">地址：广东省深圳市</span></span><font size="2"><span style="line-height: 26px">腾讯大夏19楼</span></font><span style="font-size: small"><span style="line-height: 26px">&nbsp;&nbsp;</span></span><span style="font-family: lucida Grande, Verdana; line-height: 20px; "><a href="http://www.miitbeian.gov.cn/">粤ICP备1000004号</a></span></p></p>
+	</div> 

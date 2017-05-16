@@ -1,0 +1,1 @@
+<li style="display:block;"><a href="[field:arcurl/]" target="_blank"><img  src="[field:imgurl function='GetOneImgUrl(@me,1)'/]" width="600" height="320" alt="[field:title/]"/></a><i>[field:title/]</i></li>

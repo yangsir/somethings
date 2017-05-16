@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="baidu_union_verify" content="d800d13ffed13882c3a77a58a3b9e425">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:global.cfg_indexname/}TAG专题</title>
+<meta name="keywords" content="{dede:global.cfg_indexname/}" />
+<meta name="description" content="{dede:global.cfg_indexname/}美图提供最好的在线美女图片，美女图库大全。" /><link rel="stylesheet" href="/templets/mm/css/css.css?s" />
+<!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+<style type="text/css">
+.mod{border:1px solid #cacaca;}
+.picTxt img{ width:120px; height:160px;}
+.picTxt {height: 167px;padding: 0 12px 0 159px;position: relative;}
+ .wrapper .th{ line-height:25px; height:25px; border-bottom:1px solid #cacaca; background: url("http://imgcache.qq.com/mediastyle/tenvideo/img/bg.png") repeat-x scroll 0 -692px transparent;}
+.mod .th .tit{ background:none; width:auto; padding-left:10px; font-weight:bold;}
+.mod .th a{ color:#2b2b2b;}
+.mod .th .more{ float:right; padding-right:15px;}
+.mod li{ width:182px; float:left; font-size:12px;}
+.ulTxt li{background: url("http://www.modelangel.net/templets/mm/pic/list.png") no-repeat scroll 5px 13px transparent;padding-left: 15px;}
+.hotw .tb{ padding:5px 10px;}
+</style>
+</head>
+<body>
+{dede:include filename="head_92game.htm"/}
+<div class="wrapperC">
+  <div class="wrapper fix">
+
+<div class="mod fix mt10 fLink hotw">
+  <div class="th">
+    <ul>
+      <li class="tit  cur"><a>热门TAG标签</a></li>
+    </ul>
+  </div>
+  <div class="tb">
+
+{dede:tag row='505' sort='month'} <a href='[field:link/]' target="_blank">[field:tag /]</a>{/dede:tag}
+
+  </div>
+</div><!--end of mod-->
+  
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/beautymodel/">美女模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/beautymodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='1' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330-->  
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/starmodel/">明星模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/starmodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='2' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/underwearmodel/">内衣模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/underwearmodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='3' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/silkmodel/">丝袜美女</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/silkmodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='4' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/nonmainstream/">非主流美女</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/nonmainstream/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='5' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/sexmodel/">性感模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/sexmodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='6' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/puremodel/">清纯模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/puremodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='7' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+<div class=" mt10">
+<div class="mod fix">
+  <div class="th">
+  <ul>
+      <li class="tit  cur"><a target="_blank" href="/planemodel/">平面模特</a></li>
+    </ul>
+    <a class="more" target="_blank" href="/planemodel/">更多</a>
+  </div>
+  <div class="tb  pt5  pb5 fix">
+    <ul class="ulTxt">
+	 {dede:arclist row=25 typeid='8' orderby='hot'}
+<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+    </ul>
+  </div>
+</div><!--end of mod-->
+</div><!--end of box330--> 
+
+  </div>
+  <!--end of wrapper-->
+</div>
+<!--end of wrapperC-->
+{dede:include filename="footer_92game.htm"/}
+
+</body>
+</html>

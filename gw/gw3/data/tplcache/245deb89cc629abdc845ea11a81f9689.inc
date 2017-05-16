@@ -1,0 +1,1 @@
+<div class="content2_sum"> <h3>{dede:field.typename/}</h3> <ul>  {dede:arclist row='9' titlelen='60'}<li><a target="_blank" href="[field:arcurl/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></li>  {/dede:arclist}  </ul> </div>

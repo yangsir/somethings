@@ -1,0 +1,189 @@
+/*通用_基本信息*/
+body { background:url("../Images/bg.jpg")/*tpa=http://www.dgyouji88.com//Images/bg.jpg*/;
+ background-repeat: no-repeat ;margin:0px; font-size:12px; text-align:center; color:#333; font-family:Tahoma,Verdana,"宋体"; }
+td {}
+a { color:#333; text-decoration:none; }
+a:hover { color:#f00; }
+img,form { margin:0; padding:0; border:0; }
+input,textarea { font-family:Tahoma,Verdana,"宋体"; font-size: 12px; }
+h1 { height:32px; font-size:15px; font-weight:bold; text-align:center; border-bottom:1px dashed #cccccc;}
+h2 { height:32px; font-size:15px; font-weight:bold; background:url("../Images/bg_09.gif")/*tpa=http://www.dgyouji88.com/Images/bg_09.gif*/ bottom repeat-x; }
+h3 { margin-top:-16px; font-size: 12px; font-weight:normal; color:#666; }
+h3 a{ color:#666; }
+
+/*通用_各色文本链接样式*/
+.White {color:#fff;font-family:"宋体";line-height:20px;}
+.White a{color:#fff;line-height:20px;}
+.White a:hover{color:#f00;}
+.Black-bbb {color:#222;font-size:12px;font-family:Tahoma,Verdana,"宋体";float:right;}
+.Black-222 {color:#222;font-size:11px;font-family:Tahoma,Verdana,"宋体";}
+.Blac-666 {color:#666;}
+.Red-F60 {color:#F60; font-weight:bold;}
+
+/*通用_用户录登文本框和搜索框Login Login_index Login_page Search_index Search_page*/
+.Login_text { width:100px; height:14px; padding:1px; color:#333; border:1px solid #7f9db9; margin-top:4px; }
+.Login_button {  }
+.Search_text { width:152px; height:17px; color:#333; padding:1px;border:1px solid #7F9DB9; }
+.Search_sel { width:100px; height:19px; color:#333; border:1px solid #7F9DB9; font-size:12px;}
+.Search_button { width:50px;height:22px;color:#333;font-size:12px;}
+
+/*通用_页面容器*/
+#Container {width:850px;background:#fff;margin:auto;padding:0px 5px 5px 5px;}
+
+/*通用_页面头部Header Header_index Header_page*/
+#Header { clear:both; overflow:hidden; width:850px; height:35px; background:url("../Images/Head_bg01.gif")/*tpa=http://www.dgyouji88.com/Images/Head_bg01.gif*/; text-align:left; font-family:"宋体"; }
+#Header_navigation{ float:left; width:745px; padding:12px 0 0 0; }
+#Header_navigation ul { margin:0; padding:0;}
+#Header_navigation li { display:inline; list-style-type:none; }
+#Header_navigation li a { font-weight:bold; }
+#Header_language { float:left; width:73px; padding:10px 0 0 32px; background:url("../Images/map.gif")/*tpa=http://www.dgyouji88.com/Images/map.gif*/ 0px 11px no-repeat; }
+#Header_language a{ font-family:Tahoma,Verdana,"宋体"; color:#1874CD;}
+
+/*通用_主体容器Bodyer Bodyer_index Bodyer_page Bodyer_left/center/right_index Bodyer_left/center/right_page */
+#Bodyer_index { clear:both; overflow:hidden; width:850px; border-bottom:1px solid #ddd;  background:url("../Images/bg_01.gif")/*tpa=http://www.dgyouji88.com/Images/bg_01.gif*/ 229px 0 repeat-y; }
+#Bodyer_page { clear:both; overflow:hidden; width:850px; border-bottom:1px solid #ddd;  background:url("../Images/bg_08.gif")/*tpa=http://www.dgyouji88.com/Images/bg_08.gif*/ 200px 0 repeat-y; }
+#Bodyer_banner_index { width:850px; height:190px; margin:auto; padding:auto; }
+#Bodyer_banner_page { width:850px; height:160px; margin:auto; padding:auto; }
+
+/*通用_页面底部Footer Footer_index Footer_page*/
+#Footer {width:760px;height:12px;margin-top:2px;padding:18px 45px;background: url("../Images/Foot_bg01.jpg")/*tpa=http://www.dgyouji88.com/Images/Foot_bg01.jpg*/;color: #fff;}
+#Footer_left { float: left;}
+#Footer_right { float: right;margin-top:2px;}
+
+/*首页_主体左边*/
+#Bodyer_left_index {float: left; width:230px; background: url("../Images/Bg_02.jpg")/*tpa=http://www.dgyouji88.com/Images/Bg_02.jpg*/ no-repeat; }
+.Bodyer_left_index_login { width:178px; height:114px; padding:52px 26px 20px; }
+.Bodyer_left_index_login a{ color:#ff3300; }
+.Bodyer_left_index_login a:hover{ color:#1874cd; }
+.Bodyer_left_index_search {width:156px; padding:46px 36px 0 37px; background: url("../Images/Bg_04.jpg")/*tpa=http://www.dgyouji88.com/Images/Bg_04.jpg*/ no-repeat; text-align:left; line-height:40%;font-family:"宋体";}
+.Bodyer_left_index_links {width:229px; margin-top:12px; padding-top:12px; background: url("../Images/bg_05.gif")/*tpa=http://www.dgyouji88.com/Images/bg_05.gif*/ repeat-x; }
+.Bodyer_left_index_links img {margin-bottom:8px; }
+
+/*首页_主体右边*/
+#Bodyer_right_index { float: left; width:620px;background: url("../Images/Bg_03.jpg")/*tpa=http://www.dgyouji88.com/Images/Bg_03.jpg*/ repeat-x;}	
+.Bodyer_right_index_item { float: left; width:591px; height:56px; background: url("../Images/bg_05.gif")/*tpa=http://www.dgyouji88.com/Images/bg_05.gif*/ 0 45px repeat-x;}
+.Bodyer_right_index_item img{ float: left; margin-top:18px;}
+.Bodyer_right_index_more { float: left; width:29px; height:56px; background: url("../Images/bg_05.gif")/*tpa=http://www.dgyouji88.com/Images/bg_05.gif*/ 0 45px repeat-x;}
+.Bodyer_right_index_more img{ float: left; margin-top:36px;}
+.Bodyer_right_index_list {float: left; width:578px; padding-left:42px; padding-top:12px; text-align:left; }
+.Bodyer_righ_index_list a{font-family:Tahoma,Verdana,"宋体"; }
+.Bodyer_right_index_news {float: left; width:422px; height:140px; padding-left:156px;background: url("../Images/Bg_06.jpg")/*tpa=http://www.dgyouji88.com/Images/Bg_06.jpg*/ no-repeat; }
+
+/*内页_主体左边*/
+#Bodyer_left_page { float:left; width:200px; padding-bottom:30px;}
+.Bodyer_left_page_title { width:200px; height:63px; border-bottom: 1px solid #d0e3ee;}
+.Bodyer_left_page_menu { width:200px;  line-height:26px; text-align:left; background: url("../Images/bg_10.gif")/*tpa=http://www.dgyouji88.com/Images/bg_10.gif*/; }
+.Bodyer_left_page_menu a{ padding-left:14px; background: url("../Images/Arrow_04.gif")/*tpa=http://www.dgyouji88.com/Images/Arrow_04.gif*/ 0px  no-repeat; }
+
+/*内页_主体右边*/
+#Bodyer_right_page { float: left; width:650px; }
+.Bodyer_right_page_location { float: left; width:638px; background:#c7fefb; text-align:left; padding:9px 0 9px 12px; color:#666;}
+.Bodyer_right_page_location a{ color:#666; }
+.Bodyer_right_page_content { float: left; width:720px; padding-left:15px;padding-top:10px;text-align:left; line-height:180%; }
+.Bodyer_right_page_content_infolist { float: left; width:720px; font-family:"宋体"; font-size:12px;line-height:180%; }
+.Bodyer_right_page_content_infolist a{font-family:Tahoma,Verdana,"宋体";}
+.Bodyer_right_page_content_infolist a:hover{ text-decoration:underline; }
+.Bodyer_right_page_content_infolist a:visited{	color:#600; }
+.Bodyer_right_page_content_pro1 { float: left; width:176px; height:240px; }
+.Bodyer_right_page_content_pro2 { float: left; margin-left:18px; width:398px; height:220px;}
+.Bodyer_right_page_content_pro2 img{ margin:6px 4px 0 0; vertical-align : middle; }
+.Bodyer_right_page_content_pro3 { float: left; padding-top:30px; width:592px; background: url("../Images/description.gif")/*tpa=http://www.dgyouji88.com/Images/description.gif*/ top no-repeat;}
+
+.Bodyer_right_page_content_mes1 { float: left;clear: top left;padding:0 0 4px 0; width:100%; background:url("../Images/bg_09.gif")/*tpa=http://www.dgyouji88.com/Images/bg_09.gif*/ bottom repeat-x; line-height:140%;}
+.Bodyer_right_page_content_mes1 img{ margin:0 6px 0 0 ;}	
+.Bodyer_right_page_content_mes2 { float: left; clear: top left; padding:8px 0 18px 0; width:100%; line-height:180%; word-break:break-all;}
+.Bodyer_right_page_content_bill1 { float: left; clear:top left; background:url("../Images/bg_09.gif")/*tpa=http://www.dgyouji88.com/Images/bg_09.gif*/ bottom repeat-x;}
+.Bodyer_right_page_content_bill2 { float: left; clear:top left; font-size:14px; padding-left:24px; line-height:220%;background: url("../Images/Arrow_bill.gif")/*tpa=http://www.dgyouji88.com/Images/Arrow_bill.gif*/ 0px 8px no-repeat;}
+.Bodyer_right_page_content_bill3 { float: right; clear:top left; width:58px; margin-top:11px; background:#EFEFEF; line-height:150%; font-size:12px; text-align:center; border: 1px solid #ddd; }
+.Bodyer_right_page_content_bill4 {float:left;clear: top left; width:578px; background:#efefef; line-height:160%; border-right:1px solid #ddd; border-bottom:1px solid #ddd; border-left:1px solid #ddd; padding:6px; }
+.Bodyer_right_page_end { float:left; width:720px; text-align:right; }
+
+
+
+.topmenu a {color:#fff; text-decoration:none; font-size:14px; font-weight:bold;}
+.topmenu a:hover {color:#50eef0; }
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,input,textarea,.select{border:0}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%}
+q:before,q:after{content:''}
+abbr,acronym{border:0}
+div{outline:none}
+a{text-decoration:none;outline:none;color:#555;}
+a:hover{color:#0b638e; text-decoration:none}/*ff7200*/
+.disnone{display:none;}
+.hide{visibility:hidden}
+.ui-tabs-hide{display:none}
+.clear{clear:both;overflow:hidden;height:0}
+/*************** body **********/
+body{font-family:"宋体";color:#434242}
+.icon{ background:url("../images/icon.png")/*tpa=http://www.dgyouji88.com/images/icon.png*/ no-repeat;}
+.qust_contach ul li span.icon{_margin-left:-45px;}
+
+.pst_re{ position:relative}
+.qust_contach{ background:#f5f5f5; border:#fff 1px solid; width:125px;padding:1px 5px 10px; font-size:12px; line-height:18px; position:absolute; right:5px; top:15px; z-index:9999;
+-webkit-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
+	    box-shadow: 0 0px 7px rgba(0,0,0,0.3);}
+@media(max-width:760px){.qust_contach{margin:15px auto;}}
+/*close*/
+a.qst_close {width:19px; height:22px; overflow:hidden; background-position:-102px -351px; float:right; display:block; margin:-1px -5px 0 0}
+a.qst_close:hover{ background-position:-102px -390px;}
+/*list*/
+.qust_contach ul li{ border-bottom:#d8d8d8 1px solid; border-top:#fff 1px solid; padding:5px; position:relative}
+.shouqian,.shouhou,.zixun,.tijian,.yuyue,.suces{ width:20px; height:24px; display:inline-block; margin-bottom:-4px; margin-right:3px}
+.shouqian{ background-position:-97px -2px;}
+ .shouhou{ background-position:-97px -65px;}
+   .zixun{ background-position:-97px -126px;}
+  .tijian{ background-position:-97px -200px;}
+   .yuyue{ background-position:-97px -276px;}
+   .suces{ background-position:-100px -427px;}
+.qst_info p{ line-height:20px;}   
+.qust_contach ul li:hover{ background:#e7edef;}   
+a.qst_info:hover .shouqian,.qust_contach ul li:hover .shouqian{ background-position:-339px -2px;}
+a.qst_info:hover .shouhou,.qust_contach ul li:hover .shouhou{ background-position:-339px -65px;}
+a.qst_info:hover .zixun,.qust_contach ul li:hover .zixun{ background-position:-339px -126px;}
+a.qst_info:hover .tijian,.qust_contach ul li:hover .tijian{ background-position:-339px -200px;}
+a.qst_info:hover .yuyue,.qust_contach ul li:hover .yuyue{ background-position:-339px -276px;}
+a.qst_info:hover .suces,.qust_contach ul li:hover .suces{ background-position:-100px -462px;}
+
+a.qq{width:75px; height:22px; display:inline-block; background-position:-187px -138px; margin:0 3px}
+a.qq:hover{background-position:-187px -91px; cursor:pointer}/*background-position:-191px -148px;*/
+a.tj_btn{width:79px; height:22px; display:inline-block; background-position:-184px -442px; margin:3px  3px 5px; text-align:center; line-height:22px;color:#1f495d; font-weight:bold}
+a.tj_btn:hover{background-position:-184px -471px; cursor:pointer;color:#1a649d; font-weight:normal}
+a.more{ color:#018ee8; margin-left:15px;}
+a.more:hover{ color:#0d4c9a;}
+
+.suces_btn a{width:53px; height:22px; display:block; float:left; background-position:0 -431px; margin:0 1px; text-align:center; line-height:22px;  font-size:11px; color:#1f495d; font-weight:bold}
+.suces_btn a:hover{background-position:0 -463px; cursor:pointer; color:#1a649d; font-weight:normal}
+
+a.qst_info:hover .suces,.qust_contach ul li:hover .suces{ background-position:-100px -462px;}
+a.back_top{ width:25px; height:27px; margin:10px 0 10px 45px; background-position:-342px -343px; display:block}
+a.back_top:hover,.qust_contach ul li:hover .back_top{ background-position:-342px -394px;}
+.qust_show{ background:#f5f5f5; border:#fff 1px solid; width:30px;padding:15px 15px 20px; font-size:12px; line-height:18px; position:absolute; right:10px; top:15px; z-index:9999;
+-webkit-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 0px 7px rgba(0,0,0,0.3);
+	    box-shadow: 0 0px 7px rgba(0,0,0,0.3); text-align:center;font-size:15px; line-height:18px;
+		-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.qust_show span.server{background-position:-1px -363px;width:30px; height:30px; display:inline-block; }
+.qust_show:hover{ background:#e7edef;}
+
+/*
+.footer_links {
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+.footer_links ul {
+    padding: 0 0 10px;
+}
+*/
+.footer_links ul li {
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 8px;
+    display:inline;
+}

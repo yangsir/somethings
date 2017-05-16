@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />      
+
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}">
+    <meta name="description" content="{dede:global.cfg_description/}">
+<link href="/templets/youqi/style/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templets/youqi/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="/templets/youqi/js/jquery.SuperSlide.2.1.js"></script>
+<script src="/templets/youqi/js/js.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<script type="text/javascript">jQuery(".TB-focus").slide({ mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:200 });</script>
+<div id="container">
+	<div class="indrx_left">
+		<div class="left_box">
+			<div class="left_titel">
+		  		<h1><span><a href="/a/tongzhigonggao"><img src="/templets/youqi/images/a_31.jpg" /></a></span>通知公告</h1>
+		  </div>
+			<ul>
+			{dede:arclist flag='' typeid='5' row='5' titlelen='34' orderby=''}
+				<li><a href="[field:arcurl/]" title="[field:title/]" target="_self">[field:title/]</a></li>
+			{/dede:arclist}
+			</ul>
+		</div>
+		<div class="left_box">
+			<div class="left_titel">
+		  		<h1><span><a href="/a/jiejuefangan"><img src="/templets/youqi/images/a_31.jpg" /></a></span>解决方案</h1>
+			</div>
+			<ul>
+			{dede:arclist flag='' typeid='4' row='5' titlelen='34' orderby=''}
+			<li><a href="[field:arcurl/]" title="[field:title/]" target="_self">[field:title/]</a></li>
+			{/dede:arclist}
+			</ul>
+		</div>
+
+		<div class="left_box">
+			<div class="left_titel">
+                <h1><span><a href="/a/lianxiwomen/"><img src="/templets/youqi/images/a_31.jpg" /></a></span>合作伙伴</h1>
+		  </div>
+			<div id="scrollHb" style="overflow:hidden;height:160px;width:238px;">
+
+		  <ul style="margin-top: 0px;"><li class="gaili">武汉源众文化传媒有限公司</li><li class="gaili">武汉重合科技有限公司
+</li><li class="gaili">武汉光唯科技有限公司</li><li class="gaili">武汉飞游科技有限公司</li><li class="gaili">湖北精英盛华信息科技有限公司
+</li> <li class="gaili">武汉爱瑞迪科技有限公司</li> <li class="gaili">武汉菲旺软件技术有限责任公司</li></ul>
+		  </div>
+		</div>
+	</div>
+
+	<div class="index-right">
+		<div class="zxgg">
+			<h1><span><a href="/a/gongsixinwen"><img src="/templets/youqi/images/a_31.jpg" /></a></span>公司新闻</h1>
+			<div class="zxgg_box">
+	  <div class="jdt">
+					<div class="focusBox" style="margin:0 auto">
+			<ul class="pic">
+			{dede:arclist flag='h' typeid='1' row='4' titlelen='' orderby=''}
+        	<li><a href="[field:arcurl/]" target="_self"><img src="[field:litpic/]" /></a></li>					
+				{/dede:arclist}
+				</ul>
+			<div class="txt-bg"></div>
+			<div class="txt">
+				<ul>
+				{dede:arclist flag='h' typeid='1' row='4' titlelen='40' orderby=''}
+                	<li><a href="[field:arcurl/]">[field:title/]</a></li>
+									
+									{/dede:arclist}
+								</ul>
+			</div>
+
+			<ul class="num">
+            				<li><a>1</a><span></span></li>
+						<li><a>2</a><span></span></li>
+						<li><a>3</a><span></span></li>
+						<li><a>4</a><span></span></li>
+					</ul>
+	</div>
+
+			<script type="text/javascript">
+				jQuery(".focusBox").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",
+					//下面startFun代码用于控制文字上下切换
+					startFun:function(i){
+						 jQuery(".focusBox .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-36});
+					}
+				});
+			</script>
+			</div>
+			<div class="news">
+				<ul>
+				{dede:arclist flag='' typeid='1' row='7' titlelen='45' orderby=''}
+                				<li><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]" target="_self">[field:title/]</a></li>
+								{/dede:arclist}
+								</ul>
+			</div>
+			</div>
+        </div>
+        <!--
+		<div class="box_a">
+			<div class="boxa_l">
+				<h1><span><a href="/a/xinwenzhongxin/kejidongtai/"><img src="/templets/youqi/images/a_31.jpg" /></a></span>业内动态</h1>
+				<ul>
+				{dede:arclist flag='' typeid='11' row='7' titlelen='36' orderby=''}
+   <li><a href="[field:arcurl/]" class="ml10" title="[field:title/]" target="_self">[field:title/]</a>&nbsp;&nbsp; [field:pubdate function="MyDate('Y-m-d',@me)"/]</li>
+               {/dede:arclist}
+				</ul>
+
+			</div>
+			<div class="boxa_r">
+				<h1><span><a href="/a/xinwenzhongxin/zhengcefagui/"><img src="/templets/youqi/images/a_31.jpg" /></a></span>政策法规</h1>
+				<ul>
+				{dede:arclist flag='' typeid='10' row='7' titlelen='36' orderby=''}
+				<li><a href="[field:arcurl/]" class="ml10" title="[field:title/]" target="_self">[field:title/]</a>&nbsp;&nbsp; [field:pubdate function="MyDate('Y-m-d',@me)"/]</li>
+{/dede:arclist}
+				</ul>
+			</div>
+		</div>
+        -->
+		<div class="clear_a"></div>
+		<div class="zxgg">
+			<h1><span><a href="/a/guanyuwomen/"><img src="/templets/youqi/images/a_31.jpg" /></a></span>关于我们</h1>
+			<div class="zxgg_box">
+			<img src="/templets/youqi/images/a_44.jpg" align="left" id="tpys" />
+			<p>我们是一家年轻的互联网公司（深圳市扬和宏科技有限公司），我们是一支拥有丰富互联网经验和线下经验的创业团队。我们的小伙伴均来自知名电商、软件等各个行业。我们崇尚自由，思想开放；我们关注用户，追求完美；我们充满激情，迎难而上                     ...<a href="/a/guanyuwomen/">[查看更多]</a></p>
+		  </div>
+		</div>
+		<div class="clear_a"></div>
+			<div class="zxgg">
+			<h1><span><a href="/a/chanpinjieshao"><img src="/templets/youqi/images/a_31.jpg" /></a></span>产品介绍</h1>
+			
+			<div class="scrollBox" style="margin:0 auto">
+			<div class="ohbox">
+					<ul class="piclist">
+					{dede:arclist flag='' typeid='3' row='9' titlelen='36' orderby=''}
+                    						<li><a href="[field:arcurl/]" target="_self"><img src="[field:litpic/]" width="205" height="203"  alt="[field:title/]" onerror="this.src='/templets/youqi/images/error1.jpg';"/></a></li>
+											{/dede:arclist}
+										</ul>
+			</div>
+			<div class="pageBtn">
+				<span class="prev">&lt;</span>
+				<span class="next">&gt;</span>
+			</div>
+	</div>
+	<script type="text/javascript">jQuery(".scrollBox").slide({ titCell:".list li", mainCell:".piclist", autoPage:true,effect:"left",autoPlay:true,vis:3});</script>
+
+		  </div>
+
+    <div class="lisk" style='margin:10px auto;height:auto;'>
+    	<h1>友情链接</h1>
+    	<ul>
+	    {dede:flink row='18'}
+	    <li>[field:link /]    |</li>
+        {/dede:flink}
+	    </ul>
+    </div>
+
+	</div>
+</div>
+
+{dede:include filename="foot.htm"/}
+</body>
+</html>

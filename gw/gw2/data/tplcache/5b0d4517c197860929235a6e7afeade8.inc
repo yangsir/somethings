@@ -1,0 +1,1 @@
+<li><span>[field:pubdate function='strftime("%d",@me)'/]日</span><a target="_blank" href="[field:arcurl /]" title="[field:title /]" >[field:title /]</a></li>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:global name='keyword' function='RemoveXSS(@me)'/}搜索结果_{dede:global.cfg_indexname/}</title>
+<link rel="stylesheet" href="/templets/mm/css/css.css" />
+<!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+</head>
+<body>
+{dede:include filename="head_92game.htm"/}
+<div class="wrapperC">
+<div class="wrapper fix">
+<div class="section fix pt10 lay5">
+<div class="crumb grey tc f14 pb5">当前位置:搜索<i class="red">{dede:global name='keyword' function='RemoveXSS(@me)'/}</i> 的结果 </div>
+<script src='/data/cache/myad-1.htm' language='javascript'></script>
+<div class="layTb">
+<ul class="ulPic l">
+{dede:list perpage='24'}
+<li><a href="[field:arcurl/]" class="img"><img src="[field:litpic/]" alt="[field:title/]" /><i class="tit"<font color='red'>[field:title/]</i><s></s></a></li>
+{/dede:list}
+</ul>
+</div>
+</div><!--end of section-->
+
+<div class="section lay lay5 mt5 fix">
+   <div class="page fix pt5 pb10">
+    <ul>
+<table border='0' cellpadding='0' cellspacing='0'>
+<tr align='center' style='font-size:10pt'>
+<form name='pagelist' action='/plus/search.php'><input type='hidden' name='keyword' value='90后'>
+<input type='hidden' name='channeltype' value='0'>
+<input type='hidden' name='orderby' value=''>
+<input type='hidden' name='kwtype' value='1'>
+<input type='hidden' name='pagesize' value='24'>
+<input type='hidden' name='typeid' value='0'>
+<input type='hidden' name='TotalResult' value='86'>
+<td>{dede:pagelist listsize='4'/}</td>
+</form>
+</tr>
+</table>
+<script src='/data/cache/myad-1.htm' language='javascript'></script>
+    </ul>
+  </div>
+</div><!--end of section-->  
+</div><!--end of wrapper-->
+</div><!--end of wrapperC-->
+
+{dede:include filename="footer_92game.htm"/}
+</body>
+</html>

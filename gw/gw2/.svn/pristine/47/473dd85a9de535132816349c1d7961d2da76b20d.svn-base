@@ -1,0 +1,1 @@
+<li><a href="[field:typeurl/]">[field:typename/]</a></li><li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>

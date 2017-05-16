@@ -1,0 +1,122 @@
+<!-- //主模板必须要引入{dede:global.cfg_cmsurl/}/include/dedeajax2.js -->
+<a name='postform'></a>
+<div class="plbox">
+				<h4 class="title_a mt1"><span class="fl">我也来留个脚印</span></h4>
+				<span class="more"></span>
+				<div class="dede_comment_post">
+          <form action="#" method="post" name="feedback">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="{dede:field name="id"/}" />
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+                    <div class="clear"></div>
+					<div class="dcmp-content">
+						<textarea cols="60" name="msg" rows="5" class="ipt-txt"></textarea>
+					</div><!-- /dcmp-content -->
+					<div class="dcmp-post"><!--未登陆-->
+							<div class="dcmp-userinfo" id="_ajax_feedback">
+								{dede:php}
+								if($cfg_ml->M_ID <= 0) {
+									echo '<span class="custips"><a href="../member/index.php" target="_blank"  rel="nofollow">登陆后才能发表评论哦！</a><p><a href="../member/index_do.php?fmdo=user&dopost=regnew" target="_blank" rel="nofollow">没账号？赶紧注册一个吧！</a></p></span>';
+								}
+								{/dede:php}
+							</div>
+								<script language="javascript" type="text/javascript">CheckLogin2();</script>
+
+						</div>
+        </form>
+				</div>
+	</div><!-- //评论表单区结束 -->
+
+<!-- //评论内容区 -->
+<div class="clear"></div>
+	<a name='commettop'></a>
+	<div class="comlist">
+					<h4 class="title_a mt1"><span class="fl">最新评论</span> <strong class="fr">已有<em>{dede:field.id runphp='yes'}$dsql = new dedesql(false);$dsql -> SetQuery("Select count(id) as c from #@__feedback where aid=".@me);$row = $dsql -> getone();@me=$row['c'];{/dede:field.id}</em>条评论</strong></h4>
+				<!-- //这两个ID的区块必须存在，否则JS会出错 -->
+				<div id='commetcontentNew'></div>
+				<div id='commetcontent'></div>
+	</div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='{dede:global.cfg_cmsurl/}/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("{dede:global.cfg_phpurl /}/feedback_ajax.php?dopost=getlist&aid={dede:field.id/}&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='{dede:global.cfg_cmsurl/}/images/loadinglit.gif' />正在发送中...</div>";
+		if(f.msg.value=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(f.msg.value.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = '{dede:global.cfg_soft_lang/}';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '{dede:field.id/}');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', f.msg.value);
+		myajax.SendPost2('{dede:global.cfg_phpurl/}/feedback_ajax.php');
+		f.msg.value = '';
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "{dede:global.cfg_cmsurl/}/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+}
+function quoteCommet(fid)
+{
+	document.feedback.fid.value = fid;
+}
+LoadCommets(1);
+</script><!-- //评论内容区结束 -->

@@ -1,0 +1,1 @@
+<a href="/bbs/viewthread.php?tid=[field:tid /]" title="[field:subject function="cn_substr('@me',40)" /]" target="_blank">[field:subject function="cn_substr('@me',24)" /]</a>

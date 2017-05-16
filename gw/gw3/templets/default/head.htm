@@ -1,0 +1,48 @@
+<div id="c_wrapper">
+
+	<div id="c_header">
+		<div id="c_toplinks">
+        	<div class="box c" style="width:960px; margin:0 auto;">
+                <ul class="t_login">
+					<li><a href="http://www.napianhai.com/member/login.php"><img src="{dede:global.cfg_cmspath/}/1/t_loginB.gif" alt="登录" /></a><a href="http://www.napianhai.com/member/index_do.php?fmdo=user&dopost=regnew"><img src="{dede:global.cfg_cmspath/}/1/t_regist.gif" alt="快速注册 " /></a></li>
+				</ul>
+                <p class="t_motiveNews"><span>建站资讯：</span><a href="http://www.napianhai.com/web/" title="建站指南">建站</a>-<a href="http://www.napianhai.com/web/" title="公告">公告</a>-<a href="http://www.napianhai.com/" title="成立时间">成立</a>-<a href="http://www.napianhai.com/" title="动态">动态</a><img src="{dede:global.cfg_cmspath/}/1/t_line00.gif"><img class="t_icon" src="{dede:global.cfg_cmspath/}/1/t_icon10.gif" alt="建站流程" /><a href="http://www.napianhai.com/jianzhan/" target="_blank" class="t_platform" alt="建站流程">建站流程</a><img src="{dede:global.cfg_cmspath/}/1/t_line00.gif" alt="" /><a href="http://www.napianhai.com/about/" target="_blank">关于我们</a></p>
+                <div class="clear"></div>
+            </div>
+		</div>
+
+
+		<div id="c_logo"><div class="box c" style="width:960px; margin:0 auto;">
+<a href="http://www.napianhai.com/" class="t_logo"><img src="{dede:global.cfg_cmspath/}/1/c_logo_n.gif" alt="廊坊网站建设" title="廊坊网站建设"/></a>
+			<div class="logo_wltzq"><a href="http://www.napianhai.com/" target="_blank" title="廊坊网站建设"><img src="{dede:global.cfg_cmspath/}/1/logo_wlt.gif" alt="廊坊网站建设" /></a></div>
+			<img class="t_hotline" src="{dede:global.cfg_cmspath/}/1/c_hotlin.gif" alt="廊坊网站建设,咨询订购电话：15226667650 0316-7517650" title="廊坊网站建设,咨询订购电话：15226667650 0316-7517650"/>
+			<div class="clear"></div>
+		</div></div>
+		
+		
+		<div id="c_mainnav">
+			<ul class="box c" style="width:960px; margin:0 auto;">
+				<li><a href="{dede:global.cfg_cmspath/}/" class="on" title="网站首页">网站首页</a></li>
+		     	{dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+      	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+      	{/dede:channel}
+			</ul>
+			<div class="clear"></div>
+		</div>
+		</style>
+
+
+		<div id="c_search" class="box c" style="width:960px; margin:0 auto;">
+	
+	
+		<div class="hot">
+			<ul class="c">
+				<li class="a_d">推荐搜索:</li>
+		    {dede:tag row='7' getall='1' sort='month'}
+            <li><a href='[field:link/]'>[field:tag /]</a></li>
+          {/dede:tag}
+			</ul>
+		</div>
+		</div>
+		
+	</div>

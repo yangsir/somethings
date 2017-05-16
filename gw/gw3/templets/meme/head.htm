@@ -1,0 +1,24 @@
+<div class="header_top">
+  <div class="wrapbox"> <span class="welcome">Hi,欢迎光临：我的网站！    <a href="{dede:global.cfg_basehost/}" onClick="window.external.addFavorite(this.href,this.title);return false;" title="我的网站" rel="sidebar">收藏我们</a></span><div class="toplinks"><span id="_userlogintop" ><a href="{dede:global.cfg_cmspath/}/member/login.php">[请登录]</a> <a href="{dede:global.cfg_cmspath/}/member/index_do.php?fmdo=user&dopost=regnew" target="_blank">[免费注册]</a> <a href="{dede:global.cfg_cmspath/}/member/resetpassword.php" target="_blank">忘记密码?</a></span>
+</div>
+  </div>
+</div>
+ <script language="javascript" type="text/javascript">CheckLogin();</script>
+<div class="header">
+  <div class="wrapbox top">
+    <div class="logo">
+      <h1><a title="{dede:global.cfg_webname/}" href="{dede:global.cfg_basehost/}">{dede:global.cfg_webname/}</a> </h1>
+    </div>
+    <div id="navMenu">
+      <ul>
+        <li class="hover"><a href='{dede:global.cfg_cmsurl/}/'>首页</a></li>
+        {dede:channel type='top' row='10' currentstyle="
+        <li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+        "}
+        <li><a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="ico-hot"></div>
+  </div>
+</div>

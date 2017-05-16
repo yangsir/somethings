@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.seotitle/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_cmspath/}/statics/style/index.css" rel="stylesheet" media="screen" type="text/css" />
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">              
+function CheckLogin(){          
+var taget_obj = document.getElementById('_userlogintop');          
+myajax = new DedeAjax(taget_obj,false,false,'','','');          
+myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginstatop.php");          
+ DedeXHTTP = null;
+ }   
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="wrapbox">
+ <div class="mainbox">
+  <div class="place"> <strong>当前位置:</strong> {dede:field name='position'/} </div>
+  <!-- /place -->
+  <div class="listbox">
+{dede:field.content /}
+  </div>
+  <!-- /listbox -->
+ </div>
+ <!-- /mainbox -->
+ <div class="sidebox">
+ <div class="title_a">随机推荐</div>
+  <div class="rand list1">
+  {dede:arclist row='5' type='image.' imgwidth='75' imgheight='75' orderby='rank' titlelen='50' infolen='90'  typeid='1,2,3,5' }
+  <dl><dt><a href="[field:arcurl/]" title="[field:title/]">[field:image /]</a></dt><dd><a href="[field:arcurl/]">[field:title/]</a></dd><dd>[field:info/]</dd></dl>{/dede:arclist}
+     </ul>
+  </div>
+  <!-- /commend -->
+   <div class="title_a">热点内容</div>
+  <div class="hot mt1">
+     <ul class="c1">
+      {dede:arclist row='10' orderby='click' typeid='1,2,3,5' titlelen='50'}
+      <li><a href="[field:arcurl/]">[field:title/]</a></li>
+      {/dede:arclist}
+     </ul>
+  </div>
+ </div>
+ <!-- /sidebox -->
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

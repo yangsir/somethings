@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> 
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+ <link href="/xunyang/images/css.css" rel="stylesheet" type="text/css" /> </head> <body> 
+{dede:include filename="head.htm"/}
+ <!--分类页--> 
+ <div id="p_main"> 
+ <!--左侧--> 
+ <div id="p_left"> <h4>{dede:field.typename/}</h4> <ul class="p_leftsum1">{dede:channel row='10' type='top'}   <li><a href="[field:typeurl/]">[field:typename/]</a></li>  {/dede:channel}   </ul><!-- <h5>减肥快速导航</h5> <div class="p_leftsum2"> <p>{dede:flink linktype='1' row='30' type='text'}{/dede:flink}</p> </div>--> </div> 
+ <!--左侧 end--> 
+ <!--右侧--> 
+ <div id="p_right"> <div class="p_rightit">当前位置：{dede:field name='position'/}</div> 
+ <div class="p_rightsum1">
+ <ul class="ul1">
+ {dede:list pagesize='15'}<li><a target="_blank" href="[field:arcurl/]">[field:title/]</a> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></li> {/dede:list}
+ </ul>
+
+ <ul class="ul2">
+ <div class='page1'>{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="4"/}</div>
+ </ul> </div>
+ <div class="p_rightbot"></div> </div> <!--右侧 end--> 
+ <div class="clear"></div> </div> <!--分类页 end--> 
+ {dede:include filename="footer.htm"/}
+ </body> </html>

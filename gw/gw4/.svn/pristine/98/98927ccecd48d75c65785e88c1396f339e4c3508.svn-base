@@ -1,0 +1,18 @@
+<!-- //底部模板 -->
+<div class="footer tc">
+<a target="_blank" href="{dede:global.cfg_basehost/}">美女</a><a target="_blank" href="{dede:global.cfg_basehost/}">性感美女</a><a target="_blank" href="{dede:global.cfg_basehost/}">美女图片</a><a target="_blank" href="{dede:global.cfg_basehost/}">清纯美女</a><a target="_blank" href="{dede:global.cfg_basehost/}">模特</a><a target="_blank" href="{dede:global.cfg_basehost/}">mm</a>
+<a target="_blank" href="{dede:global.cfg_basehost/}/beautymodel/">美女模特</a> 
+<a target="_blank" href="{dede:global.cfg_basehost/}/starmodel/">明星模特</a> 
+<a target="_blank" href="{dede:global.cfg_basehost/}/underwearmodel/">内衣模特</a> 
+<a target="_blank" href="{dede:global.cfg_basehost/}/planemodel/">平面模特</a> 
+<a target="_blank" href="{dede:global.cfg_basehost/}/nonmainstream/">非主流美女</a> 
+<a href="http://www.moke8.com" target="_blank">网站模板</a>
+<a href="http://www.moke8.com" target="_blank">网页模板</a>
+<a href="http://www.moke8.com/dedecms/" target="_blank">dedecms模板</a>
+<a href="http://www.moke8.com/dedecms/" target="_blank">织梦模板</a> 
+<a target="_blank" href="{dede:global.cfg_basehost/}/tags.html">站内标签</a> 
+
+ <br>{dede:global.cfg_powerby/}{dede:global.cfg_tongji/}<br>
+声明：本站所有图片来源于互联网！若有任何版权问题，请联系我们，我们将立即予以纠正注明来源！<br>
+谢谢您对{dede:global.cfg_indexname/}网的支持！！！ 
+</div>

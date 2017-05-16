@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="Keywords" content="åœ¨çº¿ç•™è¨€" />
+<meta name="Description" content="åœ¨çº¿ç•™è¨€" />
+<title>åœ¨çº¿ç•™è¨€ - æ·±åœ³å¸‚æœ‰æŠ€åŠ³åŠ¡æ´¾é£æœåŠ¡æœ‰é™å…¬å¸</title>
+<link href="Css/Style.css" tppabs="http://www.dgyouji88.com/Css/Style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div style="width:100%; background-image:url(Images/topbg.jpg);height:117px;">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td align="left"><a href="index.asp.htm" tppabs="http://www.dgyouji88.com/index.asp"><img src="Images/logo.png" tppabs="http://www.dgyouji88.com/Images/logo.png" width="567" height="117" border="0"></a></td>
+    <td align="right"><img src="Images/language.png" tppabs="http://www.dgyouji88.com/Images/language.png" width="332" height="117" border="0" usemap="#Map"></td>
+  </tr>
+</table>
+<div style="width:100%; background-image:url(Images/menubg.jpg);height:39px;">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" class="topmenu">
+  <tr>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td height="39" align="center"><a href="index.asp.htm" tppabs="http://www.dgyouji88.com/index.asp">é¦–é¡µ</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="about.asp.htm" tppabs="http://www.dgyouji88.com/about.asp">å…³äºæˆ‘ä»¬</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="about.asp-id=16.htm" tppabs="http://www.dgyouji88.com/about.asp?id=16">ç»è¥èŒƒå›´</a></td>
+    <td align="center"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="about.asp-id=17.htm" tppabs="http://www.dgyouji88.com/about.asp?id=17">æˆåŠŸæ¡ˆä¾‹</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="about.asp-id=8.htm" tppabs="http://www.dgyouji88.com/about.asp?id=8">åˆä½œä¼™ä¼´</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="job.asp.htm" tppabs="http://www.dgyouji88.com/job.asp">äººæ‰æ‹›è˜</a><a href="javascript:if(confirm('http://www.dgyouji88.com/service.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ·¢Éú´íÎó, ×èÖ¹ÁËÏÂÔØ¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.dgyouji88.com/service.asp'" tppabs="http://www.dgyouji88.com/service.asp"></a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="plist.asp-sortid=3&sortpath=0,3,.htm" tppabs="http://www.dgyouji88.com/plist.asp?sortid=3&sortpath=0,3,">æ–°é—»èµ„è®¯</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+    <td align="center"><a href="contact.asp.htm" tppabs="http://www.dgyouji88.com/contact.asp">è”ç³»æˆ‘ä»¬</a></td>
+    <td align="center" width="2"><img src="Images/split.jpg" tppabs="http://www.dgyouji88.com/Images/split.jpg" border="0"></td>
+  </tr>
+</table>
+</div>
+<script src="Scripts/AC_RunActiveContent.js" tppabs="http://www.dgyouji88.com/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<table width="999" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td align="center"><div align="center">
+      <script type="text/javascript">
+var pic_width=1000; //Í¼Æ¬¿í¶È
+var pic_height=260; //Í¼Æ¬¸ß¶È
+var button_pos=4; //°´Å¤Î»ÖÃ 1×ó 2ÓÒ 3ÉÏ 4ÏÂ
+var stop_time=6000; //Í¼Æ¬Í£ÁôÊ±¼ä(1000Îª1ÃëÖÓ)
+var show_text=0; //ÊÇ·ñÏÔÊ¾ÎÄ×Ö±êÇ© 1ÏÔÊ¾ 0²»ÏÔÊ¾
+var txtcolor="000000"; //ÎÄ×ÖÉ«
+var bgcolor="ffffff"; //±³¾°É«
+var imag=new Array();
+var link=new Array();
+var text=new Array();
+imag[1]="show/01.jpg"/*tpa=http://www.dgyouji88.com/show/01.jpg*/;
+link[1]="";
+text[1]="";
+imag[2]="show/02.jpg"/*tpa=http://www.dgyouji88.com/show/02.jpg*/;
+link[2]="";
+text[2]="";
+
+//¿É±à¼­ÄÚÈİ½áÊø
+var swf_height=show_text==1?pic_height+20:pic_height;
+var pics="", links="", texts="";
+for(var i=1; i<imag.length; i++){
+	pics=pics+("|"+imag[i]);
+	links=links+("|"+link[i]);
+	texts=texts+("|"+text[i]);
+}
+pics=pics.substring(1);
+links=links.substring(1);
+texts=texts.substring(1);
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cabversion=6,0,0,0" width="'+ pic_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="flash/focus.swf"/*tpa=http://www.dgyouji88.com/flash/focus.swf*/>');
+document.write('<param name="quality" value="high"><param name="wmode" value="opaque">');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&pic_width='+pic_width+'&pic_height='+pic_height+'&show_text='+show_text+'&txtcolor='+txtcolor+'&bgcolor='+bgcolor+'&button_pos='+button_pos+'&stop_time='+stop_time+'">');
+document.write('<embed src="flash/focus.swf"/*tpa=http://www.dgyouji88.com/flash/focus.swf*/ FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&pic_width='+pic_width+'&pic_height='+pic_height+'&show_text='+show_text+'&txtcolor='+txtcolor+'&bgcolor='+bgcolor+'&button_pos='+button_pos+'&stop_time='+stop_time+'" quality="high" width="'+ pic_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+    </script>
+    </div></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="178,40,256,76" href="index.asp.htm" tppabs="http://www.dgyouji88.com/index.asp">
+<area shape="rect" coords="259,38,329,77" href="javascript:if(confirm('http://www.dgyouji88.com/en/index.asp  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ·şÎñÆ÷±¨¸æ¸ÃÎÄ¼şÎ´ÕÒµ½¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.dgyouji88.com/en/index.asp'" tppabs="http://www.dgyouji88.com/en/index.asp">
+</map>
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" style="margin-bottom:20px;">
+  <tr>
+    <td width="232" align="left" valign="top"><table width="217" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="32" background="images/left1.jpg" tppabs="http://www.dgyouji88.com/images/left1.jpg" style="color:#0b73a9;font-size:16px; font-family:é»‘ä½“;">ã€€ã€€è”ç³»æˆ‘ä»¬</td>
+      </tr>
+
+      <tr>
+        <td height="31" background="images/left2.jpg" tppabs="http://www.dgyouji88.com/images/left2.jpg" style="line-height:31px;">ã€€ã€€ <a href="contact.asp.htm" tppabs="http://www.dgyouji88.com/contact.asp">è”ç³»æˆ‘ä»¬</a></td>
+      </tr>
+
+      <tr>
+        <td height="31" background="images/left2.jpg" tppabs="http://www.dgyouji88.com/images/left2.jpg" style="line-height:31px;">ã€€ã€€ <a href="messagewrite.asp.htm" tppabs="http://www.dgyouji88.com/messagewrite.asp">åœ¨çº¿ç•™è¨€</a></td>
+      </tr>
+
+      <tr>
+        <td><img src="Images/left3.jpg" tppabs="http://www.dgyouji88.com/Images/left3.jpg" width="217" height="5" /></td>
+      </tr>
+    </table>ï»¿<table width="217" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="Images/left4.jpg" tppabs="http://www.dgyouji88.com/Images/left4.jpg" width="217" height="59" border="0" /></td>
+      </tr>
+      <tr>
+        <td height="32" align="left" background="images/left5.jpg" tppabs="http://www.dgyouji88.com/images/left5.jpg">ã€€ã€€
+        <a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes"><img border="0" src="../pub.idqqimg.com/qconn/wpa/button/button_11.gif" tppabs="http://wpa.qq.com/pa?p=2:491498890:41" alt="ç‚¹å‡»è¿™é‡Œç»™æˆ‘å‘æ¶ˆæ¯" title="ç‚¹å‡»è¿™é‡Œç»™æˆ‘å‘æ¶ˆæ¯"></a>&nbsp;&nbsp;<a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=491498890&site=qq&menu=yes"><img border="0" src="../pub.idqqimg.com/qconn/wpa/button/button_11.gif" tppabs="http://wpa.qq.com/pa?p=2:491498890:41" alt="ç‚¹å‡»è¿™é‡Œç»™æˆ‘å‘æ¶ˆæ¯" title="ç‚¹å‡»è¿™é‡Œç»™æˆ‘å‘æ¶ˆæ¯"></a></td>
+  </tr>
+      <tr>
+        <td><img src="Images/left6.jpg" tppabs="http://www.dgyouji88.com/Images/left6.jpg" width="217" height="54" border="0" /></td>
+      </tr>
+    </table>
+ï»¿</td>
+    <td align="left" valign="top"><table width="764" border="0" cellpadding="0" cellspacing="0" background="images/right1.jpg" tppabs="http://www.dgyouji88.com/images/right1.jpg">
+      <tr>
+        <td width="210" height="40" align="left" style="color:#1d831d;font-size:16px; font-family:é»‘ä½“;">ã€€ã€€åœ¨çº¿ç•™è¨€</td>
+        <td width="554" align="right"><img src="Images/Arrow_02.gif" tppabs="http://www.dgyouji88.com/Images/Arrow_02.gif" />&nbsp;æ‚¨ç°åœ¨çš„ä½ç½®ï¼š<a href="index.asp.htm" tppabs="http://www.dgyouji88.com/index.asp">é¦–é¡µ</a> &gt; <a href="contact.asp.htm" tppabs="http://www.dgyouji88.com/contact.asp">è”ç³»æˆ‘ä»¬</a> &gt; åœ¨çº¿ç•™è¨€&nbsp;&nbsp;</td>
+      </tr>
+    </table>
+      <table width="764" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td background="images/right2.jpg" tppabs="http://www.dgyouji88.com/images/right2.jpg" style="background-repeat:repeat-x;border-left:1px solid #cccccc;border-right:1px solid #cccccc;padding:10px;line-height:150%;"><table width="100%"  cellpadding="2" cellspacing="0" >
+          <form action="http://www.dgyouji88.com/MessageSave.asp?MemberID=0" method="post" name="formWrite" id="formWrite">
+            <tr>
+              <td colspan="2"><STRONG>å°Šæ•¬çš„å®¢æˆ·ï¼š</STRONG><BR>
+                éå¸¸æ„Ÿè°¢æ‚¨å¯¹æˆ‘å…¬å¸çš„æ”¯æŒ!<BR>
+                ä¸ºäº†ç»™æ‚¨æä¾›å¿«æ·ã€å‘¨åˆ°çš„æœåŠ¡ï¼Œå¹¶èƒ½åŠæ—¶åé¦ˆä¿¡æ¯ï¼Œè¯·æ‚¨è¯¦ç»†å¡«å†™ä»¥ä¸‹èµ„æ–™ï¼Œæˆ‘ä»¬å°†åœ¨çŸ­æ—¶é—´å†…ä¸æ‚¨è”ç³»ã€‚<BR>
+                æ‚¨æ‰€æä¾›çš„è”ç³»ä¿¡æ¯åŠèµ„æ–™ä¼šç›´æ¥å‘é€åˆ°æ•å¸ç”µè„‘ç³»ç»Ÿï¼Œä¸ä¼šæ˜¾ç¤ºäºç½‘ç«™ä¸Šã€‚<BR></td>
+              </tr>
+            <tr>
+              <td width="13%">ä¸»ã€€ã€€é¢˜ï¼š</td>
+              <td width="87%"><input name="MesName" type="text" class="TextBox" id="MesName" size="40" maxlength="100" />&nbsp;<font color="#CC0000">*</font></td>
+            </tr>
+            <tr>
+              <td>ç•™è¨€å†…å®¹ï¼š</td>
+              <td><textarea name="Content" cols="90" rows="8" class="TextBox"></textarea>
+              &nbsp;<font color="#CC0000">*</font></td>
+            </tr>
+            <tr>
+              <td>ç•™è¨€ã€€äººï¼š</td>
+              <td><input name="Linkman" type="text" class="TextBox" id="Linkman" value="" size="20" maxlength="50" />&nbsp;<font color="#CC0000">*</font></td>
+            </tr>
+            <tr>
+              <td>æ€§ã€€ã€€åˆ«ï¼š</td>
+              <td><input name="Sex" type="radio" value="å…ˆç”Ÿ" checked />
+                ç”·
+                <input type="radio" name="Sex" value="å¥³å£«"  />
+                å¥³</td>
+            </tr>
+            <tr>
+              <td>å•ä½åç§°ï¼š</td>
+              <td><input name="Company" type="text" class="TextBox" value="" size="40" maxlength="100" /></td>
+            </tr>
+            <tr>
+              <td>åœ°ã€€ã€€å€ï¼š</td>
+              <td><input name="Address" type="text" class="TextBox" value="" size="40" maxlength="100" /></td>
+            </tr>
+            <tr>
+              <td>é‚®ã€€ã€€ç¼–ï¼š</td>
+              <td><input name="ZipCode" type="text" class="TextBox" value="" size="20" maxlength="20" /></td>
+            </tr>
+            <tr>
+              <td>ç”µã€€ã€€è¯ï¼š</td>
+              <td><input name="Telephone" type="text" class="TextBox" id="Telephone" value="" size="20" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>ä¼ ã€€ã€€çœŸï¼š</td>
+              <td><input name="Fax" type="text" class="TextBox" id="Fax" value="" size="20" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>ç§»åŠ¨ç”µè¯ï¼š</td>
+              <td><input name="Mobile" type="text" class="TextBox" id="Mobile" value="" size="20" maxlength="50" /></td>
+            </tr>
+            <tr>
+              <td>ç”µå­é‚®ç®±ï¼š</td>
+              <td><input name="Email" type="text" class="TextBox" id="Email" value="" size="30" maxlength="50" />&nbsp;<font color="#CC0000">*</font></td>
+            </tr>
+            <tr style="display:none;">
+              <td>æ‚„æ‚„ã€€è¯ï¼š</td>
+              <td><font color="#ff6600">ä¼šå‘˜åŠŸèƒ½</font></td>
+            </tr>
+            <tr>
+              <td>éªŒè¯ã€€ç ï¼š</td>
+              <td valign="bottom"><input name="VerifyCode" type="text" class="TextBox" size="4" maxlength="4" />
+                  <img src="Include/VerifyCode.asp.bmp" tppabs="http://www.dgyouji88.com/Include/VerifyCode.asp" align="absmiddle" /> </td>
+            </tr>
+            <tr>
+              <td height="40">&nbsp;</td>
+              <td><input name="Submit" type="submit" class="button" value=" ä¿å­˜ " />
+                &nbsp;
+                <input name="Reset" type="reset" class="button" value=" é‡ç½® " />              </td>
+            </tr>
+          </form>
+        </table></td>
+        </tr>
+      </table>
+      <table width="764" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="Images/right3.jpg" tppabs="http://www.dgyouji88.com/Images/right3.jpg" width="764" height="8" /></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+ å‹æƒ…é“¾æ¥ï¼š<a href="javascript:if(confirm('http://www.baidu.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.baidu.com/'" tppabs="http://www.baidu.com/" target="_blank">ç™¾åº¦æ¨å¹¿</a>Â Â Â <a href="javascript:if(confirm('http://www.163.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.163.com/'" tppabs="http://www.163.com/" target="_blank">ç½‘æ˜“</a>Â Â Â <a href="javascript:if(confirm('http://www.zensir.net/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.zensir.net/'" tppabs="http://www.zensir.net/" target="_blank">ä¸œèç½‘ç«™å»ºè®¾</a>Â Â <a href="javascript:if(confirm('http://www.dg-yin.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.dg-yin.com/'" tppabs="http://www.dg-yin.com/" target="_blank">ä¸œèç”»å†Œå°åˆ·</a>Â Â Â <a href="javascript:if(confirm('http://www.dg-yin.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.dg-yin.com/'" tppabs="http://www.dg-yin.com/" target="_blank">ä¸œèå°åˆ·å‚</a>
+<div style="width:100%; background-image:url(Images/footbg.jpg);height:81px;">
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td style="line-height:1.5"><div align="center">      <br />
+      Copyright &copy; 2013 æ·±åœ³å¸‚æœ‰æŠ€åŠ³åŠ¡æ´¾é£æœåŠ¡æœ‰é™å…¬å¸,All right reserved. ç²¤ICPå·014695641<br />
+      TEL:86 - (0)769 - 8686 3703 FAX:86 - (0)769 - 8686 3703 &nbsp;&nbsp;&nbsp;E-mail:http://www.dgyouji88.com&nbsp;&nbsp;&nbsp;&nbsp;<a href="system/adminlogin.asp.htm" tppabs="http://www.dgyouji88.com/system/adminlogin.asp" target="_blank">åå°ç™»é™†</a></div></td>
+    </tr>
+</table>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74d2ffc535d76abe9139098814c8f357' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+</html>

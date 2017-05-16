@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT type="text/javascript">
+function out1()
+{
+if(window.event.toElement.id!="menu1" )
+      menu1.style.visibility="hidden";
+}
+function out2()
+{
+if(window.event.toElement.id!="menu2" )
+      menu2.style.visibility="hidden";
+}
+
+function out3()
+{
+if(window.event.toElement.id!="menu3" )
+      menu3.style.visibility="hidden";
+}
+function out4()
+{
+if(window.event.toElement.id!="menu4" )
+      menu4.style.visibility="hidden";
+}
+function out5()
+{
+if(window.event.toElement.id!="menu5" )
+      menu5.style.visibility="hidden";
+}
+function out6()
+{
+if(window.event.toElement.id!="menu6" )
+      menu6.style.visibility="hidden";
+}
+</SCRIPT>
+</head>
+<body>
+
+<div id="container">
+{dede:include filename="head.htm"/}
+  	<div id="content">
+    	<table width="952" border="0" cellpadding="0" cellspacing="0">
+    	  <tr><td valign="top">
+        <div id="fenlei" style="margin-top:3px;">
+
+            <!--
+		           <div style="background:url({dede:global.cfg_templets_skin/}/images/lanmu_liebiao_head.jpg) no-repeat; width:225px; height:24px; padding:7px 0px 0px 20px; color:#fff; font-size:14px; font-weight:bold;">{dede:field.typename/}</div>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:10px;"> 
+  <tr>
+    <td><img src="{dede:global.cfg_templets_skin/}/images/lanmu_liebiao_t.jpg" width="245" height="15" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" bgcolor="#92CF46">
+    	<ul>
+		{dede:sonchannel }
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+  
+        {/dede:sonchannel}
+
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="{dede:global.cfg_templets_skin/}/images/lanmu_liebiao_d.jpg" alt="" width="245" height="15" /></td>
+  </tr>
+</table>
+-->
+{dede:include filename="left.htm"/}
+
+        </div>
+        <div id="right">
+          <div style="margin:23px 0px 0px 0px; padding:0px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" background="{dede:global.cfg_templets_skin/}/images/lanmu_bg.jpg">
+              <tr>
+                <td width="62%" height="40" style="background:url({dede:global.cfg_templets_skin/}/images/lanmu_left.jpg) no-repeat; padding-left:60px; font-size:14px; font-weight:bold; color:#fff; padding-top:6px; height:34px;">{dede:field.typename/}</td>
+                <td width="38%" height="40" class="xunyangweb" align="right" style="background:url(images/lanmu_right.jpg) no-repeat right; padding-right:10px; padding-top:6px; height:34px;">当前位置：{dede:field name='position'/}</td>
+              </tr>
+            </table>
+            </div>
+            <div style="margin:10px 10px 0px 10px; padding:0px; line-height:26px;  height:auto;min-height:300px">
+            <table width="650" border="0" cellspacing="0" cellpadding="0" id="news_border">
+			  {dede:list pagesize='20'}
+              <tr>
+                <td width="25" height="34"><img src="/templets/www.xunyangweb.com/images/lb.jpg" width="17" height="21" /></td>
+                <td width="573" height="34"><a href="[field:arcurl/]" title="[field:fulltitle/]" class="style3">[field:title/]</a></td>
+                <td width="72" height="34">[[field:pubdate function="GetDateMK(@me)"/]]</td>
+              </tr>
+              {/dede:list} 
+
+              
+            </table>
+			<div style="text-align:center; margin-bottom:5px; margin-top:8px;"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+		
+        <tr>
+          <td height="26" align="center"  class="style3"><div style="padding:10px; text-align:center; width:400px; line-height:24px;"><span>
+<div class="dede_pages">
+   <ul class="pagelist">
+             {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+   </ul>
+  </div>
+
+		  
+		  </span></div></td>
+        </tr>
+      </table></div>           
+          </div>
+            <div><img src="{dede:global.cfg_templets_skin/}/images/hua.jpg" width="670" height="137" /></div>
+        </div>
+     </td></tr></table>   
+</div>
+
+{dede:include filename="footer.htm"/}
+
+
+</div>
+</body>
+</html>

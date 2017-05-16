@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb-2312" />
+<title>{dede:field.title/}专题,{dede:global.cfg_indexname/}</title>
+<meta name="description" content="{dede:field name='keywords'/}"/>
+<meta name="keywords" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/templates/mm/css/reset-min.css" type="text/css" rel="stylesheet" />
+<link href="/templates/mm/css/main.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="Bookmark" href="favicon.ico" />
+
+<script type="text/javascript" src="{dede:global.cfg_basehost/}/templates/mm/js/show_banner.js" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head_92game.htm"/}
+</div><div class="tuijian mb8">
+<div class="tj_01">
+<h2>热门标签:</h2>
+<ul class="fenlei">
+{dede:tag row='60' getall='1' sort='month'}
+            <li><a href='[field:link/]'>[field:tag /]</a></li>
+          {/dede:tag}-------- <strong><a href="/tags.html" target="_blank"><font color="#FF0000" style="font-size:14px">查看所有标签</font></a></strong></ul>
+</div>
+</div><div class="mbx">
+您的当前位置：<a href="{dede:global.cfg_basehost/}">{dede:global.cfg_indexname/}</a> > <a href="#">  {dede:field.title/}</a>
+</div>
+<script src='/data/cache/myad-1.htm' language='javascript'></script>
+	<div class="content_2 mb8"> 
+				{dede:list pagesize='20' flag='p'}
+<div class="pic_box_02"><a href="[field:arcurl/]"  target="_blank"  title="[field:title/]"><img src="[field:litpic/]" alt="[field:title/]" width=180 height=250 /></a><label><a href="[field:arcurl/]"  target="_blank"  title="[field:title/]">[field:title/]</a></label><span class="riqi">更新日期：[field:pubdate function="GetDateMK(@me)"/]</span><span class="liulan">浏览：<span>[field:click/]</span>次</span><span class="pic_bp">标签：[field:id function='nic_arc_tag_link(@me)'/]</span></div>
+{/dede:list}
+			  <!--<div class="xfgg"><script src='/data/cache/myad-5.htm' language='javascript'></script></div> -->
+	  <div class="flickr" style="margin-top:16px;">
+	  <div class="page">{dede:pagelist listitem="index,end,pre,next,pageno,info" listsize="5"/}</div>
+	  </div>
+	</div>
+   <div class="xfgg5"><script src='/data/cache/myad-3.htm' language='javascript'></script></div>  
+{dede:include filename="footer_92game.htm"/}
+
+</div>
+
+</body>
+</html>

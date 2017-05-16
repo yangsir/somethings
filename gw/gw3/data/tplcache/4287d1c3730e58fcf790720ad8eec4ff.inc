@@ -1,0 +1,1 @@
+<li><span>[[field:typelink/]]</span> <a href="[field:arcurl/]">[field:title/]</a><em class="time">[field:pubdate function="MyDate('m-d',@me)"/]</em></li>

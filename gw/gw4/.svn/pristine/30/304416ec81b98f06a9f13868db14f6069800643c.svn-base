@@ -1,0 +1,5 @@
+INSERT INTO `dede_shops_paytype` VALUES('2','货到付款','货到后支付购物款项');
+INSERT INTO `dede_shops_paytype` VALUES('1','网银支付','能过网上银行支付购物金额');
+INSERT INTO `dede_shops_paytype` VALUES('3','银行转帐','账号:\r\n户名:dd\r\n开户行:');
+INSERT INTO `dede_shops_paytype` VALUES('4','邮政汇款','地址:\r\n邮编:jj\r\n姓名:');
+INSERT INTO `dede_shops_paytype` VALUES('5','点数购买','扣会员站内账上金币点数');

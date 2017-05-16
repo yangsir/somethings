@@ -1,0 +1,2 @@
+<div class="hotnews"><h1><a target="_blank" href="[field:arcurl /]" title="[field:title /]" >[field:title /]</a></h1>
+	<a target="_blank" class="hotnews_a" href="[field:filename /]">[field:description/]...</a></div>

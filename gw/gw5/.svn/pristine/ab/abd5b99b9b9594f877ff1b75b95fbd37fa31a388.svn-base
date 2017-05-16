@@ -1,0 +1,26 @@
+{dede:include filename="header.htm"/}
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" style="margin-bottom:20px;">
+  <tr>
+
+{dede:include filename="left_job.htm"/}
+
+    <td align="left" valign="top"><table width="764" border="0" cellpadding="0" cellspacing="0" background="/templets/wuge/images/right1.jpg" tppabs="http://www.dgyouji88.com/images/right1.jpg">
+      <tr>
+        <td width="210" height="40" align="left" style="color:#0b73a9;font-size:16px; font-family:黑体;">　　{dede:field.title/}</td>
+        <td width="554" align="right"><img src="/templets/wuge/Images/Arrow_02.gif" />&nbsp;您现在的位置：{dede:field name='position'/}{dede:field.title/} &nbsp;&nbsp;</td>
+      </tr>
+    </table>
+
+      {dede:field.content/}
+	 {dede:field.body/}
+
+      <table width="764" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/templets/wuge/Images/right3.jpg" width="764" height="8" /></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+{dede:include filename="footer.htm"/}

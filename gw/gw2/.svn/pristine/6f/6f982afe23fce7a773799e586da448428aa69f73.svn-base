@@ -1,0 +1,9 @@
+            <div><img src="{dede:global.cfg_templets_skin/}/images/chanpin.jpg" width="245" height="31" /></div>
+            <div><a href="/a/chanyejidi/huahui"><img src="{dede:global.cfg_templets_skin/}/images/huahui.jpg" width="245" height="65" border="0" /></a></div>
+            <div><a href="/a/chanyejidi/miaomu"><img src="{dede:global.cfg_templets_skin/}/images/miaomu.jpg" width="245" height="65" border="0" /></a></div>
+            <div><a href="/a/chanyejidi/xianguo"><img src="{dede:global.cfg_templets_skin/}/images/xianguo.jpg" width="245" height="65" border="0" /></a></div>
+            <!--
+            <div><a href="/putaojiu"><img src="{dede:global.cfg_templets_skin/}/images/putao.jpg" width="245" height="65" border="0" /></a></div>
+            <div style="margin-bottom:18px; height:65px;"><a href="/nongfuchanpin"><img src="{dede:global.cfg_templets_skin/}/images/nong.jpg" width="245" height="65" border="0" /></a></div>
+            -->
+            <div><a  href="http://wpa.qq.com/msgrd?v=3&amp;uin={dede:global.cfg_qqa/}&amp;site=qq&amp;menu=yes" target="_blank"><img border="0" SRC="{dede:global.cfg_templets_skin/}/images/liuyan.jpg" alt="点击这里给我发消息咨询"></a></div>

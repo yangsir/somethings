@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:field.title/}_{dede:global.cfg_indexname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:global.cfg_indexname/}精选图片之-{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" href="/templets/mm/css/css.css?12dd" />
+<!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+</head>
+<body>
+
+{dede:include filename="head_92game.htm"/}
+
+<div class="wrapperC">
+<div class="wrapper fix">
+
+<div class="section fix pt5 pb5">
+<script src='/data/cache/myad-1.htm' language='javascript'></script>
+</div>
+
+
+
+<div class="section fix pt10 pagePal">
+<div class="pagePic l">
+<img src="{dede:field.litpic/}" width="120" height="160" />
+</div>
+<div class="arcOther l">
+    <div class="arcTitle">
+      <h1 class="yh"><a href="{dede:field.arcurl/}">{dede:field.title/}</a></h1>
+      
+	</div>
+	<div class="arcDES fix pt10">关键词：{dede:field.id function='nic_arc_tag_link(@me)'/}</div>
+    <div class="arcPre fix">当前位置：{dede:field name='position'/}</div>
+    <div class="arcBtn pb5"><a class="icoGoHome" href=" /">返回首页</a> <em> 更新时间：{dede:field name='pubdate' function='GetDateMk(@me)'/}</em></div>
+
+
+
+    <div class="fav l">
+<!-- Baidu Button BEGIN -->
+    <div class="bdshare_t bds_tools_32 get-codes-bdshare" id="bdshare">
+        <a class="bds_qzone" title="分享到QQ空间"></a>
+        <a class="bds_tsina" title="分享到新浪微博"></a>
+        <a class="bds_tqq" title="分享到腾讯微博"></a>
+        <a class="bds_renren" title="分享到人人网"></a>
+        <a class="bds_tieba" title="分享到百度贴吧"></a>
+        <span class="bds_more">更多</span>
+		<a class="shareCount" title="累计分享10次">10</a>
+    </div>
+<script data="type=tools&uid=185664" id="bdshare_js" type="text/javascript" src="http://share.baidu.com/static/js/bds_s_v2.js?v=20111226"></script>
+<script id="bdshell_js" type="text/javascript" src="http://share.baidu.com/static/js/shell_v2.js?t=9"></script>
+<script type="text/javascript">
+	document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+</script>
+    </div>
+    <div class="arcLocal r">{dede:prenext get='pre'/}{dede:prenext get='next'/} </div>
+  </div>
+  
+</div><!--end of section-->
+
+
+<div class="section fix tc">
+<table cellpadding="0" cellspacing="0" align="center"><tr><td>
+<div class="tc pageBody">
+<div style="background:#fef1f1; line-height:20px;height:20px; margin-top:10px;" class="tc">友情提示：点击图片直接观看下一页</div>
+<div class="fieldCol2"><script src='/data/cache/myad-8.htm' language='javascript'></script></div>
+
+<p align="center">{dede:field.body/}</p>
+<p align="center">{dede:field.title/}</p>
+
+</td></tr>
+</table>
+</div><!--end of section-->  
+
+
+<div class="section lay mt5 fix">
+   <div class="page fix pt5 pb10">
+    <ul>
+           {dede:pagebreak/}
+          </ul>
+  </div>
+</div><!--end of section-->
+
+<p align="center">
+<div class="field728"><script src='/data/cache/myad-9.htm' language='javascript'></script></div>
+ 
+<div class="field728"><script src='/data/cache/myad-10.htm' language='javascript'></script></div>
+</div> 
+<div class="section lay  lay6 mt5 fix">
+<div class="layTh">
+</div><!--end of layTh-->
+<div class="layTb">
+<div class="box665 ">
+<div class=" listPic l">
+<ul class="ulPic">
+{dede:arclist pagesize='8' flag='p' orderby='rand'}
+<li><a href="[field:arcurl/]" class="img"><img src="[field:litpic/]" alt="[field:title/]" /><i class="tit">[field:title/]</i><s></s></a></li>
+{/dede:arclist}
+
+</ul>
+</div>
+</div><!--end of box745-->
+<div class="box310">
+<div class="mod fix"><script src='/data/cache/myad-11.htm' language='javascript'></script></div>
+ <div class="mod fix mt10 pagerecom">
+   <div class="th">
+       <ul><li class="cur tit"><a>热门推荐</a></li></ul>
+   </div>
+   <div class="tb">
+          <ul class="ulTxt pt5 ulTxtA">
+{dede:arclist row=4 orderby='hot'}
+<li><a  href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+
+          
+          </ul>
+      </div>
+</div><!--end of mod-->
+
+</div><!--end of box220-->
+</div><!--end of layTb-->
+</div><!--end of section-->
+
+
+</div><!--end of wrapper-->
+<div class="mod fix">
+  <div align="center">
+    <script src='/data/cache/myad-4.htm' language='javascript'></script>
+  </div>
+</div>
+</div><!--end of wrapperC-->
+
+{dede:include filename="footer_92game.htm"/}
+
+
+
+
+<script src="/templets/mm/js/lib.js" ></script>
+<script src="/templets/mm/js/common.js" ></script>
+</body>
+</html>

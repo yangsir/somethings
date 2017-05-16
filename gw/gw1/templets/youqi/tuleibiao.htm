@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/templets/youqi/style/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templets/youqi/js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="/templets/youqi/js/jquery.SuperSlide.2.1.js"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<script type="text/javascript">jQuery(".TB-focus").slide({ mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:200 });</script>
+<div id="container">
+	<div class="indrx_left">
+        <!--
+		<div class="left_box">
+			<div class="left_titel">
+		  		<h1>产品介绍</h1>
+			</div>
+			<ul class="ny_left">
+                <li ><a href="/a/chenggonganli/" target="_self">成果展示</a></li>
+                              			</ul>
+		</div>
+        -->
+		
+		{dede:include filename="left.htm"/}
+	</div>
+	<div class="index-right">
+		<div class="zxgg">
+		<h1><span class="ny_dqwz">您的位置：{dede:field name='position'/}</span>{dede:field.title/}</h1>
+		<div class="ny_about">
+		
+		{dede:list titlelen='26' pagesize='9'}
+                <div class="Prodiv"><a href="[field:arcurl/]"><img src="[field:litpic/]"  alt="[field:title/]"  border=0 style='border:1px #00A8D5 solid; background:#FFFFFF; padding:2px' onerror="this.src='/templets/youqi/images/error1.jpg';"></a><a href="[field:arcurl/]" >[field:title/]</a>
+	           </div>
+	     {/dede:list}
+		 
+	    <div class='clear'></div>
+<div style="text-align:center;clear:both; margin-top:20px;">
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+</div>
+        </div>
+	</div>
+</div>
+</div>
+<div class="clear"></div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

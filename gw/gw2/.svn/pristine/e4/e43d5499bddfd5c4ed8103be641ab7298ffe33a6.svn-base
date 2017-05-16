@@ -1,0 +1,14 @@
+     <div id="footer">
+    	<div style="float:left; width:10px; margin:0px;"><img src="{dede:global.cfg_templets_skin/}/images/footer_left.jpg" width="10" height="81" /></div>
+        <div style="float:left; width:932px;">
+       	  <div style="float:left; width:600px; padding-top:15px;">{dede:global.cfg_powerby/}<br>
+		   <ul class="f5"> {dede:flink row='24'/}<li><a href='http://www.webyang.net/' target='_blank'>技术支持</a></li></ul>
+		  </div>
+            <div style="float:left; width:210px; margin:0px; padding-top:10px;">
+            <img src="{dede:global.cfg_templets_skin/}/images/tel.jpg" width="206" height="29" /><br />
+            <img src="{dede:global.cfg_templets_skin/}/images/youxiang.jpg" width="206" height="31" /></div>
+            <div style="float:left; background:#427006; border:1px solid #fff; margin-top:30px; margin-left:10px; width:80px; text-align:center; height:25px; padding:0px;"><a href="/a/guanyuwomen" class="style3"><font color="#D1FB94">关于我们</font></a></div>
+			
+      	</div>
+        <div style="float:left; width:10px; margin:0px;"><img src="{dede:global.cfg_templets_skin/}/images/footer_right.jpg" width="10" height="81" /></div>
+  	</div>

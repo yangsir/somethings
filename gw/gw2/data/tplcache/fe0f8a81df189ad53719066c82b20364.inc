@@ -1,0 +1,1 @@
+<li>·<a target="_blank" href="[field:arcurl /]" title="[field:title /]" >[field:title /]</a></li>

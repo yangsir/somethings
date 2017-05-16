@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" /> <title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+ <link href="/xunyang/images/css.css" rel="stylesheet" type="text/css" /> </head> 
+ <body>
+{dede:include filename="head.htm"/}
+
+ <div class="content2">
+ {dede:channelartlist row=''}<div class="content2_sum"> <h3>{dede:field.typename/}</h3> <ul>  {dede:arclist row='9' titlelen='60'}<li><a target="_blank" href="[field:arcurl/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></li>  {/dede:arclist}  </ul> </div>{/dede:channelartlist}
+ <style>
+     #link li{list-style:none;}
+</style>
+  <div class="clear"></div> </div>
+  <!--友情链接--> <div id="link"> <div class="linktit"><strong>友情链接</strong><span class="sp"><a target="_blank" href="#">所有链接</a> | <a target="_blank" href="#">申请加入</a></span></div> {dede:flink/} </div>
+{dede:include filename="footer.htm"/}
+  
+  </body> </html>
+  
+ 

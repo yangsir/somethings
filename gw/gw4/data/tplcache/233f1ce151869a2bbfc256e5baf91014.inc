@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]" target="_blank"><img  src="[field:imgurl function='GetOneImgUrl(@me,1)'/]" width="125" height="70" alt="[field:title/]"/></a>

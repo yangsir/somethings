@@ -1,0 +1,49 @@
+/*---------- c : 纯文本列表 ---------*/
+
+.c1{/* 纯文本链接列表 */padding:4px 0px;clear:right;}
+.c1 li{height:27px;line-height:27px;overflow:hidden;padding-left:12px;background:url(../images/ico-2.gif) 2px 11px no-repeat;}
+.c1 a{color:#585858;}
+
+.c2{/* 水平切分的两列纯文本链接列表 */width:100%;padding:4px 0px;overflow:hidden;clear:both;}
+.c2 li{width:44%;margin-right:1%;float:left;height:27px;line-height:27px;overflow:hidden;padding-left:16px;background:url(../images/ico-2.gif) 7px 11px no-repeat;}
+.c3{}
+.c3 li{ float:left; margin:0 2px;}
+/*---------- e : 图文混排列表 ---------*/
+.list1{}
+.list1 dl{ clear:both; height:85px;}
+.list1 dt{border: 1px solid #EEEEEE;float: left;height: 75px;margin-bottom:5px;padding: 1px;width: 75px;}
+.list1 dd{ margin-left:85px;}
+.list1 dd a{ white-space:nowrap; overflow:hidden}
+.list2 dl{ width:500px; margin:0 auto;border: 1px solid #DDDDDD;background:#F5F5F5;}
+.list2 dt{border: 1px solid #EEEEEE;float: left;height: 80px;padding: 1px;width: 129px;}
+.list2 dd{ margin-left:140px;margin-right: 10px;line-height: 20px;}
+.list2 dd a{ color:#8D900B; font-weight:bold}
+.list2 dd a:hover{ color:#ffffff}
+.list_content{}
+.list_content li{width:100%;overflow:hidden;clear:both;padding:12px 0px;border-bottom:1px solid #EEE;height: 185px;position:relative}
+.list_content li b a{color:#555;}
+.list_content li a.pic{width:252px;height:180px;float:left;display:inline;overflow:hidden;margin-right:10px;}
+.list_content li a.pic img{width:250px;display:block;padding:1px;}
+.list_content li a.pic:hover{ background:none}
+.list_content .title {color: #666666;font-size: 14px;margin-bottom:10px;font-weight: bold;}
+.list_content small{color: #999999;font-size:12px;}
+.list_content .more,.puzilist .more {background: url("../images/add.gif") no-repeat scroll left center transparent;
+    margin-left: 10px;padding-left: 12px;}
+.list_content li .click{bottom: 10px;font: 25px Arial;position:absolute;right: 10px;}
+a.more:hover,.fr:hover{ text-decoration:underline; color:#8D900B; background:url("../images/add.gif") no-repeat scroll left center transparent}
+.list_content p.intro{line-height:20px;margin:8px;}
+/*---------- f : 特殊列表 ---------*/
+
+.f1{/* 带数字ICO的排行榜列表 */background:url(../images/number-range.gif) 5px 5px no-repeat;overflow:hidden;}
+.f1 li{height:38px;display:block;padding:3px 0px 4px 0px;;border-bottom:1px dashed #DCEBD7;padding-left:38px;overflow:hidden;}
+.f1 li a{height:21px;line-height:21px;overflow:hidden;display:block;}
+.f1 li span{line-height:15px;color:#666666;margin-left:5px;}
+.f1 li span small{font-size:12px;color:#999;}
+.f1 li span a{display:inline;line-height:15px;color:#666666;color:#690;}
+
+/*-------------------------------------------------- 
+ list icon
+ ---------------------------------------------*/
+.ico1 li{padding-left:16px;background:url(../images/ico-1.gif) 7px 11px no-repeat;}
+.ico2 li{padding-left:16px;background:url(../images/ico-2.gif) 6px 11px no-repeat;}
+.ico3 li{padding-left:16px;background:url(../images/ico-3.gif) 7px 11px no-repeat;}

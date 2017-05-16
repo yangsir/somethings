@@ -1,0 +1,124 @@
+@charset "gb2312";
+/*全局声明*/
+*{margin:0; padding:0;}
+html{border:0;}
+body{font-size:12px; font-family:"宋体"; color:#666;}
+h1{font:inherit; font-size:26px; color:#f30; line-height:135%;}
+h2{font:inherit; font-size:14px; font-weight:bold; color:#666;}
+h3{font:inherit; font-size:12px; font-weight:bold; color:#666;}
+ul{list-style:none;}
+p{line-height:20px;}
+a img{border:0;}
+a{ color:#666; text-decoration:none;}
+a:hover{ color:#f30; text-decoration:none;}
+.c{zoom:1;}
+.c:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.l{ float:left;}
+.r{ float:right;}
+.in24{text-indent:24px; text-align:left;}
+.ch{cursor:pointer;}
+.clear{ clear:both; line-height:0px; font-size:0px; overflow:hidden; height:0px;}
+
+
+/*框架样式*/
+#help_wrapper{ width:960px; margin:10px auto 0; padding-top:10px;}/*
+#help_main{ width:960px; margin:10px auto 0;}
+#help_main .leftbar{ float:left; width:198px; background:#f6f6f6; height:650px; *height:625px; border:1px #dcdcdc solid;}*/
+#help_main{ background:transparent url(help_bod.gif) repeat-y top left; width:960px; margin:10px auto 0;}
+#help_main .leftbar{ float:left; width:200px; border-top:1px #dcdcdc solid;}
+#help_main .leftbar_c{ padding:8px 8px 0;}
+#help_main .help_main_c{ float:left; width:750px; margin-left:10px;}
+
+#help_wrapper .location{ width:960px; line-height:20px; font-size:13px; border-bottom:1px #838383 solid; padding-bottom:4px; clear:both; text-align:left;}
+#help_wrapper .location img{ margin:-2px 2px 0 8px;}
+#help_wrapper .location span{ color:#f30; font-weight:bold;}
+
+#help_main .leftbar .title a{ display:block; background:url(li_subna.gif) no-repeat; width:181px; height:25px; line-height:25px; color:#545454; font-weight:bold; text-indent:15px; margin-top:7px; text-align:left;}
+#help_main .leftbar .title .on{ background:url(li_subnb.gif) no-repeat; width:181px; height:25px; text-indent:15px; color:#fff;}
+#help_main .leftbar .subnav_2{ padding:10px 0 8px; text-align:left;}
+#help_main .leftbar .subnav_2 li a{ display:block; background:url(point300.gif) no-repeat 18px 10px; *background:url(point300.gif) no-repeat 18px 5px; padding-left:28px; line-height:22px; _line-height:18px;}
+
+.help_main_c .help_banner{ width:748px; height:142px;}
+.help_main_c .help_content{ border:1px #dcdcdc solid; padding:28px 18px 116px;}
+.help_main_c .help_step{ width:710px; height:76px;}
+.help_main_c .help_round{ margin-top:26px;}
+.help_main_c .help_r_c{ padding:16px 0 16px 18px;}
+
+.help_r_a{ position:relative; width:340px; height:260px; border:1px solid #d2d2d2;}
+.help_r_a .t_l,.help_r_a .t_r,.help_r_a .b_l,.help_r_a .b_r{ position:absolute; width:5px; height:5px;}
+.help_r_a .t_l{ background:url(help_tl0.gif) no-repeat; left:-1px; top:-1px;}
+.help_r_a .t_r{ background:url(help_tr0.gif) no-repeat; right:-1px; top:-1px;}
+.help_r_a .b_l{ background:url(help_bl0.gif) no-repeat; left:-1px; bottom:-1px; _bottom:-8px;}
+.help_r_a .b_r{ background:url(help_br0.gif) no-repeat; right:-1px; bottom:-1px; _bottom:-8px;}
+
+.t_a{ width:260px; margin:25px auto;}
+.t_a th{ height:26px; line-height:26px; color:#333; font-size:13px; font-weight:bold;}
+.t_a td{ height:26px; line-height:26px;}
+.t_a td input{ height:18px; border:1px #c9c9c9 solid; padding-top:3px;}
+
+.help_main_c .a_e{ display:block; background:url(btn50000.gif) no-repeat; width:117px; height:35px; margin:0 auto;}
+
+.help_main_c .l_a{ width:110px; margin:10px auto 0;}
+.help_main_c .l_a li{ line-height:25px; text-align:left;}
+.help_main_c .l_b{}
+.help_main_c .l_b li{ background:url(icon5000.gif) no-repeat 0 8px; padding-left:20px; line-height:24px; font-size:12px; font-weight:normal; text-align:left;}
+
+ /*常见问题解答*/    
+.help_main_c .help_content_2{ border:1px #dcdcdc solid; padding:0 22px 116px;}
+.help_content_2 .help_welcome{ background:url(help_bg1.gif) no-repeat; width:702px; height:82px; line-height:22px;}
+.help_content_2 .help_welcome p{ padding:32px 35px 0 30px;}
+.help_content_2 .aq_list{ margin-top:15px;}
+.help_content_2 .aq_list h2{ background:url(icon6000.gif) no-repeat 0 2px; padding-left:20px; line-height:22px; font-size:13px; font-weight:bold; text-align:left;}
+.help_content_2 .aq_list ul{ padding-left:20px;}
+.help_content_2 .aq_list ul li{ line-height:25px; font-size:13px; text-align:left;}
+.help_content_2 .how_to{ margin-top:30px; text-align:left;}
+.help_content_2 .how_to h3{ color:#f20000; font-size:14px; font-weight:bold; line-height:25px; padding:10px 0 10px 0;}
+
+/****************mai******************/
+
+#apDiv3{
+	color:#989898;
+	margin-top:3px;
+	right:-3px;
+	font-size:12px;
+	z-index:20;
+	position:absolute;
+	word-spacing:0.8px;
+	font-family:"宋体";
+	top: 35px!important;
+	top: 35px;
+}
+
+
+/*floor*/
+
+.floor {
+	BACKGROUND: #fff;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 12px auto 0px;
+	WIDTH: 980px;
+	TEXT-ALIGN: center;
+	BORDER-BOTTOM-STYLE: none;
+	float: left;
+}
+.fta {
+	BACKGROUND: #5E5E5E; COLOR: #fff; PADDING-TOP: 7px; BORDER-BOTTOM: #7d7d7b 1px solid; HEIGHT: 22px
+}
+.cc A:link {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.cc A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.cc A:active {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.cc A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.ftbv {
+	COLOR: #414141;
+	LINE-HEIGHT: 22px;
+	FONT-FAMILY: "宋体";
+	padding: 10px;
+}

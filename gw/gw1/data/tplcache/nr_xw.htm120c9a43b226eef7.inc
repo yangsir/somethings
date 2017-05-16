@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("field","",310,329);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",330,356);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",397,426);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",466,524);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",806,841);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("channel","\r\n                      <li ><a href=\"[field:typeurl/]\" target=\"_self\">[field:typename/]</a></li>                     \r\n								 ",1199,1380);
+$z[5][4]['type']="son";
+$z[5][4]['typeid']="9";
+$z[6]=Array("include","",1463,1498);
+$z[6][4]['filename']="left.htm";
+$z[7]=Array("field","",1602,1631);
+$z[7][4]['name']="position";
+$z[8]=Array("field","",1638,1661);
+$z[8][4]['name']="typename";
+$z[9]=Array("field","",1914,1933);
+$z[9][4]['name']="title";
+$z[10]=Array("field","",2001,2053);
+$z[10][4]['name']="pubdate";
+$z[10][4]['function']="MyDate('Y-m-d',@me)";
+$z[11]=Array("field","",2077,2097);
+$z[11][4]['name']="writer";
+$z[12]=Array("field","",2214,2232);
+$z[12][4]['name']="body";
+$z[13]=Array("arclist","\r\n     <p><a href=\"[field:arcurl/]\">[field:title/]</a></p>\r\n	 ",2296,2410);
+$z[13][4]['row']="5";
+$z[13][4]['orderby']="rand";
+$z[14]=Array("prenext","",2709,2734);
+$z[14][4]['get']="pre";
+$z[15]=Array("prenext","",2749,2775);
+$z[15][4]['get']="next";
+$z[16]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/templets/youqi/images/btn_fh.gif\" width=\"88\" height=\"22\" border=\"0\" /></a>",2897,3032);
+$z[17]=Array("include","",3190,3225);
+$z[17][4]['filename']="foot.htm";
+
+?>

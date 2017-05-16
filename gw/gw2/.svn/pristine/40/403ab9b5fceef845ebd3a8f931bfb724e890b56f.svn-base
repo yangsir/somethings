@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT type="text/javascript">
+    alert(window.event.toElement.id);
+function out1()
+{
+if(window.event.toElement.id!="menu1" )
+      menu1.style.visibility="hidden";
+}
+function out2()
+{
+if(window.event.toElement.id!="menu2" )
+      menu2.style.visibility="hidden";
+}
+
+function out3()
+{
+if(window.event.toElement.id!="menu3" )
+      menu3.style.visibility="hidden";
+}
+function out4()
+{
+if(window.event.toElement.id!="menu4" )
+      menu4.style.visibility="hidden";
+}
+function out5()
+{
+if(window.event.toElement.id!="menu5" )
+      menu5.style.visibility="hidden";
+}
+function out6()
+{
+if(window.event.toElement.id!="menu6" )
+      menu6.style.visibility="hidden";
+}
+</SCRIPT>
+
+
+<style type="text/css">
+<!--
+.f1 {
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.f3 {
+	font-size: 12px;
+	color: #FFFFFF;
+	right: 1px;
+	bottom: 1px;
+}
+.f2 {	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.f31 {	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 15px;
+}
+.f4 {
+	font-size: 12px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+body {
+	background-image: url(default.htm);
+	background-color: #FFFFFF;
+}
+.style1 {color: #FFF5C2;font-size: 12px;}
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:10px;
+	width:585px;
+	height:212px;
+	z-index:1;
+}
+.bj{ background:url(images/index1_24.jpg) repeat-y center; background-repeat:no-repeat;}
+
+.a7 {
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+}
+-->
+</style>
+
+</head>
+<body>
+
+<div id="container">
+{dede:include filename="head.htm"/}
+  	<div id="main">
+        <div id="fenlei">
+{dede:include filename="left.htm"/}
+
+        </div>
+        <div id="main_right">
+            <div style="float:left; width:436px; margin-right:10px;">
+                <div id="jj">
+                    <div style="margin:0px; padding:0px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#7DBD2D">
+                      <tr>
+                        <td height="31"><img src="{dede:global.cfg_templets_skin/}/images/jj.jpg" width="92" height="31" /></td>
+                        <td align="right"><a href="/a/guanyuwomen"><img src="{dede:global.cfg_templets_skin/}/images/more.jpg" width="61" height="31" border="0" /></a></td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div style="margin:10px; padding:0px; width:416px; height:130px;">
+						
+                        <div style="float:left; width:165px; margin-right:15px;">
+                            <img src='{dede:global.cfg_templets_skin/}/images/a_44.jpg' width='165px' height='130px'>
+						</div>
+                        <div style="margin:0px; padding:0px; line-height:26px; font-size:13px; float:left; width:236px;"> 
+						{dede:sql sql='Select content from dede_arctype where id=2'}
+       [field:content function="cn_substr(@me,160)"/]{/dede:sql}......<a href="/a/guanyuwomen" class="style3"><font color="#339900">[更多详情]</font></a></div>
+						
+                  </div>
+                </div>
+                <div id="zhanshi">
+                    <div style="margin:0px; padding:0px; width:436px;">
+                    <table width="436" border="0" cellspacing="0" cellpadding="0" bgcolor="#7DBD2D">
+                      <tr>
+                        <td width="267" height="31"><img src="{dede:global.cfg_templets_skin/}/images/zhanshi.jpg" width="135" height="31" /></td>
+                        <td width="169" align="right"><a href="/a/chanyejidi"><img src="{dede:global.cfg_templets_skin/}/images/more.jpg" width="61" height="31" border="0" /></a></td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div style="margin:15px 10px 0px 0px; padding:0px; width:416px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" id="img">
+                      <tr>
+                        <td align="left">
+						
+<table width="470"  border="0" cellpadding="0" cellspacing="0" >
+                              <tr>
+                               
+                                <th width="470" valign="top" >
+								<div id=demo style=overflow:hidden;height:140;width:420; >
+								  <table width="420" border=0 align=left cellpadding=0 cellspacing=0 >
+<tr>
+
+  <td width="356" height="134" valign=top id=demo1 >
+  
+  <table width="16%"  border="0" cellspacing="0" cellpadding="0" >
+  
+  <tr>
+ 
+{dede:arclist row='3' titlelen='20'} 
+
+    <td height="" valign="top" >
+	<table width="150"  border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+    <td  align="center" class="a7"><a href="[field:arcurl/]" title="[field:title/]"  target="_blank"><img src="[field:litpic/]" width="126"  height="106" border="0" /></a></td>
+	<td width="12"></td>
+  </tr>
+  <tr><td height="5"></td></tr>
+<tr><td align="center" style="font-size:12px;">[field:title/]</td></tr>
+ 
+</table>
+	</td>
+{/dede:arclist}
+
+	
+
+  </tr>
+</table>
+  </td>
+ 
+  </tr></table>
+								</DIV></th>
+                                
+
+                                <th width="5" ></th>
+                              </tr>
+</table>	
+						
+						</td>
+                      </tr>
+                    </table>    
+                    </div>
+                </div>
+            </div>
+            <div id="link">
+                <div><img src="{dede:global.cfg_templets_skin/}/images/niao.jpg" width="258" height="99" /></div>
+                <div><a href="/a/rencaizhaopin"><img src="{dede:global.cfg_templets_skin/}/images/btn1.jpg" width="258" height="44" border="0" /></a></div>
+                <div><a href="/a/tiyannongchang"><img src="{dede:global.cfg_templets_skin/}/images/btn2.jpg" width="258" height="44" border="0" /></a></div>
+                <div><a href="/a/guanguangcaizhai"><img src="{dede:global.cfg_templets_skin/}/images/btn3.jpg" width="258" height="44" border="0" /></a></div>
+                <div><a href="#" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/btn4.jpg" width="258" height="44" border="0" /></a></div>
+                <div><img src="{dede:global.cfg_templets_skin/}/images/btn5.jpg" width="258" height="150" /></div>
+            </div>
+            <div style=" clear:left; width:704px; margin:0px; padding:0px;"><img src="{dede:global.cfg_templets_skin/}/images/hua.jpg" width="704" height="137" /></div>
+        </div>
+    </div>
+{dede:include filename="footer.htm"/}
+
+</div>
+</body>
+</html>
