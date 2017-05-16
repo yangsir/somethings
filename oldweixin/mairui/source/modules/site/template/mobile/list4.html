@@ -1,0 +1,26 @@
+{template 'header'}
+<body class="b_g">
+<style>
+.cl{text-decoration:none;}
+.cl a:hover{text-decoration:none;color:#336699;}
+</style>
+<section class="m12">
+<p class="g6">积分规则：每门微课读完之后可积<b class="red">5</b>分</p>
+
+	<div class="plist">
+   		<ul>
+          {loop $result['list'] $v}
+        	<li class="cl">
+            	<a  href="{$v['link']}"><b>{$v['title']}</b>
+                <p class="g6 ft12">获得积分：<b class="red">5</b>分</p></a>
+            </li>
+       	{/loop}
+        </ul>
+    </div>
+    
+</section>
+<section>
+{$result['pager']}
+</section>
+</body>
+</html>

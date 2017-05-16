@@ -1,0 +1,16 @@
+# no access to .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# view.css is required by public visitors
+<Files view.css>
+allow from all
+</Files>
+
+# limit public access 
+<Limit GET POST PUT>
+order deny,allow
+deny from all
+</Limit>

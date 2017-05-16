@@ -1,0 +1,126 @@
+MachForm Changelog
+==================
+
+===============================
+VERSION 1.2 - 15 September 2007
+===============================
+* New feature: added CAPTCHA for spam protection
+* New feature: added panel to embed form code
+* Bugfix on entry manager, column header didn't escape newlines, this break the whole extjs grid javascript 
+* Bugfix on excel export for UTF-8 encoding 
+* Bugfix on email name saving 
+* Bugfix on today's entry counter
+* Bugfix on domain guessing for mail
+* Bugfix on mkdir umask 
+* Bugfix on redirect for iframe 
+* Enhanchement on entry manager, provided a constant to limit the maximum columns to be displayed, large forms tend to be slower 
+* Expand last used tab on form manager 
+
+===============================
+VERSION 1.2.b - 4 November 2007
+===============================
+* Bugfix on form submission anchor, it does not go to the top of the page where the error message is.
+* Bugfix on export to excel. temporary folder wasn't explicitly configured, causing problem to some. 
+* Bugfix on email field ordering 
+* Bugfix on export to excel. header ordering. 
+
+===============================
+VERSION 1.2.c - 15 November 2007
+===============================
+* Bugfix on export to excel. unexpected repeated data.
+
+===============================
+VERSION 1.2.d - 28 November 2007
+===============================
+* Bugfix on export to excel. header ordering fix somehow missed from the previous release.
+
+===============================
+VERSION 1.2.e - 20 February 2008
+===============================
+* Small bugfix on CSS for IE7.
+
+===============================
+VERSION 1.2.f - 25 February 2008
+===============================
+* Bugfix on section break. Shouldn't be displayed on email.
+* Bugfix on checkbox with only one option. Doesn't displayed on email and exported files.
+
+===============================
+VERSION 2.0 - 28 April 2008
+===============================
+* New feature: added email autoresponder control panel
+* New feature: new html email design
+* New feature: fully customizable email template
+* New feature: revamped entry manager
+* New feature: added email autoresponder control panel
+* New feature: entry viewer
+* New feature: printer friendly version of an entry
+* New feature: forward an entry to email
+* New feature: form submission review page
+* New feature: full PHP embed code
+* New feature: built-in CAPTCHA
+* New feature: added language file for easy translation
+* New feature: form duplication
+* Improved navigation
+* SSL Support
+* Numerous minor bugfixes
+
+===============================
+VERSION 2.0.b - 30 April 2008
+===============================
+* Bugfix on quotes not displayed properly in email
+* Bugfix on form redirect not being sent properly
+
+===============================
+VERSION 2.0.c - 1 May 2008
+===============================
+* Bugfix on calendar javascript doesn't loaded properly for DD-MM-YYYY
+* Improvement: full UTF-8 encoding in MySQL table
+
+===============================
+VERSION 2.0.d - 5 May 2008
+===============================
+* Bugfix on website validation.
+
+===============================
+VERSION 2.0.e - 7 May 2008
+===============================
+* Added charset header to config file, to force UTF-8 encoding.
+
+===============================
+VERSION 2.0.f - 21 May 2008
+===============================
+* Typo in template variables page for {form_data}. Should be {entry_data}.
+* Added translation into language file for review page buttons.
+* Bugfix: Checkboxes trimming 'b' and 'r' characters at the end of the label. 
+* Bugfix: Email validation doesn't allow single character domain.
+* Bugfix: Updating checkboxes more than 10 options caused error.
+* Bugfix: When deleting fields, column preference for that field should be removed.
+* Bugfix: Saving large form on PHP 5.2.x sometimes doesn't work.
+
+===============================
+VERSION 2.0.g - 16 June 2008
+===============================
+* Bugfix: Using advanced form code, Enter key won't submit password form in IE7.
+* Bugfix: Form redirect is not being sent properly when using advanced form code.
+* Bugfix: IE7 reject CAPTCHA cookies when using iframe code.
+* Bugfix: IE7 reject session cookies for form review.
+
+===============================
+VERSION 2.1 - 11 November 2008
+===============================
+* PHPMailer library upgrade. Now support secure SMTP (TLS/SSL).
+* Added UPLOAD_DIR into config file, to separate upload folder with data folder.
+* Added file upload type checking.
+* Added random token to file upload, increased security.
+* Added default .htaccess file, increased security.
+* Bugfix: Zero values are not displayed properly on review page and email.
+* Bugfix: Dropdowns and checkboxes are having maximum value of 255.
+* Bugfix: '0' values are not being saved for dropdown/multiple choices
+* Bugfix: Uploading file with quotes doesn't work properly.
+* Bugfix: Download link in exported excel file doesn't work properly.
+
+===============================
+VERSION 2.1.b - 13 November 2008
+===============================
+* Bugfix: .htaccess file caused error on some server.

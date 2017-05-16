@@ -1,0 +1,52 @@
+body {
+	background: none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	font-size : 11pt !important;
+	overflow-y : visible !important;
+}
+#form_manager{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+#header, #footer{
+	display: none !important;
+}
+#top, #bottom{
+	display: none !important;
+	height: 0px !important;
+}
+
+#ve_action_container{
+	display: none !important;
+}
+#ve_detail{
+	width: 100% !important;
+	float: none !important;
+}
+.alt{
+	background-color: #fff !important;
+}
+.info{
+	border-bottom: none !important;
+	padding-bottom: 10px !important;
+}
+.info p{
+	display: none !important;
+}
+.breadcrumb{
+	border-bottom: none !important;
+	color: #000 !important;
+}
+#ve_a_entries, #ve_a_next{
+	display: none !important;
+}
+.global_message{
+	display: none !important;
+}
+#view_entry{
+	overflow: inherit !important;
+}
+#panel{
+	overflow: inherit !important;
+}

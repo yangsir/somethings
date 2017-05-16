@@ -1,0 +1,30 @@
+{template 'header'}
+<body>
+<style>
+img{width:80;height:60;}
+</style>
+<section>
+	<div class="list">
+        {if $collec}
+
+    	<ul>
+	{loop $collec $v}
+	<li>
+
+      {if $v['icon']!=$_W['attachurl']}<img src="{$v['icon']}" />{else}       <img src="img/sthumb.jpg" />{/if}
+             <a style="display:block;overflow:hidden;text-decoration:none;width:52%;height:20;" href="{$v['link']}">
+  <b>{$v['title']}</b></a><div style="position:absolute;top:11;right:0;"><font>{php echo date('Y-m-d', $v['date'])}</font></div><p style="overflow:hidden;width:70%;height:20;">{$v['description']}</p>
+            	<div style="float:right;position:relative;top:6;"><a href="del.php?did={$v['id']}&weid={$_W['weid']}">删除</a>
+</div>											
+	</li>
+	{/loop}
+ </ul>
+ </div>
+</section>
+<section>
+{$result['pager']}
+</section>
+{else}
+<div align='center'><h2>暂无收藏</h2></div>
+{/if}
+{template 'footer'}

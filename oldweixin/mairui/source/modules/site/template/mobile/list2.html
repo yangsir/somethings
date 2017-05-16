@@ -1,0 +1,15 @@
+{template 'header'}
+<body>
+<section>
+	<div class="qlist"><ul>{loop $result['list'] $row}
+
+
+       	  <li><b><a style="overflow:hidden;width:100%;text-decoration:none;height:20;" href="./survey/survey/view.php?id={$row['form_id']}">{$row['form_name']}</a></b><p style="overflow:hidden;width:100%;text-decoration:none;height:40;" class="g6">{$row['form_description']}   </p></li>
+       	 
+         {/loop}</ul>
+    </div>
+</section>
+<section>
+{$result['pager']}
+</section>
+</body>

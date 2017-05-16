@@ -1,0 +1,18 @@
+<style>
+body{font:14px/1.5 Tahoma,Helvetica,'SimSun',sans-serif;}
+</style>
+<div class="banner">
+	<div class="user">
+		<span class="username">{if $_W['fans']['nickname']}{$_W['fans']['nickname']}{else}请设置您的昵称{/if}</span>
+		<span class="usergroup">{if !empty($_W['fans']['card'])}<span style="color:#ff0000">会员{if $_W['fans']['card'] > 1}Lv.{$_W['fans']['card']}{/if}</span>{else}普通会员{/if}</span>
+		<div class="credit user-list"><span>积分</span>{$_W['fans']['credit1']}</div>
+		<div class="money user-list"><span>金额</span>{$_W['fans']['credit2']}元</div>
+	</div>
+	<div class="avatar"><img src="{if !empty($_W['fans']['avatar'])}{$_W['fans']['avatar']}{else}resource/image/noavatar_middle.gif{/if}"></div>
+	<div class="banner_footer">
+		<div>
+			<a class="btn btn-warning" href="{php echo create_url('mobile/module/profile', array('name' => 'fans', 'weid' => $_W['weid']))}#qq.com#wechat_redirect">我的资料</a>
+			<a class="btn btn-success" href="{php echo create_url('mobile/module/charge', array('name' => 'member', 'weid' => $_W['weid']))}#qq.com#wechat_redirect">充值</a>
+		</div>
+	</div>
+</div>

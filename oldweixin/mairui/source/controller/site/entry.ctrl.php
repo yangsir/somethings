@@ -1,0 +1,46 @@
+﻿<?php 
+defined('IN_IA') or exit('Access Denied');
+$eid = intval($_GPC['eid']);
+$sql = 'SELECT * FROM ' . tablename('modules_bindings') . ' WHERE `eid`=:eid';
+$entry = pdo_fetch($sql, array(':eid' => $eid));
+if(empty($entry) || !empty($entry['call'])) {
+	message('非法访问.');
+}
+if(!$entry['direct']) {
+	checklogin();
+	checkaccount();
+	$isexists = false;
+	foreach($_W['account']['modules'] as $m) {
+		if(strtolower($m['name']) == strtolower($entry['module'])) {
+			$isexists = true;
+		}
+	}
+	if(!$isexists) {
+		message("访问非法, 没有操作权限. (module: {$entry['module']})");
+	}
+}
+$_GPC['__entry'] = $entry['title'];
+$_GPC['__state'] = $entry['state'];
+if (!empty($_W['modules'][$entry['module']]['handles']) && !in_array('text', $_W['modules'][$entry['module']]['handles'])) {
+	$handlestips = true;
+}
+$module = WeUtility::createModule($entry['module']);
+if(!is_error($module)) {
+	$method = 'do' . ucfirst($entry['do']);
+	if (method_exists($module, $method)) {
+		exit($module->$method());
+	}
+}
+
+$site = WeUtility::createModuleSite($entry['module']);
+if(!is_error($site)) {
+	$site->module = array_merge($_W['modules'][$entry['module']], $_W['account']['modules'][$_W['modules'][$entry['module']]['mid']]);
+	$site->weid = $_W['weid'];
+	$site->inMobile = false;
+	$method = 'doWeb' . ucfirst($entry['do']);
+	if (method_exists($site, $method)) {
+		exit($site->$method());
+	}
+}
+
+exit("访问的方法 {$method} 不存在.");

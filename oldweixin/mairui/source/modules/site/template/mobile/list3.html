@@ -1,0 +1,55 @@
+{template 'header'}
+
+{php $result = site_article_search($cid,'',1);}
+{php $resultall = site_article_search($cid,'',1000);}
+<body>
+<style>
+.z1 img{height:25%;width:100%;}
+.z1 a{text-decoration:none;}
+.down { display:none; position:absolute; top:60px; width:200px; background:#333; border-radius:5px;}
+
+.dbg { position:absolute; left:94px; top:-6px; width:12px; height:8px; background:url(../img/t_bg.png) 0 0 no-repeat; background-size:12px 8px;}
+
+.down ul { margin:5px; border:#222 1px solid; border-bottom:0; background:#444;}
+
+.down li { font-size:12px; height:38px; line-height:38px;  width:100%; border-bottom:#222 1px solid; text-align:center;}
+</style>
+<script type="text/javascript" src="js/module.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<section style="width:100%" class="z2">
+	<span class="pull">{php echo urldecode($_GPC['cname']);}<img src="img/p_bg.png" class="ml5" width="10" height="8" />
+        <div class="down">
+            <div class="dbg"></div>
+
+            <ul>
+                  {loop $resultall['list'] $item}
+              <li><a style="font-size:14px;color:#fff" href="{php echo $this->createMobileUrl('list3', array('name' => 'list3','cname'=>urlencode($item['title']),'id' =>$item['id'], 'cid' =>$cid,'weid' => $_W['weid']))}">{$item['title']}</a></li>               
+{/loop}
+
+                           </ul>
+        </div>
+    </span>
+</section>
+<section class="z1">
+
+	<ul class="class pclass">
+    {if !$id}
+                {loop $result['list'] $row}
+        	{$row['content']}
+        	        
+                {/loop}
+<div style="position:relative;top:16;left:8;">
+{$result['pager']}
+</div>
+</ul>
+
+
+
+{else}
+
+        	{$detail['content']}
+        	        
+                </ul>
+{/if}
+</section>
+{template 'footer'}

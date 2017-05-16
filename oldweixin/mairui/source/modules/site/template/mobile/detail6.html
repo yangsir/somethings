@@ -1,0 +1,25 @@
+{template 'header'}
+<body class="b_g">
+<style>
+.plist li a:hover{color:#336699;}
+</style>
+<section class="m12">
+	<p  class="g6"><b style="font-size:20px;font-weight:bold">我的课程</b><span style="position:absolute;top;10;right:15px;">未完成:<b  class="red">{php echo $t-$n}</b> 完成:{$n}</span></p>
+	<div class="plist">
+   		<ul>
+  {if $result['list']}
+        {loop $result['list'] $row}
+        	<li>
+            	<a style="text-decoration:none;color:#000;" href='{$row['link']}&flag=b'><p style="overflow:hidden;height:20;width:88%;font-size:16px"><b>{$row['title']}</b></p>
+                 <p class="g6 ft12">主讲:{$row['author']}</p>
+                <p style="overflow:hidden;height:20;width:90%" class="g6 ft12">{$row['description']}</p></a>                           </li>
+        	{/loop}        </ul>
+    </div>
+   </section>
+<section>
+{$result['pager']}
+</section>
+{else}
+<div align='center'><h2>暂无课程</h2></div>
+{/if}
+{template 'footer'}

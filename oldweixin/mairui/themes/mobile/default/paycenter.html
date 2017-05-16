@@ -1,0 +1,66 @@
+{template 'header'}
+<div class="tabbable">
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab1">
+			<div class="mobile-div img-rounded">
+				<div class="mobile-hd" style="border-bottom:0;">收银台</div>
+					<div class="mobile-li">订单名称：{$params['title']}</div>
+					<div class="mobile-li">支付金额：{php echo sprintf('%.2f', $params['fee']);}<span class="muted"> 元</span></div>
+					{if !empty($_W['account']['payment']['alipay']['switch'])}
+					<div class="mobile-li" style="padding:5px;">
+						<form action="{php echo create_url('mobile/cash/alipay', array('weid' => $_W['weid']));}" method="post">
+							<input type="hidden" name="params" value="{php echo base64_encode(json_encode($params));}" />
+							<button class="btn btn-block btn-primary btn-success" type="submit" name="alipay">支付宝支付</button>
+						</form>
+					</div>
+					{/if}
+					{if !empty($_W['account']['payment']['wechat']['switch'])}
+					<div class="mobile-li" style="padding:5px;">
+						<button class="btn btn-block btn-primary btn-success" id="wBtn" type="button" onclick="doWechatPay();" value="alipay">微信支付</button>
+					</div>
+					<script type="text/javascript">
+						function doWechatPay() {
+							if(!window.WeixinJSBridge) {
+								$('#wBtn').attr('disabled', 'disabled');
+								$('#wBtn').html('微信支付(必须使用微信内置浏览器)');
+								alert('微信支付必须在微信内置浏览器中使用.');
+								return;
+							}
+							WeixinJSBridge.invoke('getBrandWCPayRequest', {
+									'appId' : '{$wOpt['appId']}',
+									'timeStamp': '{$wOpt['timeStamp']}',
+									'nonceStr' : '{$wOpt['nonceStr']}',
+									'package' : '{$wOpt['package']}',
+									'signType' : '{$wOpt['signType']}',
+									'paySign' : '{$wOpt['paySign']}'
+								}, function(res) {
+									if(res.err_msg == 'get_brand_wcpay_request:ok') {
+									} else {
+										alert('启动微信支付失败, 请检查你的支付参数. 详细错误为: ' + res.err_msg);
+									}
+							});
+						}
+					</script>
+					{/if}
+					{if !empty($_W['account']['payment']['credit']['switch'])}
+					<div class="mobile-li" style="padding:5px 5px 10px 5px;">
+						{if !empty($_W['fans']['card'])}
+						<form action="{php echo create_url('mobile/cash/credit2', array('weid' => $_W['weid']));}" method="post">
+							<input type="hidden" name="params" value="{php echo base64_encode(json_encode($params));}" />
+							{if $params['fee'] < $_W['fans']['credit2']}
+							<button class="btn btn-block btn-primary btn-success" type="submit" value="credit">余额支付 （余额支付当前 {php echo sprintf('%.2f', $_W['fans']['credit2']);}元)</button>
+							{else}
+							<button class="btn btn-block btn-primary" type="button" onclick="location.href='{php echo create_url('mobile/module/charge', array('name' => 'member', 'weid' => $_W['weid']))}'" value="credit">余额充值，（余额支付当前 {php echo sprintf('%.2f', $_W['fans']['credit2']);})</button>
+							{/if}
+						</form>
+						{else}
+							<button class="btn btn-block" type="button">余额付款不可用，请先开通会员卡或是选则其它支付方式</button>
+						{/if}
+					</div>
+					{/if}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{template 'footer'}
